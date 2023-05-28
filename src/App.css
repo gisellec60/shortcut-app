@@ -1,10 +1,8 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #b0dbb3;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,7 +12,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #eeeef0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +33,67 @@
   to {
     transform: rotate(360deg);
   }
+}
+div
+ {
+  border: 2px solid rebeccapurple;
+  padding: .5em;
+}
+
+.box,.edit
+{
+  position:absolute;
+  border: 5px solid blue;
+  padding: 16px ;
+  top:250px;
+  font-size:xx-large;
+}
+
+#gen{
+left:20px;
+width:260px;
+}
+
+#basic {
+left : 400px;  
+width: 200px;
+}
+
+#search{
+left : 700px;  
+}
+
+#multi{
+  left : 300px;  
+  top:460px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.block {
+  display: block;
+} 
+
+.edit{
+  top:700px;
+  width:700px;
+}
+
+#add {
+left: 20px; 
+width:260px; 
+}
+
+#mod {
+  left: 380px; 
+  width:200px; 
+}
+
+#del {
+  left: 700px; 
+  width:270px; 
 }
