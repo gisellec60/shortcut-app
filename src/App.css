@@ -1,6 +1,20 @@
 .App {
-  text-align: center;
+  text-align: center; 
+ }
+
+#container{
+  position:absolute;
+  background-color:burlywood;
+  border-radius:25px ;
+  border:none;
+  padding: 16px ;
+  top:230px;
+  left:100px;
+  width:1000px;
+  height:550px;
+ 
 }
+
 body{
   background-color: #b0dbb3;
 }
@@ -45,8 +59,9 @@ div
   position:absolute;
   border: 5px solid blue;
   padding: 16px ;
-  top:250px;
+  top:5px;
   font-size:xx-large;
+  border-radius:15px 50px
 }
 
 #gen{
@@ -65,7 +80,7 @@ left : 700px;
 
 #multi{
   left : 300px;  
-  top:460px;
+  top:200px;
 }
 
 ul {
@@ -81,6 +96,7 @@ ul {
 .edit{
   top:700px;
   width:700px;
+  top:390px;
 }
 
 #add {

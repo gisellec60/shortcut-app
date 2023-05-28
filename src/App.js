@@ -63,9 +63,10 @@ function App() {
   return (
     <div className="App">
       <h1 >
-        <p> VS Code Shortcuts for Windows </p>
+        <p> VS Code <span style={{fontStyle:"italic"}}>Shortcuts</span> for Windows </p>
       </h1>
-       <SearchBar />
+      <SearchBar />
+       <div id="container">  
        <General />
        <BasicEditing />
        <SearchReplace />
@@ -73,7 +74,7 @@ function App() {
        <Add />
        <Modify />
        <Delete />
-
+       </div>
     </div>
   );
 }
