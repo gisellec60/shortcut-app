@@ -1,6 +1,4 @@
-import {getRandomColor} from "./randomColorGenerator.js"
 import './App.css'
-import React, {useState} from "react"
 import Home from "./Home"
 import General from "./General"
 import BasicEditing from "./BasicEditing"
@@ -51,13 +49,4 @@ function App() {
 
 export default App;
 
-// return (
-//   <div className="App">  style={{backgroundColor:color}}
-//     <h1 >
-//       <p> VS Code <span style={{fontStyle:"italic"}}>Shortcuts</span> for Windows </p>
-//     </h1>
-//     <Search />
-//     <Head onChangeColor={handleChangeColor}/>
-//   </div>
-// );
-// }
+

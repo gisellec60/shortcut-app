@@ -1,5 +1,5 @@
 import React from 'react'
-import {Route, NavLink} from "react-router-dom"
+import {NavLink} from "react-router-dom"
 
 function NavBar() {
 
@@ -10,33 +10,34 @@ function NavBar() {
     margin: "0 6px 6px",
     background: "red",
     textDecoration: "none",
-    color:"white"
+    color:"white",
+    top:"500px",
   }  
 
   return (
     <div>
-      <NavLink exact to="/" style = {linkStyles} activeStyle={{bacgroun:"dark blue"}} >
+      <NavLink to="/" exact style = {linkStyles} activeStyle={{background:"darkblue",}} >
         Home
       </NavLink>
-      <NavLink exact to="/general" style = {linkStyles} activeStyle={{bacgroun:"dark blue"}} >
+      <NavLink exact to="/general" style = {linkStyles} activeStyle={{background:"darkblue",}} >
         General
       </NavLink> 
-      <NavLink exact to="/basic-editing" style = {linkStyles} activeStyle={{bacgroun:"dark blue"}} >
+      <NavLink exact to="/basic-editing" style = {linkStyles} activeStyle={{background:"darkblue",}} >
         BasicEditing
       </NavLink>  
-      <NavLink exact to="/search-replace" style = {linkStyles}  activeStyle={{bacgroun:"dark blue"}} >
+      <NavLink exact to="/search-replace" style = {linkStyles}  activeStyle={{background:"darkblue",}} >
         SearchReplace
       </NavLink> 
-      <NavLink exact to="/multicursor" style = {linkStyles}  activeStyle={{bacgroun:"dark blue"}} >
+      <NavLink exact to="/multicursor" style = {linkStyles}  activeStyle={{background:"darkblue",}} >
         MultiCursor
       </NavLink> 
-      <NavLink exact to="/add" style = {linkStyles} activeStyle={{bacgroun:"dark blue"}} >
+      <NavLink exact to="/add" style = {linkStyles} activeStyle={{background:"darkblue",}} >
         Add
       </NavLink>    
-      <NavLink exact to="/modify"style = {linkStyles} activeStyle={{bacgroun:"dark blue"}} >
+      <NavLink exact to="/modify"style = {linkStyles} activeStyle={{background:"darkblue",}} >
         Modify
       </NavLink> 
-      <NavLink exact to="/delete" style = {linkStyles} activeStyle={{bacgroun:"dark blue"}} >
+      <NavLink exact to="/delete" style = {linkStyles} activeStyle={{background:"darkblue",}} >
         Delete
       </NavLink>    
     </div>

@@ -1,1 +1,136 @@
-}
+{
+    "general": [
+        {
+         "id":"1", 
+         "phrase":"Open File",
+         "command": "Ctrl+P"
+        },
+        {
+         "id":"2",
+         "phrase":"Command Pallet",
+         "command": "Ctrl+Shift+P F1"
+        },                           
+        {
+         "id":"3",
+         "phrase":"New Window",
+         "command":"Ctrl+Shift+N"
+        },
+        {
+         "id":"4",
+         "phrase":"Close Window",
+         "command": "Ctrl+Shift+W"
+        },
+        {
+         "id":"5",
+         "phrase":"Settings",
+         "command":"Crtl+"
+        }
+    ],
+    "basic":[
+        {
+         "id":"1",
+         "phrase":"Cut Line",
+         "command" : "Ctrl x"
+        },
+        {
+         "id":"2",
+         "phrase":"Copy Line",
+         "command": "Ctrl c"
+        },
+        { 
+         "id":"3",
+         "phrase":"Move Line up/down",
+         "command": "Alt+ Up/down key"
+        },
+        {
+         "id":"4",
+         "phrase":"Copy Line UP/Down",
+         "command": "Shift+Alt+ Up/Down key"
+        },
+        {
+         "id":"5",
+         "phrase":"Delete Line",
+         "command":"Ctrl+Shift+K"
+        },
+        {
+         "id":"6",
+         "phrase":"Insert Line Belwo",
+         "command":"Ctrl+Enter"
+        }
+    ],
+    "search":[
+        {
+         "id":"1",
+         "phrase":"Find",
+         "command":"Ctrl F"
+        },
+        {
+         "id":"2",
+         "phrase":"Replace",
+         "command":"Ctrl H"
+        },
+        {
+         "id":"3",
+         "phrase":"Find Next/Previous",
+         "command": "F3/Shift F3"
+        },
+        {
+         "id":"4",
+         "phrase":"Select All Occurance of Find Match",
+         "command":"Alt+Enter"
+        },
+        {
+         "id":"5",
+         "phrase":"Add selection to next Find Match",
+         "command":"Ctrl D"
+        },
+        {
+         "id":"6",
+         "phrase":"Move last selection to next Find match",
+         "command":"Ctrl+K Ctrl+D"
+        },
+        {
+         "id":"7",
+         "phrase":"Toggle case-sensitve/regex/whole word",
+         "command":"Alt+C/R/W"
+        }
+    ],
+    "multi":[
+        {
+         "id":"1",
+         "phrase":"Insert Cursor",
+         "command":"Alt+Click"
+        },
+        {
+         "id":"2",
+         "phrase":"Insert cursor above/below",
+         "command": "Ctrl+Alt+up/down key"
+        },
+        {
+         "id":"3",
+         "phrase":"Undo last cursor operation",
+         "comand":"Ctrl+U"
+        },
+        {
+         "id":"4",
+         "phrase":"Insert cursor at end of each line selected",
+         "command":"Shift+Alt+I"
+        },
+        {
+         "id":"5",
+         "phrase":"Select current line",
+         "command":"Ctrl+L"
+        },
+        {
+         "id":"6",
+         "phrase":"Select all occurances of current seletion",
+         "command":"Ctrl+Shift+L"
+        },
+        {
+         "id":"7",
+         "phrase":"Select all occurances of current word",
+         "command":"Ctrl+F2"
+        }
+    ]
+
+}       

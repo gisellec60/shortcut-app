@@ -16,7 +16,7 @@
 }
 
 body{
-  background-color: #b0dbb3;
+  background-color: #c7d0c7;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -48,10 +48,14 @@ body{
     transform: rotate(360deg);
   }
 }
-div
- {
-  border: 2px solid rebeccapurple;
-  padding: .5em;
+.boxsize{
+  position:fixed;
+  width:500px;
+  height:30px;
+  padding: 5px;
+  border:10px solid black;
+  left: 700px;
+  top:300px;
 }
 
 .box,.edit
