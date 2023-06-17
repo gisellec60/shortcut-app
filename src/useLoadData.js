@@ -10,7 +10,15 @@ function useLoadData(url)  {
           .then((shortcuts) => {setShortcuts(shortcuts)
         setIsLoaded(true)})
     },[url])
+
+    if(!isLoaded) {
+        return <h2>Data Loading...</h2>
+      }
+  
+      const displayInfo = shortcuts.map((shortcut) => 
+         <div key={shortcut.id}>{shortcut.phrase} : {shortcut.command}</div>
+      )
+    return {displayInfo}
     
-    return {shortcuts, isLoaded}
 }
 export default useLoadData
