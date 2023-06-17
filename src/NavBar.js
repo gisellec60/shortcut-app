@@ -4,6 +4,7 @@ import {NavLink} from "react-router-dom"
 function NavBar() {
 
   const linkStyles = {
+    position: "relative",
     display: "inline-block",
     width: "100px",
     padding: "12px",
@@ -11,7 +12,20 @@ function NavBar() {
     background: "red",
     textDecoration: "none",
     color:"white",
-    top:"500px",
+    top:"80px",
+    left:"200px"
+  }  
+  const link2Styles = {
+    position: "relative",
+    display: "inline-block",
+    width: "100px",
+    padding: "12px",
+    margin: "0 6px 6px",
+    background: "red",
+    textDecoration: "none",
+    color:"white",
+    top:"400px",
+    left:"-325px"
   }  
 
   return (
@@ -31,13 +45,13 @@ function NavBar() {
       <NavLink exact to="/multicursor" style = {linkStyles}  activeStyle={{background:"darkblue",}} >
         MultiCursor
       </NavLink> 
-      <NavLink exact to="/add" style = {linkStyles} activeStyle={{background:"darkblue",}} >
+      <NavLink exact to="/add" style = {link2Styles} activeStyle={{background:"darkblue",}} >
         Add
       </NavLink>    
-      <NavLink exact to="/modify"style = {linkStyles} activeStyle={{background:"darkblue",}} >
+      <NavLink exact to="/modify"style = {link2Styles} activeStyle={{background:"darkblue",}} >
         Modify
       </NavLink> 
-      <NavLink exact to="/delete" style = {linkStyles} activeStyle={{background:"darkblue",}} >
+      <NavLink exact to="/delete" style = {link2Styles} activeStyle={{background:"darkblue",}} >
         Delete
       </NavLink>    
     </div>

@@ -1,11 +1,16 @@
 import React from 'react'
+import useLoadData from "./useLoadData"
 
-function MulitiCursor() {
+function MultiCursor() {
+  
+   const {displayInfo} = useLoadData("http://localhost:3001/multi")
+
   return (
-    <div className = "box" id="multi">
-      <p>Multi-Cursor and Selection</p>
+    <div >
+      <h2>Multi-Cursor and Selection</h2>
+      {displayInfo}
     </div>
   )
 }
 
-export default MulitiCursor
+export default MultiCursor
