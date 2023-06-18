@@ -4,12 +4,12 @@
 
 #container{
   position:absolute;
-  background-color:burlywood;
+  /* background-color:burlywood; */
   border-radius:25px ;
   border:none;
   padding: 16px ;
-  top:230px;
-  left:100px;
+  top:330px;
+  left:430px;
   width:1000px;
   height:550px;
  
@@ -116,4 +116,29 @@ width:260px;
 #del {
   left: 700px; 
   width:270px; 
+}
+.menu-trigger {
+  position:relative;
+  top: 40px;
+  left:50px;
+  width:120px;
+  height: 40px;
+  border: radius 50%;
+  overflow:hidden;
+  cursor:pointer;
+}
+#add-label {
+  position:relative;
+  top:100px;
+}
+#pick-category{
+  position:relative;
+  top:10px;
+}
+.butn {
+  position: relative;
+  top:100px;
+  left:-40px; 
+  background:red;
+  color:white
 }

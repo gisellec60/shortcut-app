@@ -12,7 +12,7 @@ function NavBar() {
     background: "red",
     textDecoration: "none",
     color:"white",
-    top:"80px",
+     top:"80px",
     left:"200px"
   }  
   const link2Styles = {
@@ -24,7 +24,7 @@ function NavBar() {
     background: "red",
     textDecoration: "none",
     color:"white",
-    top:"400px",
+    top:"700px",
     left:"-325px"
   }  
 

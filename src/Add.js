@@ -1,10 +1,12 @@
-import React from 'react'
+import React, {useState} from 'react'
+import ShortcutForm from "./ShortcutForm"
 
 function Add() {
+  const [isAdd, setIsAdd] = useState(true)
+  
   return (
-    <div className = "edit" id="add">
-      <p>Add</p>
-    </div>
+   // we are adding data 
+   <ShortcutForm isAdd={isAdd} /> 
   )
 }
 
