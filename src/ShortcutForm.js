@@ -5,18 +5,27 @@ function ShortcutForm ({isAdd}) {
     const [formData, setFormData] = useState({task:"",keys:""})
 
     const handleSubmit = () => {
-
+         
     }
+
+    const handleChange = ((e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    })
 
     return (
       <section id="container">
         <h1>{isAdd ? "Add Shortcut" : "Modify Shortcut"}</h1>
         <form onSubmit={handleSubmit}>
             <label className="label">Task
-              <input className="inputsize" type="text" name="task" value={formData.task}/>
+              <input className="inputsize" type="text" name="task" 
+                onChange ={handleChange}  value={formData.task}/>
             </label>
             <label className="label"> Keys
-            <input className="inputsize" type="text" name="keys" value={formData.keys} />
+            <input className="inputsize" type="text" name="keys"
+               onChange ={handleChange} value={formData.keys} />
             </label>    
             <h3 id="pick-category">Pick a Category </h3>
             <select className="menu-trigger" value={selected} onChange={(e) =>setSelected(e.target.value)} > 
