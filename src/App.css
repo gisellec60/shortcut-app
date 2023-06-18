@@ -142,3 +142,12 @@ width:260px;
   background:red;
   color:white
 }
+.label {
+  font-size:large; 
+  font-weight:bold ;
+}
+.inputsize {
+  width:200px;
+  height:30px;
+
+}
