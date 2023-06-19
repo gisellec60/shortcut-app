@@ -25,7 +25,7 @@ function Delete() {
   })
   
   return (
-   <div id="container">
+   <div className="container">
    <h3 id="pick-del">Pick a Category </h3>
      <select className="menu-trigger-del" value={category.current} 
           onChange={handleChange} > 
@@ -38,7 +38,7 @@ function Delete() {
          {displayInfo}
      </div>
   </div>
-    )
+  )
 
  }
 
