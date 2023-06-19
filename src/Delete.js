@@ -15,11 +15,24 @@ function Delete() {
         .then((shortcuts) => setShortcuts(shortcuts))
   }
 
+  const handleDeleteClick = ((id) => {
+    fetch(`http://localhost:3001/${id}`,{
+      method:"DELETE"
+    })
+    .then (res => res.json())
+    .then (() => handleDeleteTask(id))
+  })
+
+  const handleDeleteTask = (() => {
+     console.log("we are here")
+  })
+
   const displayInfo = shortcuts.map((shortcut) => {
+    console.log(shortcut.id)
     return (
      <> 
        <div key={shortcut.id}>{shortcut.task} : {shortcut.keys}</div>
-       <button> Delete </button>
+       <button onClick={() => handleDeleteClick(shortcut.id)}> Delete </button>
     </>  
     )
   })

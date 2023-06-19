@@ -4,7 +4,7 @@ function Search() {
   return (
    <div> 
     <form >
-      <input className="boxsize"  type="text" placeholder="Enter search phrase..." />
+      <input className="boxsize"  type="text" placeholder="Enter task..." />
     </form>
    </div> 
   )

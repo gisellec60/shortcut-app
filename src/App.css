@@ -17,6 +17,7 @@
 
 body{
   background-color: #c7d0c7;
+  background-image:url("") ;
 }
 
 @media (prefers-reduced-motion: no-preference) {
