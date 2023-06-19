@@ -1,11 +1,27 @@
 import React,{useState} from "react"
+import useDropDown from "./DropDown"
 
 function ShortcutForm ({isAdd}) {
-    const [selected, setSelected] = useState("")
+    const [category, setCategory] = useState("")
     const [formData, setFormData] = useState({task:"",keys:""})
 
-    const handleSubmit = () => {
-         
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        fetch(`http://localhost:3001/${category.toLowerCase()}`,{
+            method: "POST",
+            headers: {
+                "Content-Type" : "application/json"
+            },
+            body:JSON.stringify(
+               { 
+                 "task":formData.task,
+
+                 "keys":formData.keys
+               }
+            )    
+        })
+        .then(res => res.json())
+        .then((newData)=> console.log(newData))
     }
 
     const handleChange = ((e) => {
@@ -26,9 +42,9 @@ function ShortcutForm ({isAdd}) {
             <label className="label"> Keys
             <input className="inputsize" type="text" name="keys"
                onChange ={handleChange} value={formData.keys} />
-            </label>    
+            </label>  
             <h3 id="pick-category">Pick a Category </h3>
-            <select className="menu-trigger" value={selected} onChange={(e) =>setSelected(e.target.value)} > 
+            <select className="menu-trigger" value={category} onChange={(e) =>setCategory(e.target.value)} > 
                 <option>General</option>
                 <option>Basic</option>
                 <option>Search and Replace</option>

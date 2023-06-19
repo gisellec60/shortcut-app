@@ -135,6 +135,11 @@ width:260px;
   position:relative;
   top:10px;
 }
+#pick-del{
+  position:relative;
+  top:-100px;
+}
+
 .butn {
   position: relative;
   top:100px;
@@ -149,5 +154,14 @@ width:260px;
 .inputsize {
   width:200px;
   height:30px;
-
+}
+.menu-trigger-del {
+  position:relative;
+  top: -110px;
+  left:5px;
+  width:120px;
+  height: 40px;
+  border: radius 50%;
+  overflow:hidden;
+  cursor:pointer;
 }

@@ -16,7 +16,7 @@ function useLoadData(url)  {
       }
   
       const displayInfo = shortcuts.map((shortcut) => 
-         <div key={shortcut.id}>{shortcut.phrase} : {shortcut.command}</div>
+         <div key={shortcut.id}>{shortcut.task} : {shortcut.keys}</div>
       )
     return {displayInfo}
     

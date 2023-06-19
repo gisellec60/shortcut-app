@@ -1,136 +1,140 @@
 {
-    "general": [
-        {
-         "id":"1", 
-         "task":"Open File",
-         "keys": "Ctrl+P"
-        },
-        {
-         "id":"2",
-         "task":"keys Pallet",
-         "keys": "Ctrl+Shift+P F1"
-        },                           
-        {
-         "id":"3",
-         "task":"New Window",
-         "keys":"Ctrl+Shift+N"
-        },
-        {
-         "id":"4",
-         "task":"Close Window",
-         "keys": "Ctrl+Shift+W"
-        },
-        {
-         "id":"5",
-         "task":"Settings",
-         "keys":"Crtl+"
-        }
-    ],
-    "basic":[
-        {
-         "id":"1",
-         "task":"Cut Line",
-         "keys" : "Ctrl x"
-        },
-        {
-         "id":"2",
-         "task":"Copy Line",
-         "keys": "Ctrl c"
-        },
-        { 
-         "id":"3",
-         "task":"Move Line up/down",
-         "keys": "Alt+ Up/down key"
-        },
-        {
-         "id":"4",
-         "task":"Copy Line UP/Down",
-         "keys": "Shift+Alt+ Up/Down key"
-        },
-        {
-         "id":"5",
-         "task":"Delete Line",
-         "keys":"Ctrl+Shift+K"
-        },
-        {
-         "id":"6",
-         "task":"Insert Line Belwo",
-         "keys":"Ctrl+Enter"
-        }
-    ],
-    "search":[
-        {
-         "id":"1",
-         "task":"Find",
-         "keys":"Ctrl F"
-        },
-        {
-         "id":"2",
-         "task":"Replace",
-         "keys":"Ctrl H"
-        },
-        {
-         "id":"3",
-         "task":"Find Next/Previous",
-         "keys": "F3/Shift F3"
-        },
-        {
-         "id":"4",
-         "task":"Select All Occurance of Find Match",
-         "keys":"Alt+Enter"
-        },
-        {
-         "id":"5",
-         "task":"Add selection to next Find Match",
-         "keys":"Ctrl D"
-        },
-        {
-         "id":"6",
-         "task":"Move last selection to next Find match",
-         "keys":"Ctrl+K Ctrl+D"
-        },
-        {
-         "id":"7",
-         "task":"Toggle case-sensitve/regex/whole word",
-         "keys":"Alt+C/R/W"
-        }
-    ],
-    "multi":[
-        {
-         "id":"1",
-         "task":"Insert Cursor",
-         "keys":"Alt+Click"
-        },
-        {
-         "id":"2",
-         "task":"Insert cursor above/below",
-         "keys": "Ctrl+Alt+up/down key"
-        },
-        {
-         "id":"3",
-         "task":"Undo last cursor operation",
-         "comand":"Ctrl+U"
-        },
-        {
-         "id":"4",
-         "task":"Insert cursor at end of each line selected",
-         "keys":"Shift+Alt+I"
-        },
-        {
-         "id":"5",
-         "task":"Select current line",
-         "keys":"Ctrl+L"
-        },
-        {
-         "id":"6",
-         "task":"Select all occurances of current seletion",
-         "keys":"Ctrl+Shift+L"
-        },
-        {
-         "id":"7",
-         "task":"Select all occurances of current word",
-         "keys":"Ctrl+F2"
-        }
-    ]
-
-}       
+  "general": [
+    {
+      "id": "1",
+      "task": "Open File",
+      "keys": "Ctrl+P"
+    },
+    {
+      "id": "2",
+      "task": "keys Pallet",
+      "keys": "Ctrl+Shift+P F1"
+    },
+    {
+      "id": "3",
+      "task": "New Window",
+      "keys": "Ctrl+Shift+N"
+    },
+    {
+      "id": "4",
+      "task": "Close Window",
+      "keys": "Ctrl+Shift+W"
+    },
+    {
+      "id": "5",
+      "task": "Settings",
+      "keys": "Crtl+"
+    }
+  ],
+  "basic": [
+    {
+      "id": "1",
+      "task": "Cut Line",
+      "keys": "Ctrl x"
+    },
+    {
+      "id": "2",
+      "task": "Copy Line",
+      "keys": "Ctrl c"
+    },
+    {
+      "id": "3",
+      "task": "Move Line up/down",
+      "keys": "Alt+ Up/down key"
+    },
+    {
+      "id": "4",
+      "task": "Copy Line UP/Down",
+      "keys": "Shift+Alt+ Up/Down key"
+    },
+    {
+      "id": "5",
+      "task": "Delete Line",
+      "keys": "Ctrl+Shift+K"
+    },
+    {
+      "id": "6",
+      "task": "Insert Line Belwo",
+      "keys": "Ctrl+Enter"
+    },
+    {
+      "task": "fjdksad;las",
+      "keys": "dafdaa",
+      "id": "IxsVLP_"
+    }
+  ],
+  "search": [
+    {
+      "id": "1",
+      "task": "Find",
+      "keys": "Ctrl F"
+    },
+    {
+      "id": "2",
+      "task": "Replace",
+      "keys": "Ctrl H"
+    },
+    {
+      "id": "3",
+      "task": "Find Next/Previous",
+      "keys": "F3/Shift F3"
+    },
+    {
+      "id": "4",
+      "task": "Select All Occurance of Find Match",
+      "keys": "Alt+Enter"
+    },
+    {
+      "id": "5",
+      "task": "Add selection to next Find Match",
+      "keys": "Ctrl D"
+    },
+    {
+      "id": "6",
+      "task": "Move last selection to next Find match",
+      "keys": "Ctrl+K Ctrl+D"
+    },
+    {
+      "id": "7",
+      "task": "Toggle case-sensitve/regex/whole word",
+      "keys": "Alt+C/R/W"
+    }
+  ],
+  "multi-cursor": [
+    {
+      "id": "1",
+      "task": "Insert Cursor",
+      "keys": "Alt+Click"
+    },
+    {
+      "id": "2",
+      "task": "Insert cursor above/below",
+      "keys": "Ctrl+Alt+up/down key"
+    },
+    {
+      "id": "3",
+      "task": "Undo last cursor operation",
+      "comand": "Ctrl+U"
+    },
+    {
+      "id": "4",
+      "task": "Insert cursor at end of each line selected",
+      "keys": "Shift+Alt+I"
+    },
+    {
+      "id": "5",
+      "task": "Select current line",
+      "keys": "Ctrl+L"
+    },
+    {
+      "id": "6",
+      "task": "Select all occurances of current seletion",
+      "keys": "Ctrl+Shift+L"
+    },
+    {
+      "id": "7",
+      "task": "Select all occurances of current word",
+      "keys": "Ctrl+F2"
+    }
+  ]
+}
