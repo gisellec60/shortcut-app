@@ -2,7 +2,7 @@
   text-align: center; 
  }
 
-#container{
+.container{
   position:absolute;
   /* background-color:burlywood; */
   border-radius:25px ;

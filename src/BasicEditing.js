@@ -6,7 +6,7 @@ function BasicEditing() {
     const {displayInfo} = useLoadData("http://localhost:3001/basic")
 
     return (
-    <div>
+    <div className="container">
       <h2>Basic Editing</h2>
       {displayInfo}
     </div>

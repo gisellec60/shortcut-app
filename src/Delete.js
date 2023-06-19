@@ -2,7 +2,6 @@ import React, {useState,useRef} from 'react'
 import useLoadData from "./useLoadData"
 
 function Delete() {
-  // const [category, setCategory] = useState("")
   const [shortcuts, setShortcuts] = useState([])
   const category = useRef("")  
  
@@ -25,20 +24,20 @@ function Delete() {
     )
   })
   
-    return (
-      <div id="container">
-       <h3 id="pick-del">Pick a Category </h3>
-         <select className="menu-trigger-del" value={category.current} 
-              onChange={handleChange} > 
-           <option>General</option>
-           <option>Basic</option>
-           <option>Search and Replace</option>
-           <option>Multi-Cursor</option>
-         </select>
-         <div>
+  return (
+   <div id="container">
+   <h3 id="pick-del">Pick a Category </h3>
+     <select className="menu-trigger-del" value={category.current} 
+          onChange={handleChange} > 
+       <option>General</option>
+       <option>Basic</option>
+       <option>Search and Replace</option>
+       <option>Multi-Cursor</option>
+     </select>
+     <div>
          {displayInfo}
-         </div>
-    </div>
+     </div>
+  </div>
     )
 
  }

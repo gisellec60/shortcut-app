@@ -20,5 +20,6 @@ function useLoadData(url)  {
       )
     return {displayInfo}
     
+    
 }
 export default useLoadData

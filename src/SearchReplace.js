@@ -6,7 +6,7 @@ function SearchReplace () {
     const {displayInfo} = useLoadData("http://localhost:3001/search")
 
     return (
-      <div className = "box" id="search">
+      <div className = "container">
         <h2>Search and Replace</h2>
         {displayInfo}
       </div>

@@ -32,7 +32,7 @@ function ShortcutForm ({isAdd}) {
     })
 
     return (
-      <section id="container">
+      <section className="container">
         <h1>{isAdd ? "Add Shortcut" : "Modify Shortcut"}</h1>
         <form onSubmit={handleSubmit}>
             <label className="label">Task

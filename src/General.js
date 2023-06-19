@@ -6,7 +6,7 @@ function General () {
     const {displayInfo} = useLoadData("http://localhost:3001/general")
    
     return (
-      <div >                                 
+      <div className="container"  >                                 
         <h2>General</h2>
           {displayInfo}
       </div>
