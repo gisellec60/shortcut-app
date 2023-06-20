@@ -21,7 +21,7 @@ function Modify() {
        console.log(id)
        return(
         <div>
-          {openModal && <Modal closeModal={setOpenModal} id={id} />}
+           <Modal closeModal={setOpenModal} id={id} />
         </div>  
        )
     })  
@@ -52,9 +52,6 @@ function Modify() {
           </select>
             {displayInfo}
         </div>
-        {/* <button ClassName="openModalBtn" 
-          onClick={()=> setOpenModal(true)}>
-        Open</button> */}
         {/* {openModal && <Modal closeModal={setOpenModal}  />} */}
      </div>
   )
