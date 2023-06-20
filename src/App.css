@@ -3,13 +3,13 @@
  }
 
 .container{
-  position:absolute;
+  position:fixed;
   /* background-color:rgb(105, 108, 106);  */
   border-radius:25px ;
   border:none;
   padding: 16px ;
   top:335px;
-  left:675px;
+  left:875px;
   width:800px;
   height:550px;
 }

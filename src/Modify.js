@@ -19,11 +19,7 @@ function Modify() {
     
     const showModal =((id)=> {
        console.log(id)
-       return(
-        <div>
-           <Modal closeModal={setOpenModal} id={id} />
-        </div>  
-       )
+       return <Modal closeModal={setOpenModal} id={id} />
     })  
 
     const displayInfo = shortcuts.map((shortcut) => {
