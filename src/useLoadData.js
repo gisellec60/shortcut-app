@@ -19,7 +19,5 @@ function useLoadData(url)  {
          <div key={shortcut.id}>{shortcut.task} : {shortcut.keys}</div>
       )
     return {displayInfo}
-    
-    
-}
+ }
 export default useLoadData

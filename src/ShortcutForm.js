@@ -31,7 +31,7 @@ function ShortcutForm ({isAdd, onHandleAdd, category, setCategory}) {
     })
 
     return (
-      <section className = "container-add">
+      <section className = "inner-container">
         <h1>{isAdd ? "Add Shortcut" : "Modify Shortcut"}</h1>
         <form onSubmit={handleSubmit}>
             <label className="label">Task
@@ -49,7 +49,7 @@ function ShortcutForm ({isAdd, onHandleAdd, category, setCategory}) {
                 <option>Search and Replace</option>
                 <option>Multi-Cursor</option>
             </select>
-            <button className="butn" type="submit">Submit</button>
+            <button className="butn" id="addButn" type="submit">Submit</button>
         </form>
       </section>  
     )

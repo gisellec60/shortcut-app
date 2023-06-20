@@ -4,48 +4,64 @@
 
 .container{
   position:fixed;
-  /* background-color:rgb(105, 108, 106);  */
+  top:800px;
+  background-color:white;
   border-radius:25px ;
   border:none;
   padding: 16px ;
   top:335px;
-  left:875px;
-  width:800px;
-  height:550px;
+  left:660px;
+  width:650px;
+  height:450px;
 }
 .inner-container{
+  position:fixed;
+  background-color: rgb(243, 240, 240);
   border-radius:25px ;
   border:none;
   padding: 16px ;
-  top:335px;
-  left:675px;
-  width:800px;
+  top:255px;
+  left:665px;
+  width:550px;
   height:550px;
 }
 
 .container-add{
-  position:absolute;
+  position:fixed;
   /* background-color:rgb(105, 108, 106);  */
   border-radius:25px ;
   border:none;
   padding: 16px ;
-  top:335px;
+  top:255px;
   left:665px;
-  width:800px;
+  width:550px;
   height:550px;
 }
 
-#editListing {
+.listing {
  position:relative;
  display:flex;
  top:-60px;
  font-size:large; 
  font-weight:bold ;
- left : 100px;
+ text-align: center;
+ left : 0px;
  padding: 0px 20px 0px  ;
  line-height:2.0;
  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
+
+.task-listing {
+  position:relative;
+  top:70px;
+  font-size:large; 
+  font-weight:bold ;
+  padding: 0px 20px 0px  ;
+  line-height:2.0;
+  text-align:left;
+  left:0px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+ }
 
 body{
   background-color: #c7d0c7;
@@ -130,7 +146,7 @@ ul {
   display: block;
 } 
 
-#editButn {
+.editButn {
   position:relative;
   display:flex;
   flex-direction: row;
@@ -139,7 +155,6 @@ ul {
   height:25px;
   top:5px;
   left:10px;
-    /* padding:10px 10px 10px 0px ;  */
   border-radius: 10px;
  
   
@@ -162,7 +177,7 @@ width:260px;
 .menu-trigger {
   position:relative;
   top: 40px;
-  left:50px;
+  left:30px;
   width:120px;
   height: 40px;
   border: radius 50%;
@@ -190,9 +205,20 @@ width:260px;
   background:rgb(29, 2, 84);
   color:white
 }
+
+ #addButn {
+  position: relative;
+  top:200px;
+  left:-40px; 
+  background: crimson;
+  color:white
+}
+
 .label {
   font-size:large; 
   font-weight:bold ;
+  padding:15px,15px,15px,25px;
+  border-left: 5px;
 }
 .inputsize {
   width:200px;
@@ -274,5 +300,10 @@ width:260px;
   background-color: crimson;
   left:-50px;
   color:white;
+}
+h2{
+  position:realative;
+  top:500px;
+  left:900px;
 
 }

@@ -6,11 +6,14 @@ function SearchReplace () {
     const {displayInfo} = useLoadData("http://localhost:3001/search")
 
     return (
-      <div className = "container">
-        <h2>Search and Replace</h2>
-        {displayInfo}
-      </div>
-      
+      <div>
+        <div className="inner-container" >  .
+          <h2 className="h2">Search and Replace</h2>
+          <div className="task-listing" >                               
+              {displayInfo}
+          </div>
+        </div>   
+    </div>
     )
   }
 

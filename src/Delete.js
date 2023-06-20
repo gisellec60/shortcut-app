@@ -31,9 +31,10 @@ function Delete() {
   const displayInfo = shortcuts.map((shortcut) => {
     return (
       <div >
-        <div id="editListing" >
+        <div className="listing" >
            <div key={shortcut.id}>{shortcut.task} {shortcut.keys}</div> 
-           <button onClick={() => handleDeleteClick(shortcut.id)}> Delete </button>
+           <button onClick={() => handleDeleteClick(shortcut.id)} 
+           className="editButn"> Delete </button>
         </div>
       </div>   
     )

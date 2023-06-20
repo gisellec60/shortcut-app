@@ -6,10 +6,14 @@ function MultiCursor() {
    const {displayInfo} = useLoadData("http://localhost:3001/multi-cursor")
 
   return (
-    <div className="container" >
-      <h2>Multi-Cursor and Selection</h2>
-      {displayInfo}
-    </div>
+    <div>
+      <div className="inner-container" >  .
+        <h2 className="h2">Multi-Cursor</h2>
+        <div className="task-listing" >                               
+            {displayInfo}
+        </div>
+      </div>   
+  </div>
   )
 }
 

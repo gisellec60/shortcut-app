@@ -25,10 +25,10 @@ function Modify() {
     const displayInfo = shortcuts.map((shortcut) => {
       return (
        <div >
-          <div id="editListing" >
+          <div className="listing" >
             <div key={shortcut.id}>{shortcut.task}: {shortcut.keys}</div> 
              <button onClick={() => { 
-               showModal(shortcut.id); setOpenModal(true);}} id='editButn'>Edit</button> 
+               showModal(shortcut.id); setOpenModal(true);}} className ='editButn'>Edit</button> 
            </div>
       </div>   
     )
@@ -36,7 +36,6 @@ function Modify() {
 
   return (
     <div className="container">
-      <div className="inner-container" style={{display:""}} >
          <h3 id="pick-del">Pick a Category </h3>
          <select className="menu-trigger-del" value={category.current} 
              onChange={handleChange} > 
@@ -47,9 +46,8 @@ function Modify() {
             <option>Multi-Cursor</option>
           </select>
             {displayInfo}
-        </div>
-        {/* {openModal && <Modal closeModal={setOpenModal}  />} */}
-     </div>
+          {/* {openModal && <Modal closeModal={setOpenModal}  />} */}
+   </div>
   )
 }
 
