@@ -1,11 +1,11 @@
-import React,{useState} from "react"
-import useDropDown from "./DropDown"
+import React,{useState,useRef} from "react"
 
-function ShortcutForm ({isAdd}) {
-    const [category, setCategory] = useState("")
+function ShortcutForm ({isAdd, onHandleAdd, category, setCategory}) {
     const [formData, setFormData] = useState({task:"",keys:""})
+   
 
     const handleSubmit = (e) => {
+        
         e.preventDefault()
         fetch(`http://localhost:3001/${category.toLowerCase()}`,{
             method: "POST",
@@ -14,14 +14,13 @@ function ShortcutForm ({isAdd}) {
             },
             body:JSON.stringify(
                { 
-                 "task":formData.task,
-
-                 "keys":formData.keys
+                "task":formData.task,
+                "keys":formData.keys
                }
             )    
         })
         .then(res => res.json())
-        .then((newData)=> console.log(newData))
+        .then(() => onHandleAdd(category))
     }
 
     const handleChange = ((e) => {
@@ -32,7 +31,7 @@ function ShortcutForm ({isAdd}) {
     })
 
     return (
-      <section className="container">
+      <section className = "container-add">
         <h1>{isAdd ? "Add Shortcut" : "Modify Shortcut"}</h1>
         <form onSubmit={handleSubmit}>
             <label className="label">Task

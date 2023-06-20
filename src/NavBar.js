@@ -24,7 +24,7 @@ function NavBar() {
     background: "red",
     textDecoration: "none",
     color:"white",
-    top:"700px",
+    top:"750px",
     left:"-325px"
   }  
 

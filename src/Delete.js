@@ -1,4 +1,4 @@
-import React, {useState,useRef} from 'react'
+import React, {useState,useRef, createFactory} from 'react'
 import useLoadData from "./useLoadData"
 
 function Delete() {
@@ -16,32 +16,35 @@ function Delete() {
   }
 
   const handleDeleteClick = ((id) => {
-    fetch(`http://localhost:3001/${id}`,{
+    fetch(`http://localhost:3001/${category.current.toLowerCase()}/${id}`,{
       method:"DELETE"
     })
     .then (res => res.json())
     .then (() => handleDeleteTask(id))
   })
 
-  const handleDeleteTask = (() => {
-     console.log("we are here")
+  const handleDeleteTask = ((id) => {
+     const upDatedShortcuts = shortcuts.filter((shortcut) => shortcut.id !== id )
+     setShortcuts(upDatedShortcuts)
   })
-
+                          
   const displayInfo = shortcuts.map((shortcut) => {
-    console.log(shortcut.id)
     return (
-     <> 
-       <div key={shortcut.id}>{shortcut.task} : {shortcut.keys}</div>
-       <button onClick={() => handleDeleteClick(shortcut.id)}> Delete </button>
-    </>  
+      <div >
+        <div id="editListing" >
+           <div key={shortcut.id}>{shortcut.task} {shortcut.keys}</div> 
+           <button onClick={() => handleDeleteClick(shortcut.id)}> Delete </button>
+        </div>
+      </div>   
     )
   })
-  
+
   return (
    <div className="container">
    <h3 id="pick-del">Pick a Category </h3>
      <select className="menu-trigger-del" value={category.current} 
           onChange={handleChange} > 
+      <option></option>
        <option>General</option>
        <option>Basic</option>
        <option>Search and Replace</option>

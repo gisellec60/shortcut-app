@@ -8,6 +8,8 @@ import Add from "./Add"
 import Modify from "./Modify"
 import Delete from "./Delete"
 import NavBar from "./NavBar"
+import Modal from "./Modal"
+import {useState} from "react"
 import { Route, Switch } from "react-router-dom"
 
 function App() {
@@ -17,7 +19,7 @@ function App() {
         <p> VS Code <span style={{fontStyle:"italic"}}>Shortcuts</span> for Windows </p>
       </h1>
       <NavBar />
-      <Switch>
+        <Switch>
         <Route exact path ="/general">
           <General />
         </Route>  
@@ -43,7 +45,11 @@ function App() {
           <Home />
         </Route >
      </Switch> 
-    </div>
+       {/* <button ClassName="openModalBtn" 
+       onClick={()=> setOpenModal(true)}>
+        Open</button>
+        {openModal && <Modal closeModal={setOpenModal}  />} */}
+  </div>
   );
 }
 
