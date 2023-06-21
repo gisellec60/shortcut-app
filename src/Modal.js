@@ -1,17 +1,17 @@
 import React, {useState} from 'react'
 
-function Modal({closeModal}) {
+function Modal({closeModal, id, category }) {
 
     const [formData, setFormData] = useState({task:"",keys:""})
 
     const handleSubmit = (() => {
-
+      console.log(formData.task, formData.keys)
     })
-
-    const handleChange = (() => {
-
+    const handleChange = ((e) => {
+        console.log(e.target.value)
     })
-  return (
+   
+    return (
     <div className="modalBackground">
         <div className="modalContainer">
         <div className="titleCloseBtn">
@@ -22,13 +22,13 @@ function Modal({closeModal}) {
           </div>
           <div className="body">
           <form onSubmit={handleSubmit}>
-            <label className="label">Task
+            <label className="label-modal">Task
               <input className="inputsize" type="text" name="task" 
-                onChange ={handleChange}  value={formData.task}/>
+                onChange={handleChange} value={formData.task}/>
             </label>
-            <label className="label"> Keys
+            <label className="label-modal"> Keys
             <input className="inputsize" type="text" name="keys"
-               onChange ={handleChange} value={formData.keys} />
+               onChange={handleChange} value={formData.keys} />
             </label>  
             <button className="butn" type="submit">Submit</button>
         </form>

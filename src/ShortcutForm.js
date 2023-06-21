@@ -1,6 +1,6 @@
-import React,{useState,useRef} from "react"
+import React,{useState} from "react"
 
-function ShortcutForm ({isAdd, onHandleAdd, category, setCategory}) {
+function ShortcutForm ({onHandleAdd, category, setCategory}) {
     const [formData, setFormData] = useState({task:"",keys:""})
    
 
@@ -32,7 +32,7 @@ function ShortcutForm ({isAdd, onHandleAdd, category, setCategory}) {
 
     return (
       <section className = "inner-container">
-        <h1>{isAdd ? "Add Shortcut" : "Modify Shortcut"}</h1>
+        <h1 className="title">{"Add Shortcut"}</h1>
         <form onSubmit={handleSubmit}>
             <label className="label">Task
               <input className="inputsize" type="text" name="task" 
@@ -40,10 +40,11 @@ function ShortcutForm ({isAdd, onHandleAdd, category, setCategory}) {
             </label>
             <label className="label"> Keys
             <input className="inputsize" type="text" name="keys"
-               onChange ={handleChange} value={formData.keys} />
+               onChange={handleChange} value={formData.keys} />
             </label>  
             <h3 id="pick-category">Pick a Category </h3>
             <select className="menu-trigger" value={category} onChange={(e) =>setCategory(e.target.value)} > 
+                <option></option>
                 <option>General</option>
                 <option>Basic</option>
                 <option>Search and Replace</option>

@@ -16,18 +16,18 @@ function Modify() {
     .then((shortcuts) => setShortcuts(shortcuts))
   }
    
-  const showModal =(id) => {
-    console.log(id)
-    return <Modal closeModal={setOpenModal} id={id} />
-  }  
-
+  const modalShow = (id) => {
+    if(openModal) 
+      return <Modal closeModal={setOpenModal} id={id} category={category.current} />
+    }  
+ 
   const displayInfo = shortcuts.map((shortcut) => {
     return (
       <div >
         <div className="listing" >
           <div key={shortcut.id}>{shortcut.task}: {shortcut.keys}</div> 
            <button onClick={() => { 
-             showModal(shortcut.id); setOpenModal(true);}} className ='editButn'>Edit</button> 
+             modalShow(shortcut.id); setOpenModal(true);}} className ='editButn'>Edit</button> 
          </div>
       </div>   
     )
@@ -45,9 +45,10 @@ function Modify() {
             <option>Multi-Cursor</option>
           </select>
            {displayInfo}
-          {/* {openModal && <Modal closeModal={setOpenModal}  />} */}
+           {modalShow}
+          {openModal && <Modal closeModal={setOpenModal}  />}
    </div>
   )
-}
+ }
 
 export default Modify                                  

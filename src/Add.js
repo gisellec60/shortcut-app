@@ -18,7 +18,7 @@ function Add() {
 
   return (
    // Go to form to add data 
-  <ShortcutForm isAdd={isAdd} onHandleAdd={handleAdd} 
+  <ShortcutForm onHandleAdd={handleAdd} 
      category={category} setCategory={setCategory} /> 
   )
 }
