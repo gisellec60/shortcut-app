@@ -1,14 +1,30 @@
 import React, {useState} from 'react'
 
-function Modal({closeModal, id, category }) {
+function Modal({closeModal, patchId, category, patchShortcut, patchKey, patchUpdate }) {
 
-    const [formData, setFormData] = useState({task:"",keys:""})
+    const [formData, setFormData] = useState({task:patchShortcut,keys:patchKey})
 
-    const handleSubmit = (() => {
-      console.log(formData.task, formData.keys)
+    const handleSubmit = ((e) => {
+        e.preventDefault()
+             
+        fetch(`http://localhost:3001/${category.toLowerCase()}/${patchId}`, {
+            method:"PATCH",
+            headers: {"Content-Type" : "application/json"},
+            body:JSON.stringify (
+              formData
+            )
+         })
+         .then(res => res.json())
+         .then(obj => patchUpdate(obj))
+         alert("edit succesful")
+         closeModal(false)
     })
+
     const handleChange = ((e) => {
-        console.log(e.target.value)
+        setFormData({ 
+            ...formData,
+            [e.target.name] : e.target.value 
+         })
     })
    
     return (
@@ -24,7 +40,7 @@ function Modal({closeModal, id, category }) {
           <form onSubmit={handleSubmit}>
             <label className="label-modal">Task
               <input className="inputsize" type="text" name="task" 
-                onChange={handleChange} value={formData.task}/>
+                onChange={handleChange} value={formData.task} />
             </label>
             <label className="label-modal"> Keys
             <input className="inputsize" type="text" name="keys"

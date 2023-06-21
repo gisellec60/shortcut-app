@@ -8,17 +8,19 @@ import Add from "./Add"
 import Modify from "./Modify"
 import Delete from "./Delete"
 import NavBar from "./NavBar"
-import Modal from "./Modal"
-import {useState} from "react"
+// import {general} from "./db.json"
+import Search from "./Search"
 import { Route, Switch } from "react-router-dom"
 
 function App() {
+  // console.log(tasks)
    return (
     <div className="App">  
       <h1 >
         <p> VS Code <span style={{fontStyle:"italic"}}>Shortcuts</span> for Windows </p>
       </h1>
       <NavBar />
+      {/* <Search shortcuts={TaskData} /> */}
         <Switch>
         <Route exact path ="/general">
           <General />

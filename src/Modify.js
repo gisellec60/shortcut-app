@@ -4,8 +4,10 @@ import Modal from "./Modal"
 function Modify() {
   const [shortcuts, setShortcuts] = useState([])
   const [openModal, setOpenModal] = useState(false)
+  const [patchId, setPatchId] = useState(0)
+  const [patchShortcut, setPatchShortcut] = useState("")
+  const [patchKey, setPatchKey] = useState("")
   const category = useRef("")  
-  
   
   const handleChange = (e) =>{
     category.current = e.target.value
@@ -15,19 +17,25 @@ function Modify() {
     .then((res) => res.json())
     .then((shortcuts) => setShortcuts(shortcuts))
   }
-   
-  const modalShow = (id) => {
-    if(openModal) 
-      return <Modal closeModal={setOpenModal} id={id} category={category.current} />
-    }  
- 
+  function patchUpdate (obj) {
+    const updatedArray = shortcuts.map((shortcut) => {
+        if(shortcut.id === obj.id) {
+          return obj
+        }else{
+          return shortcut
+        }
+    })
+    setShortcuts(updatedArray)
+  }
+  
   const displayInfo = shortcuts.map((shortcut) => {
     return (
-      <div >
+      <div key={shortcut.id}>
         <div className="listing" >
           <div key={shortcut.id}>{shortcut.task}: {shortcut.keys}</div> 
            <button onClick={() => { 
-             modalShow(shortcut.id); setOpenModal(true);}} className ='editButn'>Edit</button> 
+             setOpenModal(true); setPatchKey(shortcut.keys); setPatchId(shortcut.id) ;
+               setPatchShortcut(shortcut.task)}} className ='editButn'>Edit</button> 
          </div>
       </div>   
     )
@@ -45,8 +53,9 @@ function Modify() {
             <option>Multi-Cursor</option>
           </select>
            {displayInfo}
-           {modalShow}
-          {openModal && <Modal closeModal={setOpenModal}  />}
+           {openModal && <Modal closeModal={setOpenModal}
+              patchId={patchId} patchShortcut={patchShortcut} category={category.current} 
+              patchKey={patchKey} patchUpdate={patchUpdate} />}
    </div>
   )
  }
