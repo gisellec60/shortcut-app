@@ -10,44 +10,43 @@ function Search() {
   const [taskEntered, setTaskEntered] = useState("")
   const searchedData = useRef([])   
 
-//  Object.values(shortcuts).map((x) => {
-//         x.map((y) => {
-//         searchedData.current.push(y.task)
-//         })  
-//   }) 
+ Object.values(shortcuts).map((x) => {
+        x.map((y) => {
+        searchedData.current.push(y.task)
+        })  
+  }) 
 
-//   const handleFilter= ((e) => {
-//     const searchTask = e.target.value
-//     setTaskEntered(searchTask)
-//     const newFilter = searchedData.current.filter((task) => {
-//        return task.toLowerCase().includes(searchTask.toLowerCase())
-//     }) 
-//     if (searchTask === ""){
-//       setFilteredData([])
-//     }else {
-//     setFilteredData(newFilter)
-//     }
-//   }) 
+  const handleFilter= ((e) => {
+    const searchTask = e.target.value
+    setTaskEntered(searchTask)
+    const newFilter = searchedData.current.filter((task) => {
+       return task.toLowerCase().includes(searchTask.toLowerCase())
+    }) 
+    if (searchTask === ""){
+      setFilteredData([])
+    }else {
+    setFilteredData(newFilter)
+    }
+  }) 
 
-//   const clearInput = () => {
-//     setFilteredData([])
-    
-//     setTaskEntered("")
-//   }
+  const clearInput = () => {
+    setFilteredData([])
+    setTaskEntered("")
+  }
+
   return (
-
-   <div className="search"> 
+    <div className="search"> 
       <div className="searchInputs">
-        <input name="task" type="text" 
-             value={taskEntered} placeholder="Enter a task..." />
+        <input onChange={handleFilter} value={taskEntered} type="text" placeholder="Enter a task..." />
         <div className="searchIcon">
-          {filteredData.length === 0 ? <SearchIcon/> :
-            <CloseIcon id="clearBtn" />} 
+        {filteredData.length === 0 ? <SearchIcon/> :
+            <CloseIcon id="clearBtn" onClick={clearInput} />} 
         </div>
       </div> 
        {filteredData.length != 0 && (
+         
          <div className="dataResult" >
-            {searchedData.current.map((data) => {
+            {filteredData.map((data) => {
               return(
                 <a className="dataItem">
                   <p>{data}</p> 
