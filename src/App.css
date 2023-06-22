@@ -31,6 +31,7 @@
   left:645px;
   width:550px;
   height:550px;
+  justify-content:center;
   font-size:large; 
   font-weight:bold ;
 }
