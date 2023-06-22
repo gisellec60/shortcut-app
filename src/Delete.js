@@ -9,14 +9,19 @@ function Delete() {
       category.current = (e.target.value)
       if(category.current === "Search and Replace")
          category.current = "search"
-       
-      fetch(`http://localhost:3001/${category.current.toLowerCase()}`)
+      
+      fetch("http://localhost:3001/shortcuts")
         .then((res) => res.json())
-        .then((shortcuts) => setShortcuts(shortcuts))
+        .then((shortcuts) =>  {
+            const shortcutFilterArray = shortcuts.filter((shortcut)=>{
+              return shortcut.category === category.current.toLowerCase()
+        })
+        console.log("this is it", shortcutFilterArray)
+        setShortcuts(shortcutFilterArray)})
   }
 
   const handleDeleteClick = ((id) => {
-    fetch(`http://localhost:3001/${category.current.toLowerCase()}/${id}`,{
+    fetch(`http://localhost:3001/shortcuts/${id}`,{
       method:"DELETE"
     })
     .then (res => res.json())
@@ -60,3 +65,13 @@ function Delete() {
  }
 
 export default Delete
+// useEffect (() => {
+//   fetch("http://localhost:3001/shortcuts")
+//     .then((res) => res.json())
+//     .then((shortcuts) => {
+//         const shortcutFilterArray = shortcuts.filter((shortcut)=>{
+//         return shortcut.category === category
+//       })
+//       setShortcuts(shortcutFilterArray)
+//   setIsLoaded(true)})
+// },[category])

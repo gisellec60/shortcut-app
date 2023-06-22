@@ -3,7 +3,7 @@ import useLoadData from "./useLoadData"
 
 function SearchReplace () {
 
-    const {displayInfo} = useLoadData("http://localhost:3001/search")
+    const {displayInfo} = useLoadData("search")
 
     return (
       <div>

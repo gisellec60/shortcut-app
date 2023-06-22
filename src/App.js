@@ -8,7 +8,7 @@ import Add from "./Add"
 import Modify from "./Modify"
 import Delete from "./Delete"
 import NavBar from "./NavBar"
-import Search from "./Search"
+import SearchBar from "./SearchBar"
 import { Route, Switch } from "react-router-dom"
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
         <p> VS Code <span style={{fontStyle:"italic"}}>Shortcuts</span> for Windows </p>
       </h1>
       <NavBar />
-      <Search /> 
+      <SearchBar /> 
         <Switch>
         <Route exact path ="/general">
           <General />

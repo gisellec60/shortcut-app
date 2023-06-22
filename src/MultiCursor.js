@@ -3,7 +3,7 @@ import useLoadData from "./useLoadData"
 
 function MultiCursor() {
   
-   const {displayInfo} = useLoadData("http://localhost:3001/multi-cursor")
+   const {displayInfo} = useLoadData("multicursor")
 
   return (
     <div>

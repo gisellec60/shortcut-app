@@ -3,7 +3,7 @@ import useLoadData from "./useLoadData"
 
 function BasicEditing() {
 
-    const {displayInfo} = useLoadData("http://localhost:3001/basic")
+    const {displayInfo} = useLoadData("basic")
 
     return (
     <div>

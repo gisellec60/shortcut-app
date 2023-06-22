@@ -1,15 +1,19 @@
 import {useState, useEffect} from "react"
 
-function useLoadData(url)  {
+function useLoadData(category)  {
     const [isLoaded, setIsLoaded] = useState(false)
     const [shortcuts, setShortcuts] = useState([])
 
     useEffect (() => {
-        fetch(url)
+        fetch("http://localhost:3001/shortcuts")
           .then((res) => res.json())
-          .then((shortcuts) => {setShortcuts(shortcuts)
+          .then((shortcuts) => {
+              const shortcutFilterArray = shortcuts.filter((shortcut)=>{
+              return shortcut.category === category
+            })
+            setShortcuts(shortcutFilterArray)
         setIsLoaded(true)})
-    },[url])
+    },[category])
 
     if(!isLoaded) {
         return <h2>Data Loading...</h2>

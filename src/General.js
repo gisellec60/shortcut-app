@@ -3,7 +3,7 @@ import useLoadData from "./useLoadData"
 
 function General () {
         
-    const {displayInfo} = useLoadData("http://localhost:3001/general")
+    const {displayInfo} = useLoadData("general")
    
     return (
     <div>

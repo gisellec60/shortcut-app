@@ -1,10 +1,9 @@
 import React from 'react'
-import Search from "./Search"
+import Search from "./SearchBar"
 
 function Home() {
   return (
     <div>
-      <Search />
     </div>
   )
 }
