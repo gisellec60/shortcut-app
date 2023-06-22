@@ -1,13 +1,14 @@
 import React,{useState} from "react"
+import App from "./App"
 
-function ShortcutForm ({onHandleAdd, category, setCategory}) {
-    const [formData, setFormData] = useState({task:"",keys:""})
-   
+function ShortcutForm (onAddNewTask) {
+    const [formData, setFormData] = useState({task:"",keys:"",category:""})
+    // const [category, setCategory] = useState("")
 
     const handleSubmit = (e) => {
         
         e.preventDefault()
-        fetch(`http://localhost:3001/${category.toLowerCase()}`,{
+        fetch("http://localhost:3001/shortcuts",{
             method: "POST",
             headers: {
                 "Content-Type" : "application/json"
@@ -15,18 +16,19 @@ function ShortcutForm ({onHandleAdd, category, setCategory}) {
             body:JSON.stringify(
                { 
                 "task":formData.task,
-                "keys":formData.keys
+                "keys":formData.keys,
+                "category":formData.category.toLowerCase()
                }
             )    
         })
         .then(res => res.json())
-        .then(() => onHandleAdd(category))
+        .then((newData) => {<App />})
     }
-
+    
     const handleChange = ((e) => {
-        setFormData({
+         setFormData({
             ...formData,
-            [e.target.name]: e.target.value
+            [e.target.name]: e.target.value                     
         });
     })
 
@@ -43,7 +45,7 @@ function ShortcutForm ({onHandleAdd, category, setCategory}) {
                onChange={handleChange} value={formData.keys} />
             </label>  
             <h3 id="pick-category">Pick a Category </h3>
-            <select className="menu-trigger" value={category} onChange={(e) =>setCategory(e.target.value)} > 
+            <select className="menu-trigger" name="category" value={formData.category} onChange={handleChange} > 
                 <option></option>
                 <option>General</option>
                 <option>Basic</option>

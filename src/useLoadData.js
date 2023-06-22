@@ -9,6 +9,7 @@ function useLoadData(category)  {
           .then((res) => res.json())
           .then((shortcuts) => {
               const shortcutFilterArray = shortcuts.filter((shortcut)=>{
+                console.log("this is ", shortcut.category ,category)
               return shortcut.category === category
             })
             setShortcuts(shortcutFilterArray)

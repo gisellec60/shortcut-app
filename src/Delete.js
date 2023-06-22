@@ -16,8 +16,7 @@ function Delete() {
             const shortcutFilterArray = shortcuts.filter((shortcut)=>{
               return shortcut.category === category.current.toLowerCase()
         })
-        console.log("this is it", shortcutFilterArray)
-        setShortcuts(shortcutFilterArray)})
+       setShortcuts(shortcutFilterArray)})
   }
 
   const handleDeleteClick = ((id) => {

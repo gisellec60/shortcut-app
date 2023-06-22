@@ -1,140 +1,148 @@
 {
-  "general": [
+  "shortcuts": [
     {
       "id": "1",
       "task": "Open File",
-      "keys": "Ctrl+P"
-    },
-    {
-      "id": "2",
-      "task": "keys Pallet",
-      "keys": "Ctrl+Shift+P F1"
-    },
-    {
-      "id": "3",
-      "task": "New Window",
-      "keys": "Ctrl+Shift+N"
+      "keys": "Ctrl+P",
+      "category": "general"
     },
     {
       "id": "4",
       "task": "Close Window",
-      "keys": "Ctrl+Shift+W"
+      "keys": "Ctrl+Shift+W",
+      "category": "general"
     },
     {
       "id": "5",
       "task": "Settings",
-      "keys": "Crtl+"
-    }
-  ],
-  "basic": [
+      "keys": "Crtl+",
+      "category": "general"
+    },
     {
-      "id": "1",
+      "id": "6",
       "task": "Cut Line",
-      "keys": "Ctrl x"
+      "keys": "Ctrl x",
+      "category": "basic"
     },
     {
-      "id": "2",
+      "id": "7",
       "task": "Copy Line",
-      "keys": "Ctrl c"
+      "keys": "Ctrl c",
+      "category": "basic"
     },
     {
-      "id": "3",
+      "id": "8",
       "task": "Move Line up/down",
-      "keys": "Alt+ Up/down key"
+      "keys": "Alt+ Up/down key",
+      "category": "basic"
     },
     {
-      "id": "4",
+      "id": "9",
       "task": "Copy Line UP/Down",
-      "keys": "Shift+Alt+ Up/Down key"
+      "keys": "Shift+Alt+ Up/Down key",
+      "category": "basic"
     },
     {
-      "id": "5",
+      "id": "10",
       "task": "Delete Line",
-      "keys": "Ctrl+Shift+K"
+      "keys": "Ctrl+Shift+K",
+      "category": "basic"
     },
     {
       "task": "Insert Below",
       "keys": "Ctrl+Enter",
-      "id": "6"
+      "id": "11",
+      "category": "basic"
     },
     {
       "task": "Insert Above Line",
       "keys": "Ctrl+Shift+Enter",
-      "id": "7"
-    }
-  ],
-  "search": [
+      "id": "12",
+      "category": "basic"
+    },
     {
-      "id": "1",
+      "id": "13",
       "task": "Find",
-      "keys": "Ctrl F"
+      "keys": "Ctrl F",
+      "category": "search"
     },
     {
-      "id": "2",
+      "id": "14",
       "task": "Replace",
-      "keys": "Ctrl H"
+      "keys": "Ctrl H",
+      "category": "search"
     },
     {
-      "id": "3",
+      "id": "15",
       "task": "Find Next/Previous",
-      "keys": "F3/Shift F3"
+      "keys": "F3/Shift F3",
+      "category": "search"
     },
     {
-      "id": "4",
+      "id": "16",
       "task": "Select All Occurance of Find Match",
-      "keys": "Alt+Enter"
+      "keys": "Alt+Enter",
+      "category": "search"
     },
     {
-      "id": "5",
+      "id": "17",
       "task": "Add selection to next Find Match",
-      "keys": "Ctrl D"
+      "keys": "Ctrl D",
+      "category": "search"
     },
     {
-      "id": "6",
+      "id": "18",
       "task": "Move last selection to next Find match",
-      "keys": "Ctrl+K Ctrl+D"
+      "keys": "Ctrl+K Ctrl+D",
+      "category": "search"
     },
     {
-      "id": "7",
+      "id": "19",
       "task": "Toggle case-sensitve/regex/whole word",
-      "keys": "Alt+C/R/W"
-    }
-  ],
-  "multi-cursor": [
+      "keys": "Alt+C/R/W",
+      "category": "search"
+    },
     {
-      "id": "1",
+      "id": "20",
       "task": "Insert Cursor",
-      "keys": "Alt+Click"
+      "keys": "Alt+Click",
+      "category": "multicursor"
     },
     {
-      "id": "2",
+      "id": "21",
       "task": "Insert cursor above/below",
-      "keys": "Ctrl+Alt+up/down key"
+      "keys": "Ctrl+Alt+up/down key",
+      "category": "multicursor"
     },
     {
-      "id": "3",
+      "id": "22",
       "task": "Undo last cursor operation",
-      "comand": "Ctrl+U"
+      "comand": "Ctrl+U",
+      "category": "multicursor"
     },
     {
-      "id": "4",
+      "id": "23",
       "task": "Insert cursor at end of each line selected",
-      "keys": "Shift+Alt+I"
+      "keys": "Shift+Alt+I",
+      "category": "multicursor"
     },
     {
-      "id": "5",
+      "id": "24",
       "task": "Select current line",
-      "keys": "Ctrl+L"
+      "keys": "Ctrl+L",
+      "category": "multicursor"
     },
     {
-      "id": "6",
+      "id": "25",
       "task": "Select all occurances of current seletion",
-      "keys": "Ctrl+Shift+L"
+      "keys": "Ctrl+Shift+L",
+      "category": "multicursor"
     },
     {
-      "id": "7",
+      "id": "26",
       "task": "Select all occurances of current word",
-      "keys": "Ctrl+F2"
+      "keys": "Ctrl+F2",
+      "category": "multicursor"
     }
   ]
 }
