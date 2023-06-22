@@ -48,7 +48,7 @@ function ShortcutForm ({onHandleAdd, category, setCategory}) {
                 <option>General</option>
                 <option>Basic</option>
                 <option>Search and Replace</option>
-                <option>Multi-Cursor</option>
+                <option>MultiCursor</option>
             </select>
             <button className="butn" id="addButn" type="submit">Submit</button>
         </form>

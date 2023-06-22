@@ -100,7 +100,7 @@
       "keys": "Alt+C/R/W"
     }
   ],
-  "multi-cursor": [
+  "multicursor": [
     {
       "id": "1",
       "task": "Insert Cursor",

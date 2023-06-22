@@ -1,26 +1,60 @@
 import React,{useState,useRef} from 'react'
+import shortcuts from "./db.json"
+import  "./Search.css"
+import SearchIcon from '@mui/icons-material/Search';
+import CloseIcon from '@mui/icons-material/Close';
 
-function Search({shortcuts}) {
-  const [searchedData, setSearchData] = useState([])
-  // const [shortcuts, setShortcuts] = useState([])
-  const [findTask,setFindTask] =useState("")
-  const categories =["general","basic","search","multi-cursor"]
-  console.log("what is shortcuts", typeof shortcuts)
+function Search() {
+ 
+  const [filteredData, setFilteredData] =useState([])
+  const [taskEntered, setTaskEntered] = useState("")
+  const searchedData = useRef([])   
+
+ Object.values(shortcuts).map((x) => {
+        x.map((y) => {
+        searchedData.current.push(y.task)
+        })  
+  }) 
+
+  const handleFilter= ((e) => {
+    const searchTask = e.target.value
+    setTaskEntered(searchTask)
+    const newFilter = searchedData.current.filter((task) => {
+       return task.toLowerCase().includes(searchTask.toLowerCase())
+    }) 
+    if (searchTask === ""){
+      setFilteredData([])
+    }else {
+    setFilteredData(newFilter)
+    }
+  }) 
+  const clearInput = () => {
+    setFilteredData([])
     
+    setTaskEntered("")
+  }
   return (
+    
    <div className="search"> 
       <div className="searchInputs">
         <input className="boxsize" name="task" type="text" 
-            placeholder="Enter task..." />
+            onChange={handleFilter} value={taskEntered} placeholder="Enter a task..." />
         <div className="searchIcon">
-          {/* <SearchIcon /> */}
+          {filteredData.length === 0 ? <SearchIcon/> :
+            <CloseIcon id="clearBtn" onClick={clearInput}/>} 
         </div>
-       </div> 
-        {/* <div className="dataResults">
-            {Object.entries.shortcuts.map((shortcut) => {
-              return <div> {shortcut} </div>
-            })}
-        </div> */}
+      </div> 
+       {filteredData.length != 0 && (
+         <div className="dataResults" >
+            {filteredData.map((data) => {
+              return(
+                <a className="dataItem">
+                  <p>{data}</p> 
+                </a>
+              ) 
+            })}         
+        </div>
+    )}    
     </div> 
   )
 } 

@@ -50,7 +50,7 @@ function Modify() {
             <option>General</option>
             <option>Basic</option>
             <option>Search and Replace</option>
-            <option>Multi-Cursor</option>
+            <option>MultiCursor</option>
           </select>
            {displayInfo}
            {openModal && <Modal closeModal={setOpenModal}
