@@ -7,7 +7,7 @@ function Modal({closeModal, patchId, category, patchShortcut, patchKey, patchUpd
     const handleSubmit = ((e) => {
         e.preventDefault()
              
-        fetch(`http://localhost:3001/${category.toLowerCase()}/${patchId}`, {
+        fetch(`http://localhost:3001/shortcuts/${patchId}`, {
             method:"PATCH",
             headers: {"Content-Type" : "application/json"},
             body:JSON.stringify (

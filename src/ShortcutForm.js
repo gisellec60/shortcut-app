@@ -1,5 +1,4 @@
 import React,{useState} from "react"
-import App from "./App"
 
 function ShortcutForm (onAddNewTask) {
     const [formData, setFormData] = useState({task:"",keys:"",category:""})
@@ -22,7 +21,7 @@ function ShortcutForm (onAddNewTask) {
             )    
         })
         .then(res => res.json())
-        .then((newData) => {<App />})
+        .then((newData) => console.log(newData))
     }
     
     const handleChange = ((e) => {
@@ -35,7 +34,7 @@ function ShortcutForm (onAddNewTask) {
     return (
       <section className = "inner-container">
         <h1 className="title">{"Add Shortcut"}</h1>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} id="showForm">
             <label className="label">Task
               <input className="inputsize" type="text" name="task" 
                 onChange ={handleChange}  value={formData.task}/>
