@@ -18,7 +18,7 @@ function App() {
         <p> VS Code <span style={{fontStyle:"italic"}}>Shortcuts</span> for Windows </p>
       </h1>
       <NavBar />
-      {<Search /> }
+      <Search /> 
         <Switch>
         <Route exact path ="/general">
           <General />
@@ -45,10 +45,6 @@ function App() {
           <Home />
         </Route >
      </Switch> 
-       {/* <button ClassName="openModalBtn" 
-       onClick={()=> setOpenModal(true)}>
-        Open</button>
-        {openModal && <Modal closeModal={setOpenModal}  />} */}
   </div>
   );
 }
