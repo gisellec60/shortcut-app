@@ -1,13 +1,13 @@
 .searchInputs {
-    margin-top: 105px;
+    margin-top: 205px;
     display:flex;
+    flex-direction:row;
 }
 
 .search input {
     position:relative;
-    top:105px;
+    top:5px;
     background-color:white;
-    border: 0;
     border-radius:2px;
     border-top-right-radius:0px;
     border-bottom-right-radius:0px;
@@ -15,36 +15,43 @@
     padding:15px;
     height:30px;
     width:300px;
-    left:890px;
+    margin-left:auto;
+    margin-right:auto;
 }
 .searchIcon{
-   position:relative;
-   top: 105px;
-   left:890px; 
+   position:fixed;
+   top: 369px;
+   left:1370px; 
    height: 60px;
    width: 50px;
    background-color: white;
-   display:grid;
    place-items:center;
+   border-radius:2px;
+   border-top-left-radius:0px;
+   border-bottom-left-radius:0px;
 }
+
 input:focus{
     outline: none;
 }
 .searchIcon svg {
-    font-size: 35px;
+    font-size: 35px;;
 }
 .dataResult {
     position:relative;
-    top:101px;
-    left:890px;
+    top: 10px;
+   
     margin-top:5px;
     width:380px;
     height:200px;
+    left:21px;
     border-radius:2px;
     background-color:white;
     box-shadow:rgba(0,0,0,0.35) 0px 5px 15px;
     overflow:hidden;
     overflow-y:auto;
+    margin-left:auto;
+    margin-right:auto;
 }
 .dataResult::-webkit-scrollbar {
     /* display:none; */
@@ -67,7 +74,7 @@ a:hover{
 }
 #clearShowBtn{
   position:relative;
-  left:250px;
-  top:-50px;
+  left:280px;
+  top:-100px;
   font-size:40px;
 }

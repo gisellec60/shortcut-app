@@ -14,8 +14,8 @@
     },
     {
       "id": 5,
-      "task": "Settings",
-      "keys": "Crtl+",
+      "task": "User Settings",
+      "keys": "Crtl+,",
       "category": "general"
     },
     {
@@ -157,9 +157,9 @@
       "id": 28
     },
     {
-      "task": "fdgsgs",
-      "keys": "sgfsfgs",
-      "category": "search and replace",
+      "task": "New Window /Instance",
+      "keys": "Ctrl+Shift+N",
+      "category": "general",
       "id": 29
     },
     {
@@ -167,18 +167,6 @@
       "keys": "",
       "category": "",
       "id": 30
-    },
-    {
-      "task": "dsafda",
-      "keys": "afdafa",
-      "category": "general",
-      "id": 31
-    },
-    {
-      "task": "vcxvcxz",
-      "keys": "cxzcvzxvz",
-      "category": "basic",
-      "id": 32
     }
   ]
 }

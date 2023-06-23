@@ -11,7 +11,7 @@ function ShowTask({taskData, setShowTask}) {
 
   console.log(taskData)
   return (
-   <div className="inner-container ">
+   <div className="container ">
        <p>task: {taskData.task}</p>
        <p>Key Sequence:{taskData.keys}</p>
        <CloseIcon id="clearShowBtn" onClick={handleClick}/> 

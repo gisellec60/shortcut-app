@@ -12,28 +12,33 @@
 .container{
   position:fixed;
   top:800px;
+  border:3px solid red;
   background-color:white;
   border-radius:25px ;
   border:none;
   padding: 16px ;
+  font-size:large; 
+  font-weight:bold ;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   top:335px;
-  left:660px;
+  left:860px;
   width:650px;
   height:450px;
 }
 .inner-container{
-  position:fixed;
+  position:relative;
   background-color: white;
   border-radius:25px ;
   border:none;
   padding: 16px ;
-  top:260px;
-  left:795px;
+  top:-169px;
+  left:899px;
   width:550px;
   height:550px;
   justify-content:center;
   font-size:large; 
   font-weight:bold ;
+  
 }
 
 .container-add{
