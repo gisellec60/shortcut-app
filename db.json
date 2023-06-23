@@ -155,6 +155,30 @@
       "keys": "Ctrl+K Ctrl+S",
       "category": "general",
       "id": 28
+    },
+    {
+      "task": "fdgsgs",
+      "keys": "sgfsfgs",
+      "category": "search and replace",
+      "id": 29
+    },
+    {
+      "task": "",
+      "keys": "",
+      "category": "",
+      "id": 30
+    },
+    {
+      "task": "dsafda",
+      "keys": "afdafa",
+      "category": "general",
+      "id": 31
+    },
+    {
+      "task": "vcxvcxz",
+      "keys": "cxzcvzxvz",
+      "category": "basic",
+      "id": 32
     }
   ]
 }

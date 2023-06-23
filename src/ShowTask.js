@@ -1,8 +1,6 @@
 import React from 'react'
 import  "./Search.css"
-import {useParams} from "react-router-dom"
 import CloseIcon from '@mui/icons-material/Close';
-import { ConstructionOutlined } from '@mui/icons-material';
 
 function ShowTask({taskData, setShowTask}) {
   
@@ -13,10 +11,10 @@ function ShowTask({taskData, setShowTask}) {
 
   console.log(taskData)
   return (
-     <div className="inner-container ">
-       <p>{taskData.task} : {taskData.keys} </p>
+   <div className="inner-container ">
+       <p>task: {taskData.task}</p>
+       <p>Key Sequence:{taskData.keys}</p>
        <CloseIcon id="clearShowBtn" onClick={handleClick}/> 
-       
     </div>
   )
 }

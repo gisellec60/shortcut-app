@@ -3,7 +3,7 @@ import {useHistory} from "react-router-dom"
 
 function ShortcutForm ( {setOpenForm}) {
     const [formData, setFormData] = useState({task:"",keys:"",category:""})
-    const history = useHistory
+    const history = useHistory()
 
     const handleSubmit = (e) => {
         
@@ -25,7 +25,7 @@ function ShortcutForm ( {setOpenForm}) {
         .then((newData) => console.log(newData))
         alert("update succesful")
         setOpenForm(false)
-        // history.push("/")
+        history.push("/")
     }
     
     const handleChange = ((e) => {
