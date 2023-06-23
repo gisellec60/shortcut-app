@@ -15,8 +15,9 @@ function App() {
    return (
     <div className="App">  
       <h1 >
-        <p> VS Code <span style={{fontStyle:"italic"}}>Shortcuts</span> for Windows </p>
+        <p> Visual Studio Code <span style={{fontStyle:"italic"}}>Shortcuts</span> </p>
       </h1>
+      <h2> Keyboard Shortcuts For Windows</h2>
       <NavBar />
       <SearchBar /> 
         <Switch>
