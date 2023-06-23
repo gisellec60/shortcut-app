@@ -2,19 +2,23 @@ import React,{useState,useRef,useEffect} from 'react'
 import  "./Search.css"
 import SearchIcon from '@mui/icons-material/Search';
 import CloseIcon from '@mui/icons-material/Close';
+import {Link} from "react-router-dom"
+import ShowTask from "./ShowTask"
 
 function SearchBar() {
  
   const [filteredData, setFilteredData] =useState([])
   const [shortcuts, setShortcuts] = useState([])
   const [taskEntered, setTaskEntered] = useState("")
-  // const searchedData = useRef([])   
+  const [taskData, setTaskData] = useState([])
+  const [showTask, setShowTask]= useState(false)
+   
   
   useEffect (() => {
     fetch("http://localhost:3001/shortcuts")
           .then((res) => res.json())
           .then((shortcuts) => { 
-                        setShortcuts(shortcuts)
+             setShortcuts(shortcuts)
         })
     },[])
   
@@ -50,12 +54,15 @@ function SearchBar() {
             {filteredData.map((data) => {
               return(
                 <a key={data.id} className="dataItem">
-                  <p onClick={(e) => console.log(data.id) }>{data.task}</p> 
+                  <p onClick={() => {setTaskData(data); setShowTask(true)}} >
+                    <Link to={`/${data.id}`}>{data.task}</Link>
+                  </p> 
                 </a>
               ) 
             })}         
         </div>
-    )}    
+       )} 
+      {showTask && <ShowTask taskData={taskData} /> }   
     </div> 
   )
 } 

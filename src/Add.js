@@ -1,9 +1,12 @@
 import ShortcutForm from "./ShortcutForm"
+import {useState} from "react"
 
 function Add() {
+  const [openForm, setOpenForm] = useState(true)
+  
    return (
     <div>
-       <ShortcutForm />
+       {openForm && <ShortcutForm setOpenForm={setOpenForm} /> }
     </div>
   )
 }

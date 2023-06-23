@@ -1,8 +1,9 @@
 import React,{useState} from "react"
+import {useHistory} from "react-router-dom"
 
-function ShortcutForm (onAddNewTask) {
+function ShortcutForm ( {setOpenForm}) {
     const [formData, setFormData] = useState({task:"",keys:"",category:""})
-    // const [category, setCategory] = useState("")
+    const history = useHistory
 
     const handleSubmit = (e) => {
         
@@ -22,6 +23,9 @@ function ShortcutForm (onAddNewTask) {
         })
         .then(res => res.json())
         .then((newData) => console.log(newData))
+        alert("update succesful")
+        setOpenForm(false)
+        // history.push("/")
     }
     
     const handleChange = ((e) => {

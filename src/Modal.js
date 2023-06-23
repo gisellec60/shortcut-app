@@ -16,7 +16,7 @@ function Modal({closeModal, patchId, category, patchShortcut, patchKey, patchUpd
          })
          .then(res => res.json())
          .then(obj => patchUpdate(obj))
-         alert("edit succesful")
+         alert("update succesful")
          closeModal(false)
     })
 
