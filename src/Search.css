@@ -62,6 +62,12 @@ input:focus{
 a:hover{
     background-color :lightgrey;
 }
-#clearBtn{
+#clearBtn #clearShowBtn{
     cursor:pointer;
+}
+#clearShowBtn{
+  position:relative;
+  left:250px;
+  top:-50px;
+  font-size:40px;
 }
