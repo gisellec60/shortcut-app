@@ -62,7 +62,7 @@ function SearchBar() {
             })}         
         </div>
        )} 
-      {showTask && <ShowTask taskData={taskData} /> }   
+      {showTask && <ShowTask taskData={taskData} setShowTask={setShowTask} /> }   
     </div> 
   )
 } 
