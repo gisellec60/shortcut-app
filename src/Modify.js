@@ -1,13 +1,17 @@
 import React,{useState,useRef} from 'react'
 import Modal from "./Modal"
+import CloseIcon from '@mui/icons-material/Close';
+import {useHistory} from "react-router-dom"
 
 function Modify() {
   const [shortcuts, setShortcuts] = useState([])
   const [openModal, setOpenModal] = useState(false)
+  const [showContainer, setShowContainer] = useState(true)
   const [patchId, setPatchId] = useState(0)
   const [patchShortcut, setPatchShortcut] = useState("")
   const [patchKey, setPatchKey] = useState("")
   const category = useRef("")  
+  const history = useHistory()
   
   const handleChange = (e) =>{
     category.current = e.target.value
@@ -46,8 +50,15 @@ function Modify() {
     )
   })
 
+  const handleClick = (()=>
+      history.push("/")
+  )
+
+  const handleShow = {display:"none"}
+
   return (
-    <div className="container">
+    <div className="container" style={!showContainer ? handleShow:null} >
+    <CloseIcon id="closeModifyBtn" onClick={() => {handleClick();setShowContainer(!showContainer) }} />  
          <h3 id="pick-del">Pick a Category </h3>
          <select className="menu-trigger-del" value={category.current} 
              onChange={handleChange} > 
@@ -66,3 +77,4 @@ function Modify() {
  }
 
 export default Modify                                  
+// onClick={() => {style={handleShow};setShowContainer(!showContainer)}}

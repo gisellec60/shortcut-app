@@ -1,8 +1,10 @@
 import React,{useState} from "react"
 import {useHistory} from "react-router-dom"
+import CloseIcon from '@mui/icons-material/Close';
 
 function ShortcutForm ( {setOpenForm}) {
     const [formData, setFormData] = useState({task:"",keys:"",category:""})
+    const [showContainer, setShowContainer] = useState(true)
     const history = useHistory()
 
     const handleSubmit = (e) => {
@@ -34,9 +36,15 @@ function ShortcutForm ( {setOpenForm}) {
             [e.target.name]: e.target.value                     
         });
     })
+    
+    const handleClick = (()=>
+    history.push("/")
+)
+    const handleShow = {display:"none"}
 
     return (
-      <section className = "inner-container">
+      <section className = "inner-container" style={!showContainer ? handleShow:null}>
+      <CloseIcon id="closeAddBtn" onClick={() => {handleClick();setShowContainer(!showContainer) }} />
         <h1 className="title">{"Add Shortcut"}</h1>
         <form onSubmit={handleSubmit} id="showForm">
             <label className="label">Task

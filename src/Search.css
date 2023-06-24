@@ -68,7 +68,7 @@ input:focus{
 a:hover{
     background-color :lightgrey;
 }
-#clearBtn #clearShowBtn{
+#clearBtn #clearShowBtn #closeModifyBtn{
     cursor:pointer;
 }
 #clearShowBtn{

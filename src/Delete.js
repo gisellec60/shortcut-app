@@ -1,10 +1,13 @@
-import React, {useState,useRef, createFactory} from 'react'
-import useLoadData from "./useLoadData"
+import React, {useState,useRef } from 'react'
+import CloseIcon from '@mui/icons-material/Close';
+import {useHistory} from "react-router-dom"
 
 function Delete() {
   const [shortcuts, setShortcuts] = useState([])
+  const [showContainer, setShowContainer] = useState(true)
   const category = useRef("")  
- 
+  const history = useHistory()
+  
   const handleChange = (e) =>{
       category.current = (e.target.value)
       if(category.current === "Search and Replace")
@@ -43,9 +46,15 @@ function Delete() {
       </div>   
     )
   })
+  
+  const handleClick = (()=>
+      history.push("/")
+  )
+ const handleShow = {display:"none"}
 
   return (
-   <div className="container">
+   <div className="container" style={!showContainer ? handleShow:null}>
+   <CloseIcon id="closeModifyBtn" onClick={() => {handleClick();setShowContainer(!showContainer) }} />
    <h3 id="pick-del">Pick a Category </h3>
      <select className="menu-trigger-del" value={category.current} 
           onChange={handleChange} > 

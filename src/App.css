@@ -18,8 +18,8 @@
   font-size:large; 
   font-weight:bold ;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  top:365px;
-  left:860px;
+  top:375px;
+  left:610px;
   width:650px;
   height:450px;
 }
@@ -30,7 +30,7 @@
   border:none;
   padding: 16px ;
   top:-169px;
-  left:899px;
+  left:650px;
   width:550px;
   height:550px;
   justify-content:center;
@@ -208,7 +208,7 @@ width:260px;
 }
 #pick-del{
   position:relative;
-  top:-100px;
+  top:-150px;
   
 }
 
@@ -262,7 +262,7 @@ width:260px;
 }
 .menu-trigger-del {
   position:relative;
-  top: -110px;
+  top: -155px;
   left:5px;
   width:120px;
   height: 30px;
@@ -351,4 +351,15 @@ h2{
   position:realative;
   top:500px;
   left:900px;
+}
+
+#closeModifyBtn, #closeAddBtn{
+  position:relative;
+  left:290px;
+  cursor:pointer;
+  font-size:40px;
+}
+#closeAddBtn{
+  position:relative;
+  left:270px;
 }
