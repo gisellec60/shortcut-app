@@ -39,9 +39,8 @@
   
 }
 
-.container-add{
+/* .container-add{
   position:fixed;
-  /* background-color:rgb(105, 108, 106);  */
   border-radius:25px ;
   border:none;
   padding: 16px ;
@@ -49,7 +48,7 @@
   left:665px;
   width:550px;
   height:550px;
-}
+} */
 
 .listing {
  position:relative;
@@ -174,6 +173,10 @@ ul {
   
 }
 
+#add-desc{
+  position:relative;
+  top :255px;
+}
 #add {
 left: 20px; 
 width:260px; 

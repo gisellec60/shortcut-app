@@ -9,8 +9,7 @@ function useLoadData(category)  {
           .then((res) => res.json())
           .then((shortcuts) => {
               const shortcutFilterArray = shortcuts.filter((shortcut)=>{
-                console.log("this is ", shortcut.category ,category)
-              return shortcut.category === category
+                return shortcut.category === category
             })
             setShortcuts(shortcutFilterArray)
         setIsLoaded(true)})
@@ -21,7 +20,7 @@ function useLoadData(category)  {
       }
   
       const displayInfo = shortcuts.map((shortcut) => 
-         <div key={shortcut.id}>{shortcut.task} : {shortcut.keys}</div>
+         <div key={shortcut.id}>{shortcut.task} : {shortcut.wkeys}</div>
       )
     return {displayInfo}
  }

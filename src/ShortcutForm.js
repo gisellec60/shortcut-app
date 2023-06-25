@@ -3,7 +3,7 @@ import {useHistory} from "react-router-dom"
 import CloseIcon from '@mui/icons-material/Close';
 
 function ShortcutForm ( {setOpenForm}) {
-    const [formData, setFormData] = useState({task:"",keys:"",category:""})
+    const [formData, setFormData] = useState({task:"",keys:"",category:"",description:""})
     const [showContainer, setShowContainer] = useState(true)
     const history = useHistory()
 
@@ -18,7 +18,8 @@ function ShortcutForm ( {setOpenForm}) {
             body:JSON.stringify(
                { 
                 "task":formData.task,
-                "keys":formData.keys,
+                "wkeys":formData.keys,
+                "description":formData.description,
                 "category":formData.category.toLowerCase()
                }
             )    
@@ -54,6 +55,10 @@ function ShortcutForm ( {setOpenForm}) {
             <label className="label"> Keys
             <input className="inputsize" type="text" name="keys"
                onChange={handleChange} value={formData.keys} />
+            </label> 
+            <label className="label"> Description
+            <input className="add-desc" type="text" name="description"
+               onChange={handleChange} value={formData.description} />
             </label>  
             <h3 id="pick-category">Pick a Category </h3>
             <select className="menu-trigger" name="category" value={formData.category} onChange={handleChange} > 
@@ -62,6 +67,7 @@ function ShortcutForm ( {setOpenForm}) {
                 <option>Basic</option>
                 <option>Search and Replace</option>
                 <option>MultiCursor</option>
+                <option>Navigation</option>
             </select>
             <button className="butn" id="addButn" type="submit">Submit</button>
         </form>
