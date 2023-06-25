@@ -56,7 +56,7 @@ function ShortcutForm ( {setOpenForm}) {
             <input className="inputsize" type="text" name="keys"
                onChange={handleChange} value={formData.keys} />
             </label> 
-            <label className="label"> Description
+            <label id="label-desc"> Description
             <input className="add-desc" type="text" name="description"
                onChange={handleChange} value={formData.description} />
             </label>  
@@ -69,7 +69,17 @@ function ShortcutForm ( {setOpenForm}) {
                 <option>MultiCursor</option>
                 <option>Navigation</option>
             </select>
-            <button className="butn" id="addButn" type="submit">Submit</button>
+               {/* <button id="win" onClick>Windows</button>
+               <button id="mac" onClick>MacOs</button> */}
+               <label id="label-win">
+                    Windows
+                    <input type="checkbox" id="win" />
+               </label>
+               <label id="label-mac">
+                    MacOs
+                    <input type="checkbox" id="mac" />
+               </label>
+               <button className="butn" id="addButn" type="submit">Submit</button>
         </form>
       </section>  
     )

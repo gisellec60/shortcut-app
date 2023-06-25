@@ -172,10 +172,17 @@ ul {
  
   
 }
-
-#add-desc{
+.add-desc{
   position:relative;
-  top :255px;
+  
+  width:300px;
+  height:50px;
+}
+
+#label-desc{
+  position:relative;
+  top: 100px;
+
 }
 #add {
 left: 20px; 
@@ -194,7 +201,7 @@ width:260px;
 .menu-trigger {
   position:relative;
   top: 130px;
-  left:30px;
+  left:-30px;
   width:120px;
   height: 40px;
   border: radius 50%;
@@ -208,13 +215,23 @@ width:260px;
 #pick-category{
   position:relative;
   top:130px;
+  left:-30px;
 }
 #pick-del{
   position:relative;
   top:-150px;
-  
 }
-
+#win, #mac{
+  position:relative;
+  top:-20px;
+  left:210px;
+  font-size:large;
+  padding:10px 3px 10px 3px;
+  display:block; 
+  color:white;
+  cursor:pointer;
+  border-radius:5px;
+}
 .butn {
   position: relative;
   top:200px;
@@ -225,11 +242,12 @@ width:260px;
 
  #addButn {
   position: relative;
-  top:300px;
-  left:-60px; 
+  top:90px;
+  left:-25px; 
   background: crimson;
   color:white
 }
+
 #submitButn {
   position: absolute;
   top:500px;
@@ -248,7 +266,16 @@ width:260px;
   font-weight:bold ;
   padding:15px,15px,15px,25px;
   border-left: 5px;
-  top:100px;
+  top:50px;
+}
+
+#label-win, #label-mac{
+   position:relative;
+   top:60px;
+
+   left:200px;
+   display:block;
+
 }
 
 .label-modal {

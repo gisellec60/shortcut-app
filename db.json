@@ -5,7 +5,7 @@
       "task": "Quick Open, Go to File...",
       "wkeys": "Ctrl+P",
       "mkeys": "command + P",
-      "decriptions":"Searching for a specific file, especially as the project gets larger, can chew up a lot of time. Even if you already know where the file is, it’s definitely handy to learn this keyboard shortcut to easily open files in your project.",
+      "decriptions": "Searching for a specific file, especially as the project gets larger, can chew up a lot of time. Even if you already know where the file is, it’s definitely handy to learn this keyboard shortcut to easily open files in your project.",
       "category": "general"
     },
     {
@@ -19,7 +19,7 @@
       "task": "User Settings",
       "wkeys": "Crtl+,",
       "mkeys": "command+,",
-      "description":"Visual Studio Code comes with a lot of features and settings that you can change to fit your needs. This keyboard shortcut makes it easier to get to the settings whenever necessary.",
+      "description": "Visual Studio Code comes with a lot of features and settings that you can change to fit your needs. This keyboard shortcut makes it easier to get to the settings whenever necessary.",
       "category": "general"
     },
     {
@@ -165,6 +165,13 @@
       "wkeys": "Ctrl+Shift+N",
       "category": "general",
       "id": 29
+    },
+    {
+      "task": "",
+      "wkeys": "",
+      "description": "",
+      "category": "",
+      "id": 30
     }
   ]
 }
