@@ -36,7 +36,7 @@ function NavBar() {
     background: "red",
     textDecoration: "none",
     color:"white",
-    top:"750px",
+    top:"550px",
     left:"-305px"
   }  
 
