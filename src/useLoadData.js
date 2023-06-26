@@ -19,9 +19,17 @@ function useLoadData(category)  {
         return <h2>Data Loading...</h2>
       }
   
-      const displayInfo = shortcuts.map((shortcut) => 
-         <div key={shortcut.id}>{shortcut.task} : {shortcut.wkeys}</div>
-      )
+      // const displayInfo = shortcuts.map((shortcut) => {
+      //     if(shortcut.os === "Windows"){
+      //       <div key={shortcut.id}>{shortcut.task} : {shortcut.keys}</div>
+      //     } 
+      //   })
+
+        const displayInfo = shortcuts.map((shortcut) => 
+            <div key={shortcut.id}>{shortcut.task} : {shortcut.keys}</div>
+        )
+
     return {displayInfo}
+ 
  }
 export default useLoadData

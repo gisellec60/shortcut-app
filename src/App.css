@@ -38,6 +38,23 @@
   font-weight:bold ;
   
 }
+.inner-container2{
+  position:relative;
+  background-color: white;
+  border-radius:25px ;
+  border:none;
+  padding: 16px ;
+  top:-369px;
+  left:600px;
+  width:750px;
+  /* height:150px; */
+ 
+  height: 100vh;
+  justify-content:center;
+  font-size:large; 
+  font-weight:bold ;
+  
+}
 
 /* .container-add{
   position:fixed;
@@ -224,7 +241,7 @@ width:260px;
 #win, #mac{
   position:relative;
   top:-20px;
-  left:210px;
+  left:-10px;
   font-size:large;
   padding:10px 3px 10px 3px;
   display:block; 
@@ -272,8 +289,8 @@ width:260px;
 #label-win, #label-mac{
    position:relative;
    top:60px;
-
-   left:200px;
+   width:100px;
+   left:450px;
    display:block;
 
 }

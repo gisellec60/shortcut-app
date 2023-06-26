@@ -1,15 +1,18 @@
-import React,{useState} from "react"
+import React,{useState,useRef} from "react"
 import {useHistory} from "react-router-dom"
 import CloseIcon from '@mui/icons-material/Close';
 
 function ShortcutForm ( {setOpenForm}) {
     const [formData, setFormData] = useState({task:"",keys:"",category:"",description:""})
     const [showContainer, setShowContainer] = useState(true)
+    const [wChecked, setWChecked] = useState(false) 
+    const [mChecked, setMChecked] = useState(false)
     const history = useHistory()
-
+    const keys = useRef("")  
+    
     const handleSubmit = (e) => {
-        
         e.preventDefault()
+        const key = keys.current
         fetch("http://localhost:3001/shortcuts",{
             method: "POST",
             headers: {
@@ -18,7 +21,7 @@ function ShortcutForm ( {setOpenForm}) {
             body:JSON.stringify(
                { 
                 "task":formData.task,
-                "wkeys":formData.keys,
+                [key]:formData.keys,
                 "description":formData.description,
                 "category":formData.category.toLowerCase()
                }
@@ -43,6 +46,15 @@ function ShortcutForm ( {setOpenForm}) {
 )
     const handleShow = {display:"none"}
 
+    const handleWindows = () => {
+         setWChecked(!wChecked)
+         setMChecked(false)
+    }
+    const handleMac = () => {
+        setMChecked(!mChecked)
+        setWChecked(false)
+     }
+    
     return (
       <section className = "inner-container" style={!showContainer ? handleShow:null}>
       <CloseIcon id="closeAddBtn" onClick={() => {handleClick();setShowContainer(!showContainer) }} />
@@ -73,11 +85,13 @@ function ShortcutForm ( {setOpenForm}) {
                <button id="mac" onClick>MacOs</button> */}
                <label id="label-win">
                     Windows
-                    <input type="checkbox" id="win" />
+                    <input type="checkbox" id="win" name="windows" 
+                        checked={wChecked} onChange={()=>{handleWindows();keys.current="mkeys"}} />
                </label>
                <label id="label-mac">
                     MacOs
-                    <input type="checkbox" id="mac" />
+                        <input type="checkbox" id="mac" name="mac" 
+                        checked={mChecked} onChange={()=>{handleMac();keys.current="mkeys"}}/>
                </label>
                <button className="butn" id="addButn" type="submit">Submit</button>
         </form>
