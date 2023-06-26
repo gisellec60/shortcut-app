@@ -3,6 +3,18 @@ import {NavLink} from "react-router-dom"
 
 function NavBar() {
 
+  const linkHomeStyles = {
+    position: "relative",
+    display: "inline-block",
+    width: "100px",
+    padding: "12px",
+    margin: "0 6px 6px",
+    background: "red",
+    textDecoration: "none",
+    color:"white",
+     top:"50px",
+    left:"500px"
+  }  
   const linkStyles = {
     position: "relative",
     display: "inline-block",
@@ -12,8 +24,8 @@ function NavBar() {
     background: "red",
     textDecoration: "none",
     color:"white",
-     top:"80px",
-    left:"200px"
+     top:"120px",
+    left:"170px"
   }  
   const link2Styles = {
     position: "relative",
@@ -25,12 +37,12 @@ function NavBar() {
     textDecoration: "none",
     color:"white",
     top:"750px",
-    left:"-325px"
+    left:"-305px"
   }  
 
   return (
     <div>
-      <NavLink to="/" exact style = {linkStyles} activeStyle={{background:"darkblue",}} >
+      <NavLink to="/" exact style = {linkHomeStyles} activeStyle={{background:"darkblue",}} >
         Home
       </NavLink>
       <NavLink exact to="/general" style = {linkStyles} activeStyle={{background:"darkblue",}} >
