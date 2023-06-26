@@ -21,7 +21,7 @@ function SearchReplace () {
       <div className="inner-container2"  style={!showContainer ? handleShow:null}>
             <CloseIcon id="closeListBtn" 
             onClick={() => {handleClick();setShowContainer(!showContainer) }} />  
-          <h2 className="h2">Search and Replace</h2>
+          <h2 className="h2-listing">Search and Replace</h2>
           <div className="task-listing" >                               
               {displayInfo}
           </div>

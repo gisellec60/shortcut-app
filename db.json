@@ -42,19 +42,11 @@
     },
     {
       "id": 6,
-      "task": "Cut Line",
+      "task": "Cut Current Line",
       "keys": "Ctrl X",
       "category": "basic",
       "description": "Cut the selected line into clipboard",
       "os": "Windows"
-    },
-    {
-      "id": 7,
-      "task": "Cut Line",
-      "keys": "command + X",
-      "category": "basic",
-      "description": "Cut the selected line into clipboard",
-      "os": "MacOS"
     },
     {
       "id": 8,
@@ -423,6 +415,14 @@
       "decriptions": "Searching for a specific file, especially as the project gets larger, can chew up a lot of time. Even if you already know where the file is, it’s definitely handy to learn this keyboard shortcut to easily open files in your project.",
       "category": "general",
       "os": "Mac"
+    },
+    {
+      "task": "Add Line Comment",
+      "keys": "Ctrl+C Ctrl+K",
+      "description": "Add comment to current line",
+      "category": "basic",
+      "os": "Windows",
+      "id": 56
     }
   ]
 }

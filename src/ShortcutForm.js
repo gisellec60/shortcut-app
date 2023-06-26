@@ -3,7 +3,12 @@ import {useHistory} from "react-router-dom"
 import CloseIcon from '@mui/icons-material/Close';
 
 function ShortcutForm ( {setOpenForm}) {
-    const [formData, setFormData] = useState({task:"",keys:"",category:"",description:""})
+    const [formData, setFormData] = useState({task:"",
+    keys:"",
+    category:"",
+    description:"",
+    os:""})
+
     const [showContainer, setShowContainer] = useState(true)
     const [wChecked, setWChecked] = useState(false) 
     const [mChecked, setMChecked] = useState(false)
@@ -21,9 +26,10 @@ function ShortcutForm ( {setOpenForm}) {
             body:JSON.stringify(
                { 
                 "task":formData.task,
-                [key]:formData.keys,
+                "keys":formData.keys,
                 "description":formData.description,
-                "category":formData.category.toLowerCase()
+                "category":formData.category.toLowerCase(),
+                "os":formData.os
                }
             )    
         })
@@ -46,7 +52,9 @@ function ShortcutForm ( {setOpenForm}) {
 )
     const handleShow = {display:"none"}
 
-    const handleWindows = () => {
+    const handleWindows = (e) => {
+        
+        
          setWChecked(!wChecked)
          setMChecked(false)
     }
@@ -81,17 +89,15 @@ function ShortcutForm ( {setOpenForm}) {
                 <option>MultiCursor</option>
                 <option>Navigation</option>
             </select>
-               {/* <button id="win" onClick>Windows</button>
-               <button id="mac" onClick>MacOs</button> */}
-               <label id="label-win">
+                                         <label id="label-win">
                     Windows
-                    <input type="checkbox" id="win" name="windows" 
-                        checked={wChecked} onChange={()=>{handleWindows();keys.current="mkeys"}} />
+                    <input type="checkbox" id="win" name="os" 
+                        checked={wChecked} onChange={()=>{handleWindows();setFormData({...formData,os:"Windows"})}} />
                </label>
                <label id="label-mac">
                     MacOs
-                        <input type="checkbox" id="mac" name="mac" 
-                        checked={mChecked} onChange={()=>{handleMac();keys.current="mkeys"}}/>
+                        <input type="checkbox" id="mac" name="os" 
+                        checked={mChecked} onChange={(e)=>{handleMac(e);e.target.value="MacOS"}}/>
                </label>
                <button className="butn" id="addButn" type="submit">Submit</button>
         </form>

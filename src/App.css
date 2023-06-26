@@ -78,7 +78,7 @@
 .task-listing {
   position:relative;
   display:inline-block;
-  top:0px;
+  top:-80px;
   font-size:large; 
   font-weight:bold ;
   padding: 0px 20px 0px  ;
@@ -441,10 +441,10 @@ width:260px;
   left:-50px;
   color:white;
 }
-h2{
-  position:realative;
-  top:500px;
-  left:900px;
+.h2-listing{
+  position:relative;
+  top:-80px;
+  left:00px;
 }
 
 #closeModifyBtn, #closeListBtn, #closeShowBtn{

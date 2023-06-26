@@ -20,7 +20,7 @@ function MultiCursor() {
       <div className="inner-container2" style={!showContainer ? handleShow:null}>
             <CloseIcon id="closeListBtn" 
             onClick={() => {handleClick();setShowContainer(!showContainer) }} />  
-        <h2 className="h2">Multi-Cursor</h2>
+        <h2 className="h2-listing">Multi-Cursor</h2>
         <div className="task-listing" >                               
             {displayInfo}
         </div>

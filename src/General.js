@@ -18,7 +18,7 @@ function General () {
       <div className="inner-container2" style={!showContainer ? handleShow:null}>
             <CloseIcon id="closeListBtn" 
             onClick={() => {handleClick();setShowContainer(!showContainer) }} />
-              <h2 className="h2">General</h2>
+              <h2 className="h2-listing">General</h2>
               <div className="task-listing" >                               
                   {displayInfo}
             </div>
