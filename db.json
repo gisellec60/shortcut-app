@@ -45,7 +45,7 @@
       "task": "Cut Line",
       "keys": "Ctrl X",
       "category": "basic",
-      "description":"	Cut the selected line into clipboard",
+      "description":"Cut the selected line into clipboard",
       "os":"Windows"
     },
     {
@@ -53,7 +53,7 @@
       "task": "Cut Line",
       "keys": "command + X",
       "category": "basic",
-      "description":"	Cut the selected line into clipboard",
+      "description":"Cut the selected line into clipboard",
       "os":"MacOS"
     },
     {
@@ -279,7 +279,7 @@
       "keys": "option+mouseClick",
       "description":"This keyboard shortcut allows you to insert an additional cursor at any point in the file.",
       "category": "multicursor",
-      "os":"MacOs"
+      "os":"MacOS"
     },
     {
       "id": 37,

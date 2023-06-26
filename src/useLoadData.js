@@ -9,7 +9,7 @@ function useLoadData(category)  {
           .then((res) => res.json())
           .then((shortcuts) => {
               const shortcutFilterArray = shortcuts.filter((shortcut)=>{
-                return shortcut.category === category
+                  return shortcut.category === category
             })
             setShortcuts(shortcutFilterArray)
         setIsLoaded(true)})
@@ -19,14 +19,8 @@ function useLoadData(category)  {
         return <h2>Data Loading...</h2>
       }
   
-      // const displayInfo = shortcuts.map((shortcut) => {
-      //     if(shortcut.os === "Windows"){
-      //       <div key={shortcut.id}>{shortcut.task} : {shortcut.keys}</div>
-      //     } 
-      //   })
-
-        const displayInfo = shortcuts.map((shortcut) => 
-            <div key={shortcut.id}>{shortcut.task} : {shortcut.keys}</div>
+      const displayInfo = shortcuts.map((shortcut) => 
+            <div key={shortcut.id}>{shortcut.os} - {shortcut.task} : {shortcut.keys} </div>
         )
 
     return {displayInfo}

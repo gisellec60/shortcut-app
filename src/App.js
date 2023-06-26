@@ -18,7 +18,7 @@ function App() {
       <p> Visual Studio Code <span style={{fontStyle:"italic"}}>Shortcuts</span> </p>
       {/* <p className="App-logo"> Visual Studio Code <span style={{fontStyle:"italic"}}>Shortcuts</span> </p> */}
       </h1>
-      <h2> Keyboard Shortcuts For Windows</h2>
+      <h2> Keyboard Shortcuts For Windows and Mac</h2>
       <NavBar />
       <SearchBar /> 
         <Switch>

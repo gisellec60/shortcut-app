@@ -17,16 +17,15 @@ function BasicEditing() {
     const handleShow = {display:"none"}
    
     return (
-    <div>
-      <div className="inner-container2"  style={!showContainer ? handleShow:null}>
-            <CloseIcon id="closeAddBtn" 
+     <div className="inner-container2"  style={!showContainer ? handleShow:null}>
+            <CloseIcon id="closeListBtn" 
             onClick={() => {handleClick();setShowContainer(!showContainer) }} />  
         <h2 className="h2">Basic Editing</h2>
         <div className="task-listing" >                               
             {displayInfo}
         </div>
       </div>  
-    </div>
+  
   )
 }
 

@@ -15,19 +15,14 @@ function General () {
     
     const handleShow = {display:"none"}
     return (
-    
-    <div>
-          <div > 
-            <div className="inner-container2" style={!showContainer ? handleShow:null}>
-            <CloseIcon id="closeAddBtn" 
+      <div className="inner-container2" style={!showContainer ? handleShow:null}>
+            <CloseIcon id="closeListBtn" 
             onClick={() => {handleClick();setShowContainer(!showContainer) }} />
               <h2 className="h2">General</h2>
               <div className="task-listing" >                               
                   {displayInfo}
-              </div>
-            </div>   
-          </div>  
-    </div>
+            </div>
+        </div>   
     )
   }
 

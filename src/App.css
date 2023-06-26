@@ -1,7 +1,7 @@
 .App {
   text-align: center; 
-  width:100vw;
-  height: 100vh;
+  /* width:100vw;
+  height: 100vh; */
 
   /* background-image:linear-gradient(90deg,  #626662,#c7d0c7 ) */
  }
@@ -30,7 +30,7 @@
   border:none;
   padding: 16px ;
   top:-169px;
-  left:650px;
+  left:590px;
   width:550px;
   height:550px;
   justify-content:center;
@@ -43,17 +43,13 @@
   background-color: white;
   border-radius:25px ;
   border:none;
-  padding: 16px ;
-  top:-369px;
-  left:600px;
-  width:750px;
-  /* height:150px; */
- 
-  height: 100vh;
-  justify-content:center;
-  font-size:large; 
-  font-weight:bold ;
-  
+  padding: 16px ; 
+  top:-299px;
+  left:430px;
+  min-width:550;
+  min-height:550px;
+  width:50%;
+
 }
 
 /* .container-add{
@@ -82,7 +78,8 @@
 
 .task-listing {
   position:relative;
-  top:70px;
+  display:inline-block;
+  top:0px;
   font-size:large; 
   font-weight:bold ;
   padding: 0px 20px 0px  ;
@@ -400,13 +397,15 @@ h2{
   left:900px;
 }
 
-#closeModifyBtn, #closeAddBtn{
+#closeModifyBtn, #closeListBtn{
   position:relative;
-  left:290px;
+  left:380px;
   cursor:pointer;
   font-size:40px;
 }
 #closeAddBtn{
   position:relative;
   left:270px;
+  cursor:pointer;
+  font-size:40px;
 }
