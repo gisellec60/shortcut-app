@@ -10,6 +10,8 @@ function Modify() {
   const [patchId, setPatchId] = useState(0)
   const [patchShortcut, setPatchShortcut] = useState("")
   const [patchKey, setPatchKey] = useState("")
+  const [patchDesc, setPatchDesc] = useState("")
+  const [patchOs, setPatchOs] = useState("")
   const category = useRef("")  
   const history = useHistory()
   
@@ -39,12 +41,13 @@ function Modify() {
   
   const displayInfo = shortcuts.map((shortcut) => {
     return (
-      <div key={shortcut.id}>
+      <div  key={shortcut.id}>
         <div className="listing" >
-          <div key={shortcut.id}>{shortcut.task}: {shortcut.keys}</div> 
+          <div key={shortcut.id}>{shortcut.os} - {shortcut.task}: {shortcut.keys}</div> 
            <button onClick={() => { 
              setOpenModal(true); setPatchKey(shortcut.keys); setPatchId(shortcut.id) ;
-               setPatchShortcut(shortcut.task)}} className ='editButn'>Edit</button> 
+               setPatchShortcut(shortcut.task); setPatchDesc(shortcut.description);
+               setPatchOs(shortcut.os)}} className ='editButn'>Edit</button> 
          </div>
       </div>   
     )
@@ -71,10 +74,10 @@ function Modify() {
            {displayInfo}
            {openModal && <Modal closeModal={setOpenModal}
               patchId={patchId} patchShortcut={patchShortcut} category={category.current} 
-              patchKey={patchKey} patchUpdate={patchUpdate} />}
+              patchKey={patchKey} patchOs={patchOs} patchDesc={patchDesc} 
+              patchUpdate={patchUpdate} />}
    </div>
   )
  }
 
 export default Modify                                  
-// onClick={() => {style={handleShow};setShowContainer(!showContainer)}}

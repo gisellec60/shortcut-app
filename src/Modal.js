@@ -1,10 +1,16 @@
 import React, {useState} from 'react'
 
-function Modal({closeModal, patchId, category, patchShortcut, patchKey, patchUpdate }) {
+function Modal({closeModal, patchId, patchShortcut, patchKey, patchUpdate,
+     patchOs, patchDesc }) {
 
-    const [formData, setFormData] = useState({task:patchShortcut,keys:patchKey})
+    const [formData, setFormData] = useState(
+      {task:patchShortcut,
+        keys:patchKey,
+        description:patchDesc,
+        os:patchOs})
 
-    const handleSubmit = ((e) => {
+      
+        const handleSubmit = ((e) => {
         e.preventDefault()
              
         fetch(`http://localhost:3001/shortcuts/${patchId}`, {
@@ -39,14 +45,22 @@ function Modal({closeModal, patchId, category, patchShortcut, patchKey, patchUpd
           <div className="body">
           <form onSubmit={handleSubmit}>
             <label className="label-modal">Task
-              <input className="inputsize" type="text" name="task" 
+              <input className="modal-input" type="text" name="task" 
                 onChange={handleChange} value={formData.task} />
             </label>
             <label className="label-modal"> Keys
-            <input className="inputsize" type="text" name="keys"
+            <input className="modal-input" type="text" name="keys"
                onChange={handleChange} value={formData.keys} />
             </label>  
-            <button className="butn" type="submit">Submit</button>
+            <label className="label-desc"> Description
+            <input id="modal-input-desc" type="text" name="description"
+               onChange={handleChange} value={formData.description} />
+            </label>  
+            <label className="label-os"> OS
+            <input id="modal-input-os" type="text" name="os"
+               onChange={handleChange} value={formData.os} />
+            </label>  
+            <button id="modal-butn" type="submit">Submit</button>
         </form>
           </div>
           <div className="footer">

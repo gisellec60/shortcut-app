@@ -12,9 +12,13 @@ function ShowTask({taskData, setShowTask}) {
   console.log(taskData)
   return (
    <div className="container ">
-       <p>task: {taskData.task}</p>
-       <p>Key Sequence:{taskData.keys}</p>
-       <CloseIcon id="clearShowBtn" onClick={handleClick}/> 
+     <div className="search-listing">
+       <div>{taskData.os}</div>
+       <p>Task : {taskData.task}</p>
+       <p>Key Sequence : {taskData.keys}</p>
+       <p>Description - {taskData.description}</p>
+       <CloseIcon id="closeShowBtn" onClick={handleClick}/> 
+    </div>
     </div>
   )
 }

@@ -55,7 +55,7 @@ function SearchBar() {
               return(
                 <a key={data.id} className="dataItem">
                   <p onClick={() => {setTaskData(data); setShowTask(true)}} >
-                    <Link to={`/${data.id}`}>{data.task}</Link>
+                    <Link to={`/${data.id}`}>{data.os} - {data.task}</Link>
                   </p> 
                 </a>
               ) 

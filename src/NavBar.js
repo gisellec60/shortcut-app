@@ -37,13 +37,13 @@ function NavBar() {
         General
       </NavLink> 
       <NavLink exact to="/basic-editing" style = {linkStyles} activeStyle={{background:"darkblue",}} >
-        BasicEditing
+        Basic Editing
       </NavLink>  
       <NavLink exact to="/search-replace" style = {linkStyles}  activeStyle={{background:"darkblue",}} >
-        SearchReplace
+        Search/Replace
       </NavLink> 
       <NavLink exact to="/multicursor" style = {linkStyles}  activeStyle={{background:"darkblue",}} >
-        MultiCursor
+        Multi-Cursor
       </NavLink> 
       <NavLink exact to="/add" style = {link2Styles} activeStyle={{background:"darkblue",}} >
         Add

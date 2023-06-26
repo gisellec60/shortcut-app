@@ -18,10 +18,11 @@
   font-size:large; 
   font-weight:bold ;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  top:375px;
-  left:610px;
-  width:650px;
-  height:450px;
+  top: 199px;
+  left:430px;
+  min-width:550;
+  min-height:550px;
+  width:50%;
 }
 .inner-container{
   position:relative;
@@ -52,16 +53,6 @@
 
 }
 
-/* .container-add{
-  position:fixed;
-  border-radius:25px ;
-  border:none;
-  padding: 16px ;
-  top:255px;
-  left:665px;
-  width:550px;
-  height:550px;
-} */
 
 .listing {
  position:relative;
@@ -74,6 +65,14 @@
  padding: 0px 20px 0px  ;
  line-height:2.0;
  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#search-listing{
+  font-weight:bold ;
+  font-size:large;
+  line-height:2.0;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
 }
 
 .task-listing {
@@ -192,12 +191,36 @@ ul {
   width:300px;
   height:50px;
 }
-
-#label-desc{
+#label-desc-add{
   position:relative;
-  top: 100px;
-
+  top:90px;
+  left:0px;
+  font-size:large; 
+  font-weight:bold ;
+  padding:15px,15px,15px,25px;
+  border-left: 5px;
 }
+.label-desc{
+  position:relative;
+  top:10px;
+  left:99px;
+  font-size:large; 
+  font-weight:bold ;
+  padding:15px,15px,15px,25px;
+  border-left: 5px;
+}
+
+.label-os{
+  position:relative;
+  width:100px;
+  top:70px;
+  left:-175px;
+  font-size:large; 
+  font-weight:bold ;
+  padding:15px,15px,15px,25px;
+  border-left: 5px;
+}
+
 #add {
 left: 20px; 
 width:260px; 
@@ -233,7 +256,7 @@ width:260px;
 }
 #pick-del{
   position:relative;
-  top:-150px;
+  top:-80px;
 }
 #win, #mac{
   position:relative;
@@ -282,6 +305,14 @@ width:260px;
   border-left: 5px;
   top:50px;
 }
+.label-modal {
+  position:relative;
+  font-size:large; 
+  font-weight:bold ;
+  padding:15px,15px,15px,25px;
+  border-left: 5px;
+  top:-70px;
+}
 
 #label-win, #label-mac{
    position:relative;
@@ -294,6 +325,7 @@ width:260px;
 
 .label-modal {
   position:relative;
+  top:-20px;
   font-size:large; 
   font-weight:bold ;
   padding:15px,15px,15px,25px;
@@ -304,9 +336,29 @@ width:260px;
   width:200px;
   height:30px;
 }
+
+.modal-input, #modal-input-os #modal-input-desc {
+  width:200px;
+  height:30px;
+}
+
+#modal-input-os{
+  position:relative;
+  width:70px;
+  top:0px;
+  left:10px;
+}
+#modal-input-desc{
+  position:relative;
+  width:300px;
+  height:40px;
+  top:0px;
+  left:10px;
+ }
+
 .menu-trigger-del {
   position:relative;
-  top: -155px;
+  top: -95px;
   left:5px;
   width:120px;
   height: 30px;
@@ -315,12 +367,10 @@ width:260px;
   cursor:pointer;
 }
 .modalBackground {
-  top:-700px;
-  left:-700px;
-  width:100vw;
-  height:100vh;
-  /* background-color: rgba(200,200,200); */
-  /* background-color: rgb(200, 200, 200); */
+  top:-900px;
+  left:-500px;
+  width:1900px;
+  height:1000px;
   background-color: #c7d0c7;
   position:relative;
   display:flex;
@@ -397,7 +447,7 @@ h2{
   left:900px;
 }
 
-#closeModifyBtn, #closeListBtn{
+#closeModifyBtn, #closeListBtn, #closeShowBtn{
   position:relative;
   left:380px;
   cursor:pointer;
@@ -408,4 +458,18 @@ h2{
   left:270px;
   cursor:pointer;
   font-size:40px;
+}
+
+#closeShowBtn{
+  top:-155px;
+  left:300px;
+}
+
+#modal-butn {
+   position:relative;
+   top:170px;
+   left:-250px;
+   background:red;
+   color:white;
+
 }
