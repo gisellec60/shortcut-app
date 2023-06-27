@@ -1,4 +1,5 @@
-# **Visual Studio Code *Shortcuts***
+![Alt text](Banner9.png)
+
 ## Keyboard Shortcuts for Windows and Mac
 
 It has been said that *neccesity is the mother of invention*. The idea for the **VS Code Shortcuts for Windows and Mac** app was birthed from such a need. My only hope is eventually I'll be able to move around VS Code with the speed and efficiency of the development community.
@@ -9,7 +10,7 @@ It has been said that *neccesity is the mother of invention*. The idea for the *
 ## The Layout
 ![Alt text](App.jpg)
 
-**Visual Studio Code Shortcut for Window and Mac** consist of 8 buttons:
+Visual Studio Code Shortcut for Window and Mac consist of 8 buttons:
 - Home
 - General
 - Basic Editing
@@ -19,7 +20,7 @@ It has been said that *neccesity is the mother of invention*. The idea for the *
 - Modify
 - Delete
 
-## How does it work?
+## Usage
 *Home* - This is where the app starts. It contains all the buttons for operation to include a *search box*. The search box allows the user to search for the key sequence for a particular task. As the user begins to type a dropdown box appears with a list of tasks matching what is being typed in the search box(Fig1).  The user can then pick a task from the list to get the key sequence along with a descripton of that task. 
 
 (Fig1)![Alt text](search.jpg) (Fig2)![Alt text](search2.jpg)
@@ -58,7 +59,7 @@ Along the bottom of the Home page are what we call *utility* buttons. These butt
 As I grow as a FullStack Developer my plan is to complete this project by adding the rest of the categories and shortcuts. I would also like to spend some time adding styling to make it more professional looking...**stay tuned!** 
 
 
-
+<video src="shortcuts.mp4" controls title="Title"></video>
 
 
 
