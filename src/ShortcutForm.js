@@ -16,7 +16,7 @@ function ShortcutForm ( {setOpenForm}) {
        
     const handleSubmit = (e) => {
         e.preventDefault()
-        fetch("http://localhost:3001/shortcuts",{
+        fetch("https://gisellec60-json-server-template.onrender.com/shortcuts",{
             method: "POST",
             headers: {
                 "Content-Type" : "application/json"

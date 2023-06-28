@@ -15,7 +15,7 @@ function SearchBar() {
    
   
   useEffect (() => {
-    fetch("http://localhost:3001/shortcuts")
+    fetch("https://gisellec60-json-server-template.onrender.com/shortcuts")
           .then((res) => res.json())
           .then((shortcuts) => { 
              setShortcuts(shortcuts)

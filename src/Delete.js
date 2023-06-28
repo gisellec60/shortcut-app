@@ -13,7 +13,7 @@ function Delete() {
       if(category.current === "Search and Replace")
          category.current = "search"
       
-      fetch("http://localhost:3001/shortcuts")
+      fetch("https://gisellec60-json-server-template.onrender.com/shortcuts")
         .then((res) => res.json())
         .then((shortcuts) =>  {
             const shortcutFilterArray = shortcuts.filter((shortcut)=>{
@@ -23,7 +23,7 @@ function Delete() {
   }
 
   const handleDeleteClick = ((id) => {
-    fetch(`http://localhost:3001/shortcuts/${id}`,{
+    fetch(`https://gisellec60-json-server-template.onrender.com/shortcuts/${id}`,{
       method:"DELETE"
     })
     .then (res => res.json())

@@ -19,7 +19,7 @@ function Modify() {
     category.current = e.target.value
     if(category.current === "Search and Replace")
        category.current = "search"
-    fetch("http://localhost:3001/shortcuts")
+    fetch("https://gisellec60-json-server-template.onrender.com/shortcuts")
     .then((res) => res.json())
     .then((shortcuts) =>  {
       const shortcutFilterArray = shortcuts.filter((shortcut)=>{
