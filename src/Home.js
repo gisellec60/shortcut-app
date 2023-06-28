@@ -1,5 +1,5 @@
 import React from 'react'
-import Search from "./SearchBar"
+
 
 function Home() {
   return (

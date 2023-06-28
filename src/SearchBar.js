@@ -49,15 +49,15 @@ function SearchBar() {
             <CloseIcon id="clearBtn" onClick={clearInput} />} 
         </div>
       </div> 
-       {filteredData.length != 0 && (
+       {filteredData.length !== 0 && (
         <div className="dataResult" >
             {filteredData.map((data) => {
               return(
-                <a key={data.id} className="dataItem">
+                <p key={data.id} className="dataItem">
                   <p onClick={() => {setTaskData(data); setShowTask(true)}} >
                     <Link to={`/${data.id}`}>{data.os} - {data.task}</Link>
                   </p> 
-                </a>
+                </p>
               ) 
             })}         
         </div>

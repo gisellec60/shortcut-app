@@ -1,4 +1,4 @@
-import React,{useState,useRef} from "react"
+import React,{useState} from "react"
 import {useHistory} from "react-router-dom"
 import CloseIcon from '@mui/icons-material/Close';
 
@@ -13,11 +13,9 @@ function ShortcutForm ( {setOpenForm}) {
     const [wChecked, setWChecked] = useState(false) 
     const [mChecked, setMChecked] = useState(false)
     const history = useHistory()
-    const keys = useRef("")  
-    
+       
     const handleSubmit = (e) => {
         e.preventDefault()
-        const key = keys.current
         fetch("http://localhost:3001/shortcuts",{
             method: "POST",
             headers: {
