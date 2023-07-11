@@ -10,10 +10,8 @@ function Delete() {
   
   const handleChange = (e) =>{
       category.current = (e.target.value)
-      if(category.current === "Search and Replace")
-         category.current = "search"
-      
-      fetch("https://gisellec60-json-server-template.onrender.com/shortcuts")
+      // fetch("https://gisellec60-json-server-template.onrender.com/shortcuts")
+      fetch("http://localhost:3000/shortcuts")
         .then((res) => res.json())
         .then((shortcuts) =>  {
             const shortcutFilterArray = shortcuts.filter((shortcut)=>{
@@ -23,7 +21,8 @@ function Delete() {
   }
 
   const handleDeleteClick = ((id) => {
-    fetch(`https://gisellec60-json-server-template.onrender.com/shortcuts/${id}`,{
+    // fetch(`https://gisellec60-json-server-template.onrender.com/shortcuts/${id}`,{
+    fetch(`http://localhost:3000/shortcuts/${id}`,{
       method:"DELETE"
     })
     .then (res => res.json())
@@ -62,7 +61,7 @@ function Delete() {
        <option>General</option>
        <option>Basic</option>
        <option>Search and Replace</option>
-       <option>MultiCursor</option>
+       <option>Multi-Cursor</option>
      </select>
      <div>
          {displayInfo}
@@ -73,13 +72,3 @@ function Delete() {
  }
 
 export default Delete
-// useEffect (() => {
-//   fetch("http://localhost:3001/shortcuts")
-//     .then((res) => res.json())
-//     .then((shortcuts) => {
-//         const shortcutFilterArray = shortcuts.filter((shortcut)=>{
-//         return shortcut.category === category
-//       })
-//       setShortcuts(shortcutFilterArray)
-//   setIsLoaded(true)})
-// },[category])

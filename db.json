@@ -4,7 +4,7 @@
       "id": 1,
       "task": "Quick Open, Go to File...",
       "keys": "Ctrl+P",
-      "decriptions": "Searching for a specific file, especially as the project gets larger, can chew up a lot of time. Even if you already know where the file is, it’s definitely handy to learn this keyboard shortcut to easily open files in your project.",
+      "decriptions": "search and replaceing for a specific file, especially as the project gets larger, can chew up a lot of time. Even if you already know where the file is, it’s definitely handy to learn this keyboard shortcut to easily open files in your project.",
       "category": "general",
       "os": "Windows"
     },
@@ -148,7 +148,7 @@
       "id": 21,
       "task": "Find",
       "keys": "Command F",
-      "category": "search",
+      "category": "search and replace",
       "description": "Open Find box",
       "os": "MacOS"
     },
@@ -156,23 +156,23 @@
       "id": 22,
       "task": "Replace",
       "keys": "Ctrl H",
-      "category": "search",
-      "description": "Show search and replace option",
+      "category": "search and replace",
+      "description": "Show search and replace and replace option",
       "os": "Windows"
     },
     {
       "id": 23,
       "task": "Replace",
       "keys": "Command + Shift + H",
-      "category": "search",
-      "description": "Show search and replace option",
+      "category": "search and replace",
+      "description": "Show search and replace and replace option",
       "os": "MacOS"
     },
     {
       "id": 24,
       "task": "Find Next/Previous",
       "keys": "F3/Shift+F3",
-      "category": "search",
+      "category": "search and replace",
       "description": "Find the next/previous instance of the selection",
       "os": "Windows"
     },
@@ -180,7 +180,7 @@
       "id": 25,
       "task": "Find Next/Previous",
       "keys": "Command+G/Command+Shift+G",
-      "category": "search",
+      "category": "search and replace",
       "description": "Find the next/previous instance of the selection",
       "os": "MacOS"
     },
@@ -188,7 +188,7 @@
       "id": 26,
       "task": "Select All Occurance of Find Match",
       "keys": "Alt+Enter",
-      "category": "search",
+      "category": "search and replace",
       "description": "If you are using the find feature to do certain modifications with all the find results, this keyboard shortcut allows you to select all the find results.",
       "os": "Windows"
     },
@@ -196,7 +196,7 @@
       "id": 27,
       "task": "Select All Occurance of Find Match",
       "keys": "Option+Enter",
-      "category": "search",
+      "category": "search and replace",
       "description": "If you are using the find feature to do certain modifications with all the find results, this keyboard shortcut allows you to select all the find results.",
       "os": "MacOS"
     },
@@ -204,7 +204,7 @@
       "id": 28,
       "task": "Add selection to next Find Match",
       "keys": "Ctrl D",
-      "category": "search",
+      "category": "search and replace",
       "description": "Selects the word at the cursor, or the next occurrence of the current selection. ",
       "os": "Windows"
     },
@@ -212,7 +212,7 @@
       "id": 29,
       "task": "Add selection to next Find Match",
       "keys": "Command+D",
-      "category": "search",
+      "category": "search and replace",
       "description": "Selects the word at the cursor, or the next occurrence of the current selection. ",
       "os": "MacOs"
     },
@@ -221,7 +221,7 @@
       "task": "Move last selection to next Find match",
       "keys": "Ctrl+K Ctrl+D",
       "description": "The Move Last Selection To Next Find Match command in VS Code moves the current selection to the next instance of the selected text.",
-      "category": "search",
+      "category": "search and replace",
       "os": "Windows"
     },
     {
@@ -229,7 +229,7 @@
       "task": "Move last selection to next Find match",
       "keys": "Command+K Command+D",
       "description": "The Move Last Selection To Next Find Match command in VS Code moves the current selection to the next instance of the selected text.",
-      "category": "search",
+      "category": "search and replace",
       "os": "MacOS"
     },
     {
@@ -237,7 +237,7 @@
       "task": "Toggle case-sensitve/regex/whole word",
       "keys": "Alt+C/R/W",
       "description": "",
-      "category": "search",
+      "category": "search and replace",
       "os": "Windows"
     },
     {
@@ -245,7 +245,7 @@
       "task": "Toggle case-sensitve/regex/whole word",
       "keys": "Option+C/R/W",
       "description": "",
-      "category": "search",
+      "category": "search and replace",
       "os": "MacOS"
     },
     {
@@ -253,7 +253,7 @@
       "task": "Insert Cursor ",
       "keys": "Alt+mouseClick",
       "description": "This keyboard shortcut allows you to insert an additional cursor at any point in the file.",
-      "category": "multicursor",
+      "category": "multi-cursor",
       "os": "Windows"
     },
     {
@@ -261,7 +261,7 @@
       "task": "Insert Cursor",
       "keys": "option+mouseClick",
       "description": "This keyboard shortcut allows you to insert an additional cursor at any point in the file.",
-      "category": "multicursor",
+      "category": "multi-cursor",
       "os": "MacOS"
     },
     {
@@ -269,7 +269,7 @@
       "task": "Insert cursor above/below",
       "keys": "Ctrl+Alt+up/down key",
       "description": "Insert cursor above or below each of the current cursor positions.",
-      "category": "multicursor",
+      "category": "multi-cursor",
       "os": "Windows"
     },
     {
@@ -277,7 +277,7 @@
       "task": "Insert cursor above/below",
       "keys": "Command+Option+Up/down Arrow key",
       "description": "Insert cursor above or below each of the current cursor positions.",
-      "category": "multicursor",
+      "category": "multi-cursor",
       "os": "MacOS"
     },
     {
@@ -285,7 +285,7 @@
       "task": "Undo last cursor operation",
       "keys": "Ctrl+U",
       "description": "What if you inserted a cursor by mistake, or realized later that you do not want to insert the cursor at that position anymore? This keyboard shortcut allows you to undo the last cursor insert. This is very helpful when you’ve inserted multiple cursors, as it allows you to keep the others in place and just removes the last inserted one.",
-      "category": "multicursor",
+      "category": "multi-cursor",
       "os": "Windows"
     },
     {
@@ -293,7 +293,7 @@
       "task": "Undo last cursor operation",
       "keys": "Command+U",
       "description": "What if you inserted a cursor by mistake, or realized later that you do not want to insert the cursor at that position anymore? This keyboard shortcut allows you to undo the last cursor insert. This is very helpful when you’ve inserted multiple cursors, as it allows you to keep the others in place and just removes the last inserted one.",
-      "category": "multicursor",
+      "category": "multi-cursor",
       "os": "MacOS"
     },
     {
@@ -301,7 +301,7 @@
       "task": "Insert cursor at end of each line selected",
       "keys": "Shift+Alt+I",
       "description": "Insert the cursor at the end of a highlighted selection.",
-      "category": "multicursor",
+      "category": "multi-cursor",
       "os": "Windows"
     },
     {
@@ -309,7 +309,7 @@
       "task": "Insert cursor at end of each line selected",
       "keys": "Shift+Option+I",
       "description": "Insert the cursor at the end of a highlighted selection.",
-      "category": "multicursor",
+      "category": "multi-cursor",
       "os": "MacOS"
     },
     {
@@ -317,7 +317,7 @@
       "task": "Select current line",
       "keys": "Ctrl+L",
       "description": "A lot of times you need to select the entire current line your cursor is at. This keyboard shortcut makes it very simple.",
-      "category": "multicursor",
+      "category": "multi-cursor",
       "os": "Window"
     },
     {
@@ -325,7 +325,7 @@
       "task": "Select current line",
       "keys": "Command+L",
       "description": "A lot of times you need to select the entire current line your cursor is at. This keyboard shortcut makes it very simple.",
-      "category": "multicursor",
+      "category": "multi-cursor",
       "os": "MacOS"
     },
     {
@@ -333,7 +333,7 @@
       "task": "Select all occurances of current seletion",
       "keys": "Ctrl+Shift+L",
       "description": "With this keyboard shortcut, all you need is to have one occurrence of the text you’re looking for in the file selected. Then, by pressing the keys of the shortcut, you will select all its occurrences in the file.",
-      "category": "multicursor",
+      "category": "multi-cursor",
       "os": "Windows"
     },
     {
@@ -341,7 +341,7 @@
       "task": "Select all occurances of current seletion",
       "keys": "Command+Shift+L",
       "description": "With this keyboard shortcut, all you need is to have one occurrence of the text you’re looking for in the file selected. Then, by pressing the keys of the shortcut, you will select all its occurrences in the file.",
-      "category": "multicursor",
+      "category": "multi-cursor",
       "os": "MacOS"
     },
     {
@@ -349,7 +349,7 @@
       "task": "Select all occurances of current word",
       "keys": "Ctrl+F2",
       "description": "This keyboard shortcut allows you to do the same as the previous one, but without having anything selected. While the cursor is placed on a word, you can press the keys of this shortcut and the current word with all of its occurrences in the current file will be selected.",
-      "category": "multicursor",
+      "category": "multi-cursor",
       "os": "Windows"
     },
     {
@@ -357,13 +357,13 @@
       "task": "Select all occurances of current word",
       "keys": "Command+F2",
       "description": "This keyboard shortcut allows you to do the same as the previous one, but without having anything selected. While the cursor is placed on a word, you can press the keys of this shortcut and the current word with all of its occurrences in the current file will be selected.",
-      "category": "multicursor",
+      "category": "multi-cursor",
       "os": "Windows"
     },
     {
       "task": "Show Command Palette",
       "keys": "Ctrl+Shift+P,F1",
-      "description": "With this keyboard shortcut, you can easily open the command palette. The command palette allows you to search through the commands you can use and execute them.",
+      "description": "With this keyboard shortcut, you can easily open the command palette. The command palette allows you to search and replace through the commands you can use and execute them.",
       "category": "general",
       "id": 49,
       "os": "Windows"
@@ -371,7 +371,7 @@
     {
       "task": "Show Command Palette",
       "keys": "Command+Shift+P,F1",
-      "description": "With this keyboard shortcut, you can easily open the command palette. The command palette allows you to search through the commands you can use and execute them.",
+      "description": "With this keyboard shortcut, you can easily open the command palette. The command palette allows you to search and replace through the commands you can use and execute them.",
       "category": "general",
       "id": 50,
       "os": "MacOS"
@@ -412,7 +412,7 @@
       "id": 55,
       "task": "Quick Open, Go to File...",
       "keys": "command + P",
-      "decriptions": "Searching for a specific file, especially as the project gets larger, can chew up a lot of time. Even if you already know where the file is, it’s definitely handy to learn this keyboard shortcut to easily open files in your project.",
+      "decriptions": "search and replaceing for a specific file, especially as the project gets larger, can chew up a lot of time. Even if you already know where the file is, it’s definitely handy to learn this keyboard shortcut to easily open files in your project.",
       "category": "general",
       "os": "Mac"
     }

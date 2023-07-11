@@ -17,15 +17,18 @@ function Modify() {
   
   const handleChange = (e) =>{
     category.current = e.target.value
-    if(category.current === "Search and Replace") {
-       category.current = "search"
-    }else if (category.current === "Multi-Cursor" ){
-       category.current = "multicursor"
-    }   
-    fetch("https://gisellec60-json-server-template.onrender.com/shortcuts")
+    console.log(category.current.toLowerCase()) 
+    // if(category.current === "Search and Replace") {
+    //    category.current = "search"
+    // }else if (category.current === "Multi-Cursor" ){
+    //    category.current = "multicursor"
+    // }   
+    // fetch("https://gisellec60-json-server-template.onrender.com/shortcuts")
+    fetch("http://localhost:3000/shortcuts")
     .then((res) => res.json())
     .then((shortcuts) =>  {
       const shortcutFilterArray = shortcuts.filter((shortcut)=>{
+        console.log(shortcut.category)
         return shortcut.category === category.current.toLowerCase()
   })
   setShortcuts(shortcutFilterArray)})

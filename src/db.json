@@ -64,85 +64,85 @@
       "id": 13,
       "task": "Find",
       "keys": "Ctrl F",
-      "category": "search"
+      "category": "search and replace"
     },
     {
       "id": 14,
       "task": "Replace",
       "keys": "Ctrl H",
-      "category": "search"
+      "category": "search and replace"
     },
     {
       "id": 15,
       "task": "Find Next/Previous",
       "keys": "F3/Shift F3",
-      "category": "search"
+      "category": "search and replace"
     },
     {
       "id": 16,
       "task": "Select All Occurance of Find Match",
       "keys": "Alt+Enter",
-      "category": "search"
+      "category": "search and replace"
     },
     {
       "id": 17,
       "task": "Add selection to next Find Match",
       "keys": "Ctrl D",
-      "category": "search"
+      "category": "search and replace"
     },
     {
       "id": 18,
       "task": "Move last selection to next Find match",
       "keys": "Ctrl+K Ctrl+D",
-      "category": "search"
+      "category": "search and replace"
     },
     {
       "id": 19,
       "task": "Toggle case-sensitve/regex/whole word",
       "keys": "Alt+C/R/W",
-      "category": "search"
+      "category": "search and replace"
     },
     {
       "id": 20,
       "task": "Insert Cursor",
       "keys": "Alt+Click",
-      "category": "multicursor"
+      "category": "multi-cursor"
     },
     {
       "id": 21,
       "task": "Insert cursor above/below",
       "keys": "Ctrl+Alt+up/down key",
-      "category": "multicursor"
+      "category": "multi-cursor"
     },
     {
       "id": 22,
       "task": "Undo last cursor operation",
       "comand": "Ctrl+U",
-      "category": "multicursor"
+      "category": "multi-cursor"
     },
     {
       "id": 23,
       "task": "Insert cursor at end of each line selected",
       "keys": "Shift+Alt+I",
-      "category": "multicursor"
+      "category": "multi-cursor"
     },
     {
       "id": 24,
       "task": "Select current line",
       "keys": "Ctrl+L",
-      "category": "multicursor"
+      "category": "multi-cursor"
     },
     {
       "id": 25,
       "task": "Select all occurances of current seletion",
       "keys": "Ctrl+Shift+L",
-      "category": "multicursor"
+      "category": "multi-cursor"
     },
     {
       "id": 26,
       "task": "Select all occurances of current word",
       "keys": "Ctrl+F2",
-      "category": "multicursor"
+      "category": "multi-cursor"
     }
   ]
 }
