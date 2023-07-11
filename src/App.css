@@ -20,40 +20,57 @@
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   top: 199px;
   left:430px;
-  min-width:550;
+  min-width:50%; 
   min-height:550px;
-  width:50%;
+  overflow:auto; 
+  resize:both;
 }
+
 .inner-container{
   position:relative;
-  background-color: white;
+  background-color: whitesmoke;
   border-radius:25px ;
   border:none;
   padding: 16px ;
   top:-269px;
-  left:590px;
+  left:550px;
   width:550px;
   height:550px;
   justify-content:center;
   font-size:large; 
   font-weight:bold ;
-  
 }
+
 .inner-container2{
   position:relative;
-  background-color: white;
+  display:flex; 
+  float:left;
+  background-color: whitesmoke;
   border-radius:25px ;
   border:none;
   padding: 16px ; 
   top:-299px;
-  left:430px;
-  min-width:550;
+  left:500px;
   min-height:550px;
-  width:50%;
-
+  overflow:auto; 
+ /* width:auto;
+  height:auto; */
+  resize:both;
 }
-
-
+.wrapper{
+  display:grid;
+  background:whitesmoke;
+  grid-template-columns: 8fr 8fr 8fr;
+  /* grid-template-columns:repeat(3, 1fr ) ; */
+  /* grid-column-gap:1em; 
+  grid-row-gap:1em; */
+  grid-gap:1em;                                      
+  /*grid-auto-rows:100px; */
+  grid-auto-rows:minmax(100px,auto) ;
+  justify-items:stretch;  /* default is stretch */
+  align-items:stretch;   /* default is stretch */
+}
+ 
 .listing {
  position:relative;
  display:flex;
@@ -77,14 +94,13 @@
 
 .task-listing {
   position:relative;
-  display:inline-block;
-  top:-80px;
+  top:75px;
   font-size:large; 
   font-weight:bold ;
   padding: 0px 20px 0px  ;
   line-height:2.0;
   text-align:left;
-  left:0px;
+  left:-90px;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
  }
 
@@ -256,7 +272,7 @@ width:260px;
 }
 #pick-del{
   position:relative;
-  top:-80px;
+  top:-70px;
 }
 #win, #mac{
   position:relative;
@@ -358,7 +374,7 @@ width:260px;
 
 .menu-trigger-del {
   position:relative;
-  top: -95px;
+  top: -80px;
   left:5px;
   width:120px;
   height: 30px;
@@ -443,21 +459,30 @@ width:260px;
 }
 .h2-listing{
   position:relative;
-  top:-80px;
-  left:00px;
+  top:-10px;
+  left: 290px;
+  /* text-justify: center; */
 }
 
-#closeModifyBtn, #closeListBtn, #closeShowBtn{
+#closeModifyBtn, #closeShowBtn{
   position:relative;
-  left:380px;
+  left:-380px;
+  cursor:pointer;
+  font-size:30px;
+}
+.closeListBtn {
+  position:relative;
+  /* left:650px; */
+  text-justify: auto;
   cursor:pointer;
   font-size:40px;
 }
+
 #closeAddBtn{
   position:relative;
   left:270px;
   cursor:pointer;
-  font-size:40px;
+  font-size:30px;
 }
 
 #closeShowBtn{
