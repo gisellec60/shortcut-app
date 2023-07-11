@@ -17,8 +17,11 @@ function Modify() {
   
   const handleChange = (e) =>{
     category.current = e.target.value
-    if(category.current === "Search and Replace")
+    if(category.current === "Search and Replace") {
        category.current = "search"
+    }else if (category.current === "Multi-Cursor" ){
+       category.current = "multicursor"
+    }   
     fetch("https://gisellec60-json-server-template.onrender.com/shortcuts")
     .then((res) => res.json())
     .then((shortcuts) =>  {
@@ -69,7 +72,7 @@ function Modify() {
             <option>General</option>
             <option>Basic</option>
             <option>Search and Replace</option>
-            <option>MultiCursor</option>
+            <option>Multi-Cursor</option>
           </select>
            {displayInfo}
            {openModal && <Modal closeModal={setOpenModal}
