@@ -18,11 +18,6 @@ function Modify() {
   const handleChange = (e) =>{
     category.current = e.target.value
     console.log(category.current.toLowerCase()) 
-    // if(category.current === "Search and Replace") {
-    //    category.current = "search"
-    // }else if (category.current === "Multi-Cursor" ){
-    //    category.current = "multicursor"
-    // }   
     // fetch("https://gisellec60-json-server-template.onrender.com/shortcuts")
     fetch("http://localhost:3000/shortcuts")
     .then((res) => res.json())
@@ -69,7 +64,7 @@ function Modify() {
     <div className="container" style={!showContainer ? handleShow:null} >
     <CloseIcon id="closeModifyBtn" onClick={() => {handleClick();setShowContainer(!showContainer) }} />  
          <h3 id="pick-del">Pick a Category </h3>
-         <select className="menu-trigger-del" value={category.current} 
+         <select className="menu-trigger-edit" value={category.current} 
              onChange={handleChange} > 
             <option></option>   
             <option>General</option>

@@ -40,7 +40,7 @@ function Delete() {
         <div className="listing" >
            <div key={shortcut.id}>{shortcut.os} - {shortcut.task} {shortcut.keys}</div> 
            <button onClick={() => handleDeleteClick(shortcut.id)} 
-           className="editButn"> Delete </button>
+           className="delButn"> Delete </button>
         </div>
       </div>   
     )

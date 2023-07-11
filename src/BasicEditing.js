@@ -21,7 +21,7 @@ function BasicEditing() {
             <CloseIcon className="closeListBtn" 
             onClick={() => {handleClick();setShowContainer(!showContainer) }} />  
         <h2 className="h2-listing">Basic Editing</h2>
-        <div className="task-listing" >                              
+        <div>                              
             {displayInfo}
         </div>
       </div>  

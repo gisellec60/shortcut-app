@@ -19,7 +19,7 @@ function General () {
             <CloseIcon className="closeListBtn" 
             onClick={() => {handleClick();setShowContainer(!showContainer) }} />
               <h2 className="h2-listing">General</h2>
-              <div className="task-listing" >                               
+              <div>                               
                   {displayInfo}
             </div>
         </div>   

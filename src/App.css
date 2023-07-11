@@ -94,7 +94,8 @@
 
 .task-listing {
   position:relative;
-  top:75px;
+  display:flex;
+  top:70px;
   font-size:large; 
   font-weight:bold ;
   padding: 0px 20px 0px  ;
@@ -188,7 +189,7 @@ ul {
   display: block;
 } 
 
-.editButn {
+.editButn, .delButn{
   position:relative;
   display:flex;
   flex-direction: row;
@@ -198,9 +199,15 @@ ul {
   top:5px;
   left:10px;
   border-radius: 10px;
- 
-  
+  background:crimson;
+  color:white;
+  font-weight:bolder;
+ }
+
+.editButn {
+  background:blue;
 }
+
 .add-desc{
   position:relative;
   
@@ -372,16 +379,23 @@ width:260px;
   left:10px;
  }
 
-.menu-trigger-del {
+.menu-trigger-del, .menu-trigger-edit {
   position:relative;
   top: -80px;
-  left:5px;
+  left:-5px;
   width:150px;
   height: 30px;
   border: radius 50%;
   overflow:hidden;
   cursor:pointer;
+  background:crimson;
+  color:white;
 }
+
+.menu-trigger-edit{
+  background:blue;
+}
+
 .modalBackground {
   top:-900px;
   left:-500px;
@@ -498,3 +512,15 @@ width:260px;
    color:white;
 
 }
+.listButn {
+  position:relative;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  width:auto;
+  height:25px;
+  top:px;
+  left:10px;
+  border-radius: 10px;
+  font-style:bold;
+}   

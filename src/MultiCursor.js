@@ -21,7 +21,7 @@ function MultiCursor() {
             <CloseIcon className="closeListBtn" 
             onClick={() => {handleClick();setShowContainer(!showContainer) }} />  
         <h2 className="h2-listing">Multi-Cursor</h2>
-        <div className="task-listing" >                               
+        <div>                               
             {displayInfo}
         </div>
       </div>   
