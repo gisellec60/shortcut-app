@@ -53,19 +53,19 @@ function Delete() {
 
   return (
    <div className="container" style={!showContainer ? handleShow:null}>
-   <CloseIcon id="closeModifyBtn" onClick={() => {handleClick();setShowContainer(!showContainer) }} />
-   <h3 id="pick-del">Pick a Category </h3>
-     <select className="menu-trigger-del" value={category.current} 
+       <CloseIcon id="closeModifyBtn" onClick={() => {handleClick();setShowContainer(!showContainer) }} />
+       <h3 id="pick-del">Pick a Category </h3>
+         <select className="menu-trigger-del" value={category.current} 
           onChange={handleChange} > 
-      <option></option>
-       <option>General</option>
-       <option>Basic</option>
-       <option>Search and Replace</option>
-       <option>Multi-Cursor</option>
-     </select>
-     <div>
-         {displayInfo}
-     </div>
+          <option></option>
+          <option>General</option>
+          <option>Basic</option>
+          <option>Search and Replace</option>
+          <option>Multi-Cursor</option>
+        </select>
+        <div>
+            {displayInfo}
+        </div>
   </div>
   )
 

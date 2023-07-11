@@ -36,7 +36,7 @@ function Modal({closeModal, patchId, patchShortcut, patchKey, patchUpdate,
     return (
     <div className="modalBackground">
         <div className="modalContainer">
-        <div className="titleCloseBtn">
+          <div className="titleCloseBtn">
            <button onClick={() => closeModal(false)}>X</button>
         </div>    
           <div className="title">

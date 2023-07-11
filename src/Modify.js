@@ -61,8 +61,8 @@ function Modify() {
   const handleShow = {display:"none"}
 
   return (
-    <div className="container" style={!showContainer ? handleShow:null} >
-    <CloseIcon id="closeModifyBtn" onClick={() => {handleClick();setShowContainer(!showContainer) }} />  
+    <div className="inner.container2" style={!showContainer ? handleShow:null} >
+         <CloseIcon id="closeModifyBtn" onClick={() => {handleClick();setShowContainer(!showContainer) }} />  
          <h3 id="pick-del">Pick a Category </h3>
          <select className="menu-trigger-edit" value={category.current} 
              onChange={handleChange} > 
@@ -77,7 +77,7 @@ function Modify() {
               patchId={patchId} patchShortcut={patchShortcut} category={category.current} 
               patchKey={patchKey} patchOs={patchOs} patchDesc={patchDesc} 
               patchUpdate={patchUpdate} />}
-   </div>
+    </div>
   )
  }
 

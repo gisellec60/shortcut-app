@@ -1,14 +1,6 @@
 {
   "shortcuts": [
     {
-      "id": 1,
-      "task": "Quick Open, Go to File...",
-      "keys": "Ctrl+P",
-      "decriptions": "search and replaceing for a specific file, especially as the project gets larger, can chew up a lot of time. Even if you already know where the file is, it’s definitely handy to learn this keyboard shortcut to easily open files in your project.",
-      "category": "general",
-      "os": "Windows"
-    },
-    {
       "id": 2,
       "task": "Close Window",
       "keys": "Ctrl+Shift+W",

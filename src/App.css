@@ -10,7 +10,9 @@
    text-decoration-line: underline;
  }
 .container{
-  position:fixed;
+  position:relative;
+  display:flex; 
+  float:left;
   background-color:white;
   border-radius:25px ;
   border:none;
@@ -18,9 +20,9 @@
   font-size:large; 
   font-weight:bold ;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  top: 199px;
-  left:430px;
-  min-width:50%; 
+  top: -299px;
+  left:660px;
+  min-width:550px; 
   min-height:550px;
   overflow:auto; 
   resize:both;
@@ -57,30 +59,17 @@
   height:auto; */
   resize:both;
 }
-.wrapper{
-  display:grid;
-  background:whitesmoke;
-  grid-template-columns: 8fr 8fr 8fr;
-  /* grid-template-columns:repeat(3, 1fr ) ; */
-  /* grid-column-gap:1em; 
-  grid-row-gap:1em; */
-  grid-gap:1em;                                      
-  /*grid-auto-rows:100px; */
-  grid-auto-rows:minmax(100px,auto) ;
-  justify-items:stretch;  /* default is stretch */
-  align-items:stretch;   /* default is stretch */
-}
  
 .listing {
  position:relative;
  display:flex;
- top:-60px;
+ top:80px;
  font-size:large; 
  font-weight:bold ;
- text-align: center;
- left : 0px;
+ left :-250px;
  padding: 0px 20px 0px  ;
  line-height:2.0;
+ text-align:left;
  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
@@ -275,11 +264,12 @@ width:260px;
 #pick-category{
   position:relative;
   top:130px;
-  left:-30px;
+  left:30px;
 }
 #pick-del{
   position:relative;
-  top:-70px;
+  top:-30px;
+  left:155px;
 }
 #win, #mac{
   position:relative;
@@ -381,8 +371,8 @@ width:260px;
 
 .menu-trigger-del, .menu-trigger-edit {
   position:relative;
-  top: -80px;
-  left:-5px;
+  top: 30px;
+  left:px;
   width:150px;
   height: 30px;
   border: radius 50%;
@@ -397,19 +387,21 @@ width:260px;
 }
 
 .modalBackground {
-  top:-900px;
-  left:-500px;
-  width:1900px;
-  height:1000px;
-  background-color: #c7d0c7;
+  top:-100px;
+  left:-700px;
+  width:500px;
+  height:500px;
+  /* background-color: #c7d0c7; */
+  border: 10px color red;
   position:relative;
-  display:flex;
   justify-content:center;
   align-items:center;
 }
 .modalContainer {
-  width:600px;
-  height:500px;
+  position:relative;
+  bottom:970px;
+  width:700px;
+  height:700px;
   border-radius: 12px;
   background-color: white;
   box-shadow:rgba(0,0,0,0.35) 0px 5px 15px;
@@ -480,7 +472,7 @@ width:260px;
 
 #closeModifyBtn, #closeShowBtn{
   position:relative;
-  left:-460px;
+  left:5px;
   cursor:pointer;
   font-size:30px;
 }
