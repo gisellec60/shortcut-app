@@ -32,40 +32,39 @@ function Modal({closeModal, patchId, patchShortcut, patchKey, patchUpdate,
             [e.target.name] : e.target.value 
          })
     })
-   
     return (
     <div className="modalBackground">
-        <div className="modalContainer">
-          <div className="titleCloseBtn">
-           <button onClick={() => closeModal(false)}>X</button>
-        </div>    
-          <div className="title">
-          <h1>Edit Task</h1>
-          </div>
-          <div className="body">
-          <form onSubmit={handleSubmit}>
-            <label className="label-modal">Task
-              <input className="modal-input" type="text" name="task" 
-                onChange={handleChange} value={formData.task} />
-            </label>
-            <label className="label-modal"> Keys
-            <input className="modal-input" type="text" name="keys"
-               onChange={handleChange} value={formData.keys} />
-            </label>  
-            <label className="label-desc"> Description
-            <input id="modal-input-desc" type="text" name="description"
-               onChange={handleChange} value={formData.description} />
-            </label>  
-            <label className="label-os"> OS
-            <input id="modal-input-os" type="text" name="os"
-               onChange={handleChange} value={formData.os} />
-            </label>  
-            <button id="modal-butn" type="submit">Submit</button>
-        </form>
-          </div>
-          <div className="footer">
-            <button onClick={() => closeModal(false)} id="cancelBtn">Cancel</button>
-          </div>
+        <div className="modalContainer"> 
+            <div className="titleCloseBtn"> 
+               <button onClick={() => closeModal(false)}>X</button>
+            </div>      
+            <div className="title">
+                <h1>Edit Task</h1>
+            </div>
+            <div className="body">
+                <form onSubmit={handleSubmit}>
+                    <label className="label-modal">Task
+                        <input className="modal-input" type="text" name="task" 
+                        onChange={handleChange} value={formData.task} />
+                    </label>
+                    <label className="label-modal"> Keys
+                         <input className="modal-input" type="text" name="keys"
+                         onChange={handleChange} value={formData.keys} />
+                    </label>  
+                    <label className="modal-label-desc"> Description
+                         <input id="modal-input-desc" type="text" name="description"
+                          onChange={handleChange} value={formData.description} />
+                    </label>  
+                    <label className="label-os"> OS
+                         <input id="modal-input-os" type="text" name="os"
+                         onChange={handleChange} value={formData.os} />
+                    </label>  
+                    <button id="modal-butn" type="submit">Submit</button>
+                </form>
+            </div>
+            <div className="footer">
+                <button onClick={() => closeModal(false)} id="cancelBtn">Cancel</button>
+            </div>
         </div>
     </div>  
   )

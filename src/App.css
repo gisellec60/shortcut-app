@@ -20,7 +20,7 @@
   font-size:large; 
   font-weight:bold ;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  top: -299px;
+  top: -290px;
   left:660px;
   min-width:550px; 
   min-height:550px;
@@ -30,17 +30,23 @@
 
 .inner-container{
   position:relative;
+  display:flex; 
+  float:left;
   background-color: whitesmoke;
   border-radius:25px ;
   border:none;
   padding: 16px ;
   top:-269px;
   left:550px;
-  width:660px;
-  height:550px;
+  /* width:660px;
+  height:550px; */
   justify-content:center;
   font-size:large; 
   font-weight:bold ;
+  min-width:550px; 
+  min-height:550px;
+  overflow:auto; 
+  resize:both;
 }
 
 .inner-container2{
@@ -100,7 +106,6 @@
   padding: 0px 20px 0px  ;
   line-height:2.0;
   text-align:left;
-  left:-90px;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
  }
 
@@ -237,7 +242,7 @@ ul {
   padding:15px,15px,15px,25px;
   border-left: 5px;
 }
-.label-desc{
+.label-desc, .modal-label-desc{
   position:relative;
   top:10px;
   left:99px;
@@ -247,11 +252,15 @@ ul {
   border-left: 5px;
 }
 
+.modal-label-desc{
+  left:9px;
+}
+
 .label-os{
   position:relative;
   width:100px;
   top:70px;
-  left:-175px;
+  left:-160px;
   font-size:large; 
   font-weight:bold ;
   padding:15px,15px,15px,25px;
@@ -392,7 +401,7 @@ width:260px;
   position:relative;
   width:70px;
   top:0px;
-  left:10px;
+  left:190px;
 }
 #modal-input-desc{
   position:relative;
@@ -420,27 +429,30 @@ width:260px;
 }
 
 .modalBackground {
-  top:-100px;
-  left:-700px;
-  width:500px;
-  height:500px;
-  /* background-color: #c7d0c7; */
-  border: 10px color red;
   position:relative;
+  top:-900px;
+  left:0px;
+  width:1900px;
+  height:1900px;
+  background-color: #c7d0c7;
   justify-content:center;
   align-items:center;
 }
+
 .modalContainer {
   position:relative;
+  display: inline-block;
+  top:600px;
   bottom:970px;
-  width:700px;
-  height:700px;
+  width:500px;
+  height:500px;
   border-radius: 12px;
-  background-color: white;
+  background-color: whitesmoke;
   box-shadow:rgba(0,0,0,0.35) 0px 5px 15px;
   display:flex;
   flex-direction:column;
   padding:25px;
+  left:-100px; 
 }
 
 .addContainer {
@@ -497,9 +509,9 @@ width:260px;
   color:white;
 }
 .h2-listing{
-  position:relative;
-  top:-10px;
-  left: 290px;
+  position:fixed;
+  top:180px;
+  left:880px;
   /* text-justify: center; */
 }
 
@@ -510,7 +522,7 @@ width:260px;
   font-size:30px;
  }
 .closeListBtn {
-  position:relative;
+  position:fixed;
   /* left:650px; */
   text-justify: auto;
   cursor:pointer;

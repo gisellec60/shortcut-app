@@ -137,22 +137,6 @@
       "os": "MacOs"
     },
     {
-      "id": 21,
-      "task": "Find",
-      "keys": "Command F",
-      "category": "search and replace",
-      "description": "Open Find box",
-      "os": "MacOS"
-    },
-    {
-      "id": 22,
-      "task": "Replace",
-      "keys": "Ctrl H",
-      "category": "search and replace",
-      "description": "Show search and replace and replace option",
-      "os": "Windows"
-    },
-    {
       "id": 23,
       "task": "Replace",
       "keys": "Command + Shift + H",

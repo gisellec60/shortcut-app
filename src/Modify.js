@@ -8,6 +8,7 @@ function Modify() {
   const [shortcuts, setShortcuts] = useState([])
   const [openModal, setOpenModal] = useState(false)
   const [showContainer, setShowContainer] = useState(true)
+  const [hideContainer, setHideContainer] = useState(true)
   const [patchId, setPatchId] = useState(0)
   const [patchShortcut, setPatchShortcut] = useState("")
   const [patchKey, setPatchKey] = useState("")
@@ -18,14 +19,12 @@ function Modify() {
   
   const handleChange = (e) =>{
     category.current = e.target.value
-    console.log(category.current.toLowerCase()) 
     // fetch("https://gisellec60-json-server-template.onrender.com/shortcuts")
     fetch("http://localhost:3000/shortcuts")
     .then((res) => res.json())
     .then((shortcuts) =>  {
       const shortcutFilterArray = shortcuts.filter((shortcut)=>{
-        console.log(shortcut.category)
-        return shortcut.category === category.current.toLowerCase()
+          return shortcut.category === category.current.toLowerCase()
   })
   setShortcuts(shortcutFilterArray)})
   }
@@ -61,8 +60,10 @@ function Modify() {
   )
 
   const handleShow = {display:"none"}
+  const handleVisible = {visibility:"hidden"}
 
   return (
+   <div> 
     <div className="container" style={!showContainer ? handleShow:null} >
          <CloseIcon id="closeModifyBtn" onClick={() => {handleClick();setShowContainer(!showContainer) }} />  
          <h3 id="pick-del">Pick a Category </h3>
@@ -77,11 +78,13 @@ function Modify() {
           <div>
            {displayInfo}
           </div>
+        </div>  
            {openModal && <Modal closeModal={setOpenModal}
               patchId={patchId} patchShortcut={patchShortcut} category={category.current} 
               patchKey={patchKey} patchOs={patchOs} patchDesc={patchDesc} 
               patchUpdate={patchUpdate} />}
-    </div>
+      </div>      
+   
   )
  }
 
