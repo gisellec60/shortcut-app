@@ -30,23 +30,17 @@
 
 .inner-container{
   position:relative;
-  display:flex; 
-  float:left;
   background-color: whitesmoke;
   border-radius:25px ;
   border:none;
   padding: 16px ;
   top:-269px;
   left:550px;
-  /* width:660px;
-  height:550px; */
+  width:660px;
+  height:550px;
   justify-content:center;
   font-size:large; 
   font-weight:bold ;
-  min-width:550px; 
-  min-height:550px;
-  overflow:auto; 
-  resize:both;
 }
 
 .inner-container2{
@@ -58,7 +52,7 @@
   border:none;
   padding: 16px ; 
   top:-299px;
-  left:600px;
+  left:650px;
   min-height:550px;
   overflow:auto; 
  /* width:auto;
@@ -260,7 +254,7 @@ ul {
   position:relative;
   width:100px;
   top:70px;
-  left:-160px;
+  left:-200px;
   font-size:large; 
   font-weight:bold ;
   padding:15px,15px,15px,25px;
@@ -392,16 +386,16 @@ width:260px;
   height:30px;
 }
 
-.modal-input, #modal-input-os #modal-input-desc {
+.modal-input, #modal-input-os, #modal-input-desc {
   width:200px;
   height:30px;
-}
+  }
 
 #modal-input-os{
   position:relative;
   width:70px;
   top:0px;
-  left:190px;
+  left:240px;
 }
 #modal-input-desc{
   position:relative;
@@ -551,7 +545,7 @@ width:260px;
 #modal-butn {
    position:relative;
    top:170px;
-   left:-250px;
+   left:-30px;
    background:red;
    color:white;
 
