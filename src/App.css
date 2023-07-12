@@ -74,7 +74,7 @@
  top:80px;
  font-size:large; 
  font-weight:bold ;
- left :-250px;
+ left:10px;
  padding: 0px 20px 0px  ;
  line-height:2.0;
  text-align:left;
@@ -292,9 +292,9 @@ width:260px;
   left:-20px;
 }
 #pick-del{
-  position:relative;
-  top:-30px;
-  left:155px;
+  position:fixed;
+  top:170px;
+  left:955px;
 }
 #win, #mac{
   position:relative;
@@ -403,9 +403,9 @@ width:260px;
  }
 
 .menu-trigger-del, .menu-trigger-edit {
-  position:relative;
-  top: 30px;
-  left:px;
+  position:fixed;
+  top: 230px;
+  left:955px;
   width:150px;
   height: 30px;
   border: radius 50%;
@@ -504,8 +504,8 @@ width:260px;
 }
 
 #closeModifyBtn, #closeShowBtn{
-  position:relative;
-  left:5px;
+  position:fixed;
+  left:680px;
   cursor:pointer;
   font-size:30px;
  }
