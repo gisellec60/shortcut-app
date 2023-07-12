@@ -195,29 +195,43 @@ ul {
   justify-content: center;
   width:70px;
   height:25px;
-  top:5px;
-  left:10px;
+  top:10px;
+  left:15px;
   border-radius: 10px;
-  background:crimson;
-  color:white;
+  /* background:crimson; */
+  /* color:white; */
   font-weight:bolder;
   cursor:pointer;
  }
 
-.editButn {
+.taskButn, .taskButnDel {
+  position:relative;
+  display:flex;
+  top:10px;
+  width:auto;
+  border-radius: 2px;
+  height:25px;
+  left:10px;
   background:blue;
+  color :white;
+  font-weight:bolder;
+}
+
+.taskButnDel{
+  background:red;
 }
 
 .add-desc{
   position:relative;
-  
+  top:-50px;
+  left:470px;
   width:300px;
   height:50px;
 }
 #label-desc-add{
   position:relative;
-  top:90px;
-  left:0px;
+  top:150px;
+  left:-500px;
   font-size:large; 
   font-weight:bold ;
   padding:15px,15px,15px,25px;
@@ -275,7 +289,7 @@ width:260px;
 #pick-category{
   position:relative;
   top:130px;
-  left:30px;
+  left:-20px;
 }
 #pick-del{
   position:relative;
@@ -321,7 +335,7 @@ width:260px;
   border-radius: 10px;
 }
                      
-.label {
+.label, .label-key {
   position:relative;
   font-size:large; 
   font-weight:bold ;
@@ -329,6 +343,12 @@ width:260px;
   border-left: 5px;
   top:50px;
 }
+.label-key{
+  position:relative;
+  left:40px;
+
+}
+
 .label-modal {
   position:relative;
   font-size:large; 
@@ -357,6 +377,8 @@ width:260px;
 }
 
 .inputsize {
+  position:relative;
+  left:10px;
   width:200px;
   height:30px;
 }

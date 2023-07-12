@@ -38,7 +38,8 @@ function Delete() {
     return (
       <div >
         <div className="listing" >
-           <div key={shortcut.id}>{shortcut.os} - {shortcut.task} {shortcut.keys}</div> 
+           <div key={shortcut.id}>{shortcut.os} - {shortcut.task}</div> 
+           <button className="taskButnDel">{shortcut.keys}</button>
            <button onClick={() => handleDeleteClick(shortcut.id)} 
            className="delButn"> Delete </button>
         </div>

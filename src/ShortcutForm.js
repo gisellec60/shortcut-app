@@ -70,7 +70,7 @@ function ShortcutForm ( {setOpenForm}) {
               <input className="inputsize" type="text" name="task" 
                 onChange ={handleChange}  value={formData.task}/>
             </label>
-            <label className="label"> Keys
+            <label className="label-key"> Keys
             <input className="inputsize" type="text" name="keys"
                onChange={handleChange} value={formData.keys} />
             </label> 

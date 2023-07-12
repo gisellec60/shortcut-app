@@ -2,6 +2,7 @@ import React,{useState,useRef} from 'react'
 import Modal from "./Modal"
 import CloseIcon from '@mui/icons-material/Close';
 import {useHistory} from "react-router-dom"
+import Button from '@mui/material/Button';
 
 function Modify() {
   const [shortcuts, setShortcuts] = useState([])
@@ -44,7 +45,8 @@ function Modify() {
     return (
       <div> 
         <div className="listing" >
-          <div key={shortcut.id}>{shortcut.os} - {shortcut.task}: {shortcut.keys}</div> 
+          <div key={shortcut.id}>{shortcut.os} - {shortcut.task}:</div> 
+          <button className="taskButn">{shortcut.keys}</button>
            <button onClick={() => { 
              setOpenModal(true); setPatchKey(shortcut.keys); setPatchId(shortcut.id) ;
                setPatchShortcut(shortcut.task); setPatchDesc(shortcut.description);
