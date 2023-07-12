@@ -59,7 +59,15 @@
   height:auto; */
   resize:both;
 }
- 
+.search-container{
+  position:relative;
+  top:-400px;
+  background-color: whitesmoke;
+  width:550px;
+  height:500px;
+  left:690px;
+} 
+
 .listing {
  position:relative;
  display:flex;
@@ -74,11 +82,13 @@
 }
 
 #search-listing{
+  position:relative;
   font-weight:bold ;
   font-size:large;
   line-height:2.0;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-
+  width:500px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  left:10px;
 }
 
 .task-listing {
@@ -191,6 +201,7 @@ ul {
   background:crimson;
   color:white;
   font-weight:bolder;
+  cursor:pointer;
  }
 
 .editButn {
@@ -475,13 +486,20 @@ width:260px;
   left:5px;
   cursor:pointer;
   font-size:30px;
-}
+ }
 .closeListBtn {
   position:relative;
   /* left:650px; */
   text-justify: auto;
   cursor:pointer;
   font-size:40px;
+}
+
+#clearShowBtn{
+  position:fixed;
+  left:700px;
+  bottom:540px;
+  font-size:30px;
 }
 
 #closeAddBtn{

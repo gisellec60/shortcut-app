@@ -42,7 +42,7 @@ function Modify() {
   
   const displayInfo = shortcuts.map((shortcut) => {
     return (
-      <div  key={shortcut.id}>
+      <div> 
         <div className="listing" >
           <div key={shortcut.id}>{shortcut.os} - {shortcut.task}: {shortcut.keys}</div> 
            <button onClick={() => { 
@@ -61,7 +61,7 @@ function Modify() {
   const handleShow = {display:"none"}
 
   return (
-    <div className="inner.container2" style={!showContainer ? handleShow:null} >
+    <div className="container" style={!showContainer ? handleShow:null} >
          <CloseIcon id="closeModifyBtn" onClick={() => {handleClick();setShowContainer(!showContainer) }} />  
          <h3 id="pick-del">Pick a Category </h3>
          <select className="menu-trigger-edit" value={category.current} 
@@ -72,7 +72,9 @@ function Modify() {
             <option>Search and Replace</option>
             <option>Multi-Cursor</option>
           </select>
+          <div>
            {displayInfo}
+          </div>
            {openModal && <Modal closeModal={setOpenModal}
               patchId={patchId} patchShortcut={patchShortcut} category={category.current} 
               patchKey={patchKey} patchOs={patchOs} patchDesc={patchDesc} 
