@@ -2,13 +2,11 @@ import React,{useState,useRef} from 'react'
 import Modal from "./Modal"
 import CloseIcon from '@mui/icons-material/Close';
 import {useHistory} from "react-router-dom"
-import Button from '@mui/material/Button';
 
 function Modify() {
   const [shortcuts, setShortcuts] = useState([])
   const [openModal, setOpenModal] = useState(false)
   const [showContainer, setShowContainer] = useState(true)
-  const [hideContainer, setHideContainer] = useState(true)
   const [patchId, setPatchId] = useState(0)
   const [patchShortcut, setPatchShortcut] = useState("")
   const [patchKey, setPatchKey] = useState("")
@@ -19,8 +17,8 @@ function Modify() {
   
   const handleChange = (e) =>{
     category.current = e.target.value
-    fetch("https://gisellec60-json-server-template.onrender.com/shortcuts")
-    // fetch("http://localhost:3000/shortcuts")
+    // fetch("https://gisellec60-json-server-template.onrender.com/shortcuts")
+    fetch("http://localhost:3000/shortcuts")
     .then((res) => res.json())
     .then((shortcuts) =>  {
       const shortcutFilterArray = shortcuts.filter((shortcut)=>{

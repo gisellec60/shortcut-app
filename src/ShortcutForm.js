@@ -16,8 +16,8 @@ function ShortcutForm ( {setOpenForm}) {
        
     const handleSubmit = (e) => {
         e.preventDefault()
-        fetch("https://gisellec60-json-server-template.onrender.com/shortcuts",{
-            // fetch("http://localhost:3000/shortcuts", {
+        // fetch("https://gisellec60-json-server-template.onrender.com/shortcuts",{
+            fetch("http://localhost:3000/shortcuts", {
             method: "POST",
             headers: {
                 "Content-Type" : "application/json"
@@ -52,10 +52,10 @@ function ShortcutForm ( {setOpenForm}) {
     const handleShow = {display:"none"}
 
     const handleWindows = () => {
-         setWChecked(!wChecked)
-         setMChecked(false)
+        setWChecked(!wChecked)
+        setMChecked(false)
     }
-    const handleMac = () => {
+    const handleMac = (e) => {
         setMChecked(!mChecked)
         setWChecked(false)
      }
@@ -94,7 +94,8 @@ function ShortcutForm ( {setOpenForm}) {
                <label id="label-mac">
                     MacOs
                         <input type="checkbox" id="mac" name="os" 
-                        checked={mChecked} onChange={(e)=>{handleMac(e);e.target.value="MacOS"}}/>
+                        checked={mChecked} onChange={()=>{handleMac();setFormData({...formData,os:"MacOs"})}}/>
+                        {/* checked={mChecked} onChange={(e)=>{handleMac(e);e.target.value="MacOS"}}/> */}
                </label>
                <button className="butn" id="addButn" type="submit">Submit</button>
         </form>
