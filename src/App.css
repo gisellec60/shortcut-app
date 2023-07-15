@@ -342,7 +342,7 @@ width:260px;
 #pick-del{
   position:fixed;
   top:170px;
-  left:955px;
+  left:755px;
 }
 #win, #mac{
   position:relative;
@@ -453,7 +453,7 @@ width:260px;
 .menu-trigger-del, .menu-trigger-edit {
   position:fixed;
   top: 230px;
-  left:955px;
+  left:755px;
   width:150px;
   height: 30px;
   border: radius 50%;
@@ -556,7 +556,7 @@ width:260px;
 
 #closeModifyBtn, #closeShowBtn{
   position:fixed;
-  left:680px;
+  left:580px;
   cursor:pointer;
   font-size:30px;
  }
