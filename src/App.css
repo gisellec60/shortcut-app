@@ -278,11 +278,17 @@ ul {
   left:10px;
   background:blue;
   color :white;
-  font-weight:bolder;
+  font-weight:bold;
 }
 
 .taskButnDel{
   background:red;
+}
+
+.delbutn{
+  background:red;
+  color:white;
+  cursor:pointer;
 }
 
 .add-desc{

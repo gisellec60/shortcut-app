@@ -34,18 +34,34 @@ function Delete() {
      setShortcuts(upDatedShortcuts)
   })
                           
-  const displayInfo = shortcuts.map((shortcut) => {
-    return (
-      <div >
-        <div className="listing" >
-           <div key={shortcut.id}>{shortcut.os} - {shortcut.task}</div> 
-           <button className="taskButnDel">{shortcut.keys}</button>
-           <button onClick={() => handleDeleteClick(shortcut.id)} 
-           className="delButn"> Delete </button>
-        </div>
-      </div>   
-    )
-  })
+  const displayInfo =                                            
+  <table id='tableSize'>
+    <tbody>
+     <tr className="ttask-listing">
+        <th className='th-system' > System</th>
+        <th  className='th-task'>Task</th>
+        <th  className='th-keys'>Keys</th>
+        <th  className='th-edit'>Action</th>
+     </tr>    
+     {shortcuts.map((shortcut) => { 
+       return (
+           <tr key={shortcut.id} id='tr' >
+               <td className = "td-edit">{shortcut.os}</td>   
+                <td className = "td-edit">{shortcut.task}</td> 
+                <td className = "td-edit">
+                   <button className = "taskButnDel" > {shortcut.keys} </button>
+                </td>
+                 <td className="td">   
+                    <button onClick={() => handleDeleteClick(shortcut.id)} className="delbutn" >
+                       delete
+                    </button> 
+                </td>
+           </tr> 
+       ) 
+       
+    })}
+   </tbody> 
+</table>
   
   const handleClick = (()=>
       history.push("/")
@@ -73,3 +89,15 @@ function Delete() {
  }
 
 export default Delete
+// const displayInfo = shortcuts.map((shortcut) => {
+//   return (
+//     <div >
+//       <div className="listing" >
+//          <div key={shortcut.id}>{shortcut.os} - {shortcut.task}</div> 
+//          <button className="taskButnDel">{shortcut.keys}</button>
+//          <button onClick={() => handleDeleteClick(shortcut.id)} 
+//          className="delButn"> Delete </button>
+//       </div>
+//     </div>   
+//   )
+// })
