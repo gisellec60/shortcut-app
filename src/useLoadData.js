@@ -25,14 +25,14 @@ function useLoadData(category)  {
     const displayInfo =                                            
         <table id='tableSize'>
           <tbody>
-           <tr className="ttask-listing">
+           <tr >
               <th className='th-system' > System</th>
               <th  className='th-task'>Task</th>
               <th  className='th-keys'>Keys</th>
            </tr>    
            {shortcuts.map((shortcut) => { 
              return (
-                 <tr key={shortcut.id}  className="ttask-listing" id='tr' >
+                 <tr key={shortcut.id}  id='tr' >
                      <td className = "td">{shortcut.os}</td>   
                       <td className = "td">{shortcut.task}</td> 
                       <td className = "td">
@@ -49,15 +49,3 @@ function useLoadData(category)  {
     return {displayInfo}
  }
 export default useLoadData
-// const displayInfo = shortcuts.map((shortcut) => 
-// <div className="task-listing">
-//     <div key={shortcut.id} >{shortcut.os} - {shortcut.task} : </div>
-//     <Button variant='contained' className="listButn">
-//             {shortcut.keys}
-//     </Button>  
-
-// </div>  
-           
-// )
-
-// return {displayInfo}

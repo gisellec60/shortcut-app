@@ -38,20 +38,38 @@ function Modify() {
     setShortcuts(updatedArray)
   }
   
-  const displayInfo = shortcuts.map((shortcut) => {
-    return (
-      <div> 
-        <div className="listing" >
-          <div key={shortcut.id}>{shortcut.os} - {shortcut.task}:</div> 
-          <button className="taskButn">{shortcut.keys}</button>
-           <button onClick={() => { 
-             setOpenModal(true); setPatchKey(shortcut.keys); setPatchId(shortcut.id) ;
-               setPatchShortcut(shortcut.task); setPatchDesc(shortcut.description);
-               setPatchOs(shortcut.os)}} className ='editButn'>Edit</button> 
-         </div>
-      </div>   
-    )
-  })
+  const displayInfo =                                            
+  <table id='tableSize'>
+    <tbody>
+     <tr className="ttask-listing">
+        <th className='th-system' > System</th>
+        <th  className='th-task'>Task</th>
+        <th  className='th-keys'>Keys</th>
+        <th  className='th-edit'>Action</th>
+     </tr>    
+     {shortcuts.map((shortcut) => { 
+       return (
+           <tr key={shortcut.id} id='tr' >
+               <td className = "td-edit">{shortcut.os}</td>   
+                <td className = "td-edit">{shortcut.task}</td> 
+                <td className = "td-edit">
+                   <button className = "taskButn" > {shortcut.keys} </button>
+                </td>
+                 <td className="td">   
+                    <button className=" taskButn listButn" onClick={() => { 
+                        setOpenModal(true); setPatchKey(shortcut.keys); setPatchId(shortcut.id) ;
+                        setPatchShortcut(shortcut.task); setPatchDesc(shortcut.description);
+                        setPatchOs(shortcut.os)}} >
+                        edit
+                    </button> 
+                </td>
+           </tr> 
+       ) 
+       
+    })}
+   </tbody> 
+</table>
+
 
   const handleClick = (()=>
       history.push("/")
@@ -87,3 +105,17 @@ function Modify() {
  }
 
 export default Modify                                  
+// const displayInfo = shortcuts.map((shortcut) => {
+//   return (
+//     <div> 
+//       <div className="listing" >
+//         <div key={shortcut.id}>{shortcut.os} - {shortcut.task}:</div> 
+//         <button className="taskButn">{shortcut.keys}</button>
+//          <button onClick={() => { 
+//            setOpenModal(true); setPatchKey(shortcut.keys); setPatchId(shortcut.id) ;
+//              setPatchShortcut(shortcut.task); setPatchDesc(shortcut.description);
+//              setPatchOs(shortcut.os)}} className ='editButn'>Edit</button> 
+//        </div>
+//     </div>   
+//   )
+// })

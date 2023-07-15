@@ -14,17 +14,22 @@ body{
   border-collapse: seperate; 
  }
 
- .td, th {
+ .td, th, .td-edit {
   background:whitesmoke;
   border:1px solid grey;
   position:relative;
-  top:50px;
+  top:65px;
   height:auto;
   text-align:left;
   font-weight:bolder;
   padding: 0px 20px 0px  ;
   line-height:1.0;
   color:gray;
+  
+}
+
+.td-edit{
+    line-height:2.0; 
 }
 
 #tr {
@@ -32,17 +37,19 @@ body{
   /* min-width:500px; */
   resize:horizontal;
 }
-.th-system, .th-task, .th-keys{
+.th-system, .th-task, .th-keys,.th-edit, .th-del{
   background-color:rgb(247, 31, 31) ;
   color:rgb(225, 199, 199)
  }
 
 .th-system {
   width:100px;
+  justify-content: center;
 }
 
 .th-task {
   width:200px;
+  justify-content: center;
 }
 
 .th-keys {
@@ -52,6 +59,7 @@ body{
   resize:horizontal;
   padding: 0px 20px 0px  ;
   line-height:2.0;
+  line-height-step:1px;
 }
 
 .text-decor{
@@ -80,7 +88,7 @@ body{
 
 .container > h3{
     display:inline-block;
-    width:10%;
+    width:20%;
 }
 
 .inner-container{
@@ -263,7 +271,7 @@ ul {
 .taskButn, .taskButnDel {
   position:relative;
   display:flex;
-  top:10px;
+  top:1px;
   width:auto;
   border-radius: 2px;
   height:25px;
@@ -465,7 +473,7 @@ width:260px;
 .menu-trigger-del, .menu-trigger-edit {
   position:fixed;
   top: 230px;
-  left:765px;
+  left:855px;
   width:150px;
   height: 30px;
   border: radius 50%;
@@ -618,4 +626,5 @@ width:260px;
   left:10px;
   border-radius: 10px;
   font-style:bold;
+  cursor:pointer;
 }   
