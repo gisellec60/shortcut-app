@@ -5,7 +5,7 @@ import {useHistory} from "react-router-dom"
 
 function SearchReplace () {
 
-    const {displayInfo} = useLoadData("search")
+    const {displayInfo} = useLoadData("search and replace")
     
     const [showContainer, setShowContainer] = useState(true)
     const history = useHistory()

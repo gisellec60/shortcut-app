@@ -21,8 +21,8 @@ function Delete() {
   }
 
   const handleDeleteClick = ((id) => {
-    // fetch(`https://gisellec60-json-server-template.onrender.com/shortcuts/${id}`,{
-    fetch(`http://localhost:3000/shortcuts/${id}`,{
+    fetch(`https://gisellec60-json-server-template.onrender.com/shortcuts/${id}`,{
+    // fetch(`http://localhost:3000/shortcuts/${id}`,{
       method:"DELETE"
     })
     .then (res => res.json())

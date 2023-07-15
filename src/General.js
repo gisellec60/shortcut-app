@@ -14,12 +14,13 @@ function General () {
     )
     
     const handleShow = {display:"none"}
+   
     return (
       <div className="inner-container2" style={!showContainer ? handleShow:null}>
             <CloseIcon className="closeListBtn" 
             onClick={() => {handleClick();setShowContainer(!showContainer) }} />
               <h2 className="h2-listing">General</h2>
-              <div>                               
+              <div >                               
                   {displayInfo}
             </div>
         </div>   

@@ -11,9 +11,10 @@ function Modal({closeModal, patchId, patchShortcut, patchKey, patchUpdate,
 
       
         const handleSubmit = ((e) => {
-        e.preventDefault()
-             
+           e.preventDefault()
+           console.log(formData)  
         fetch(`https://gisellec60-json-server-template.onrender.com/shortcuts/${patchId}`, {
+        // fetch(`https://localhost:3000/shortcuts/${patchId}`, {
             method:"PATCH",
             headers: {"Content-Type" : "application/json"},
             body:JSON.stringify (
@@ -22,7 +23,8 @@ function Modal({closeModal, patchId, patchShortcut, patchKey, patchUpdate,
          })
          .then(res => res.json())
          .then(obj => patchUpdate(obj))
-         alert("update succesful")
+         .then(obj => console.log("what is this", obj))
+        //  alert("update succesful")
          closeModal(false)
     })
 

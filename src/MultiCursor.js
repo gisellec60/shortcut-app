@@ -5,7 +5,7 @@ import {useHistory} from "react-router-dom"
 
 function MultiCursor() {
   
-   const {displayInfo} = useLoadData("multicursor")
+   const {displayInfo} = useLoadData("multi-cursor")
    const [showContainer, setShowContainer] = useState(true)
    const history = useHistory()
 
