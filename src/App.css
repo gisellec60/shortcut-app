@@ -5,6 +5,10 @@
 
   /* background-image:linear-gradient(90deg,  #626662,#c7d0c7 ) */
  }
+ 
+body{
+  overflow-y: hidden;
+}
  #tableSize {
   border-collapse: seperate; 
  }
@@ -65,7 +69,7 @@
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   top: -290px;
   left:560px;
-  min-width:560px; 
+  min-width:570px; 
   min-height:550px;
   overflow:auto; 
   resize:both;
