@@ -72,6 +72,7 @@ function Modify() {
             <option>Search and Replace</option>
             <option>Multi-Cursor</option>
           </select>
+          
           <div>
            {displayInfo}
           </div>

@@ -8,6 +8,7 @@
  
 body{
   overflow-y: hidden;
+  width:100%
 }
  #tableSize {
   border-collapse: seperate; 
@@ -68,11 +69,18 @@ body{
   font-weight:bold ;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   top: -290px;
-  left:560px;
-  min-width:570px; 
+  left:540px;
+  min-width:40%; 
   min-height:550px;
+  height:auto;
   overflow:auto; 
   resize:both;
+  justify-self: center;
+}
+
+.container > h3{
+    display:inline-block;
+    width:10%;
 }
 
 .inner-container{
@@ -457,7 +465,7 @@ width:260px;
 .menu-trigger-del, .menu-trigger-edit {
   position:fixed;
   top: 230px;
-  left:755px;
+  left:765px;
   width:150px;
   height: 30px;
   border: radius 50%;
