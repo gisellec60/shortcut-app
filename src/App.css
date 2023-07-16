@@ -605,6 +605,7 @@ width:260px;
   background-color: crimson;
   left:-50px;
   color:white;
+  cursor:pointer;
 }
 .h2-listing{
   position:fixed;
@@ -652,6 +653,7 @@ width:260px;
    left:-30px;
    background:red;
    color:white;
+   cursor:pointer;
 
 }
 .listButn {
