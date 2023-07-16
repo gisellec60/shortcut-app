@@ -308,7 +308,7 @@ ul {
   padding:15px,15px,15px,25px;
   border-left: 5px;
 }
-.label-desc, .modal-label-desc{
+.label-desc, .label-modal-desc{
   position:relative;
   top:10px;
   left:99px;
@@ -318,15 +318,15 @@ ul {
   border-left: 5px;
 }
 
-.modal-label-desc{
-  left:9px;
+.label-modal-desc{
+  top:120px;
+  left:-480px;
 }
 
 .label-os{
   position:relative;
-  width:100px;
-  top:70px;
-  left:-200px;
+  top:80px;
+  left:0px;
   font-size:large; 
   font-weight:bold ;
   padding:15px,15px,15px,25px;
@@ -371,7 +371,7 @@ width:260px;
   top:170px;
   left:755px;
 }
-#win, #mac{
+#win, #mac, #win-modal, #mac-modal{
   position:relative;
   top:-20px;
   left:-10px;
@@ -382,6 +382,11 @@ width:260px;
   cursor:pointer;
   border-radius:5px;
 }
+
+#win-modal, #mac-modal{
+  left:-30px;
+}
+
 .butn {
   position: relative;
   top:200px;
@@ -424,22 +429,39 @@ width:260px;
 
 }
 
-.label-modal {
+.label-modal-task, .label-modal-keys {
   position:relative;
   font-size:large; 
   font-weight:bold ;
   padding:15px,15px,15px,25px;
   border-left: 5px;
-  top:-70px;
 }
 
-#label-win, #label-mac{
+.label-modal-keys {
+  top:40px;
+  left:60px;
+}
+
+.label-modal-task {
+  top:40px;
+  left:20px;
+}
+
+#label-win, #label-mac, #label-win-edit, #label-mac-edit{
    position:relative;
    top:60px;
    width:100px;
-   left:450px;
+   left:550px;
    display:block;
 
+}
+
+#label-win-edit, #label-mac-edit {
+  left:200px;
+  top:100px;
+  font-size:large;
+  font-weight: bold;
+  line-height:.35;
 }
 
 .label-modal {
@@ -458,23 +480,36 @@ width:260px;
   height:30px;
 }
 
-.modal-input, #modal-input-os, #modal-input-desc {
+.modal-input-task, #modal-input-os, .modal-input-desc, .modal-input-keys {
   width:200px;
   height:30px;
   }
 
+.modal-input-task {
+  position:relative;
+  top:0px;
+  left:20px;
+}  
+
+.modal-input-keys{
+  position:relative;
+  top:0px;
+  left:20px;
+
+}
+
 #modal-input-os{
   position:relative;
   width:70px;
-  top:0px;
-  left:240px;
+  top:-20px;
+  left:20px;
 }
-#modal-input-desc{
+.modal-input-desc{
   position:relative;
   width:300px;
   height:40px;
-  top:0px;
-  left:10px;
+  top:-40px;
+  left:470px;
  }
 
 .menu-trigger-del, .menu-trigger-edit {
@@ -507,7 +542,7 @@ width:260px;
   display: inline-block;
   top:600px;
   bottom:970px;
-  width:500px;
+  width:700px;
   height:500px;
   border-radius: 12px;
   background-color: whitesmoke;
@@ -515,7 +550,7 @@ width:260px;
   display:flex;
   flex-direction:column;
   padding:25px;
-  left:-100px; 
+  left:-450px; 
 }
 
 .addContainer {

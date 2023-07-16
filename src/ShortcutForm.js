@@ -86,7 +86,7 @@ function ShortcutForm ( {setOpenForm}) {
                 <option>MultiCursor</option>
                 <option>Navigation</option>
             </select>
-                                         <label id="label-win">
+                <label id="label-win">
                     Windows
                     <input type="checkbox" id="win" name="os" 
                         checked={wChecked} onChange={()=>{handleWindows();setFormData({...formData,os:"Windows"})}} />
@@ -95,8 +95,7 @@ function ShortcutForm ( {setOpenForm}) {
                     MacOs
                         <input type="checkbox" id="mac" name="os" 
                         checked={mChecked} onChange={()=>{handleMac();setFormData({...formData,os:"MacOs"})}}/>
-                        {/* checked={mChecked} onChange={(e)=>{handleMac(e);e.target.value="MacOS"}}/> */}
-               </label>
+                </label>
                <button className="butn" id="addButn" type="submit">Submit</button>
         </form>
       </section>  

@@ -39,25 +39,26 @@ function Modal({closeModal, patchId, patchShortcut, patchKey, patchUpdate,
                <button onClick={() => closeModal(false)}>X</button>
             </div>      
             <div className="title">
-                <h1>Edit Task</h1>
+                <h1>Edit Shortcut</h1>
             </div>
             <div className="body">
                 <form onSubmit={handleSubmit}>
-                    <label className="label-modal">Task
-                        <input className="modal-input" type="text" name="task" 
+                    <label className="label-modal-task">Task
+                        <input className="modal-input-task" type="text" name="task" 
                         onChange={handleChange} value={formData.task} />
                     </label>
-                    <label className="label-modal"> Keys
-                         <input className="modal-input" type="text" name="keys"
+                    <label className="label-modal-keys"> Keys
+                         <input className="modal-input-keys" type="text" name="keys"
                          onChange={handleChange} value={formData.keys} />
                     </label>  
-                    <label className="modal-label-desc"> Description
-                         <input id="modal-input-desc" type="text" name="description"
+                    <label className="label-modal-desc"> Description
+                         <input className="modal-input-desc" type="text" name="description"
                           onChange={handleChange} value={formData.description} />
                     </label>  
-                    <label className="label-os"> OS
-                         <input id="modal-input-os" type="text" name="os"
-                         onChange={handleChange} value={formData.os} />
+                    <label className="label-os"> 
+                        <h4>Operating System</h4> 
+                        <input id="modal-input-os" type="text" name="os"
+                        onChange={handleChange} value={formData.os} />
                     </label>  
                     <button id="modal-butn" type="submit">Submit</button>
                 </form>
