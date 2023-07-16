@@ -25,8 +25,7 @@ body{
   padding: 0px 20px 0px  ;
   line-height:1.0;
   color:gray;
-  
-}
+ }
 
 .td-edit{
     line-height:2.0; 
@@ -37,7 +36,7 @@ body{
   /* min-width:500px; */
   resize:horizontal;
 }
-.th-system, .th-task, .th-keys,.th-edit, .th-del{
+.th-system, .th-task, .th-keys,.th-edit, .th-del,.th-desc{
   background-color:rgb(247, 31, 31) ;
   color:rgb(225, 199, 199)
  }
@@ -50,6 +49,17 @@ body{
 .th-task {
   width:200px;
   justify-content: center;
+}
+.th-desc {
+  width:700px;
+  resize:horizontal;
+  padding: 0px 20px 0px  ;
+  line-height:2.0;
+}
+
+.td-desc {
+  line-height:2.0;
+  
 }
 
 .th-keys {
@@ -115,9 +125,9 @@ body{
   border:none;
   padding: 16px ; 
   top:-299px;
-  left:550px;
+  left:50px;
   min-height:550px;
-  min-width:750px;
+  min-width:650px;
   overflow:auto; 
  /* width:auto;
   height:auto; */
@@ -612,8 +622,8 @@ width:260px;
 .h2-listing{
   position:fixed;
   top:180px;
-  left:880px;
-  text-justify: center;
+  left:760px;
+  /* text-justify: center; */
 }
 
 #closeModifyBtn, #closeShowBtn{

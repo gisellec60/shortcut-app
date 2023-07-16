@@ -29,6 +29,7 @@ function useLoadData(category)  {
               <th className='th-system' > System</th>
               <th  className='th-task'>Task</th>
               <th  className='th-keys'>Keys</th>
+              <th  className="th-desc">Description</th>
            </tr>    
            {shortcuts.map((shortcut) => { 
              return (
@@ -40,6 +41,7 @@ function useLoadData(category)  {
                               {shortcut.keys}
                           </Button> 
                       </td>
+                      <td className ="td td-desc">{shortcut.description}</td>
                  </tr> 
              ) 
              

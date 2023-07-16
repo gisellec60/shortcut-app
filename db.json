@@ -372,10 +372,10 @@
       "id": 55,
       "task": "Quick Open, Go to File...",
       "keys": "command + P",
-      "decriptions": "search and replaceing for a specific file, especially as the project gets larger, can chew up a lot of time. Even if you already know where the file is, it’s definitely handy to learn this keyboard shortcut to easily open files in your project.",
+      "decription": "search and replaceing for a specific file, especially as the project gets larger, can chew up a lot of time. Even if you already know where the file is, it’s definitely handy to learn this keyboard shortcut to easily open files in your project.",
       "category": "general",
       "os": "windows",
-      "description": "I just want to added a description"
+      "description": ""
     }
   ]
 }
