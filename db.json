@@ -376,6 +376,14 @@
       "category": "general",
       "os": "windows",
       "description": ""
+    },
+    {
+      "task": "Jump to Matching Bracket",
+      "keys": "CRTL + Shift + \\",
+      "description": "This shortcut will allow you to keep your brackets straights by match them. ",
+      "category": "basic",
+      "os": "Windows",
+      "id": 56
     }
   ]
 }
