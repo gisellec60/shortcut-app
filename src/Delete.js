@@ -1,6 +1,9 @@
 import React, {useState,useRef } from 'react'
-import CloseIcon from '@mui/icons-material/Close';
+import CloseIcon from '@mui/icons-material/Close'
 import {useHistory} from "react-router-dom"
+import DeleteIcon from '@mui/icons-material/Delete'
+import Button from '@mui/material/Button'
+import IconButton from '@mui/material/IconButton'
 
 function Delete() {
   const [shortcuts, setShortcuts] = useState([])
@@ -21,6 +24,7 @@ function Delete() {
   }
 
   const handleDeleteClick = ((id) => {
+    console.log("do you get here ")
     // fetch(`https://gisellec60-json-server-template.onrender.com/shortcuts/${id}`,{
     fetch(`http://localhost:3000/shortcuts/${id}`,{
       method:"DELETE"
@@ -37,8 +41,8 @@ function Delete() {
   const displayInfo =                                            
   <table id='tableSize'>
     <tbody>
-     <tr className="ttask-listing">
-        <th className='th-system' > System</th>
+     <tr>
+        <th className='th-system' >System</th>
         <th  className='th-task'>Task</th>
         <th  className='th-keys'>Keys</th>
         <th  className='th-edit'>Action</th>
@@ -49,12 +53,12 @@ function Delete() {
                <td className = "td-edit">{shortcut.os}</td>   
                 <td className = "td-edit">{shortcut.task}</td> 
                 <td className = "td-edit">
-                   <button className = "taskButnDel" > {shortcut.keys} </button>
+                   <Button variant="contained" className = "taskButnDel" > {shortcut.keys} </Button>
                 </td>
                  <td className="td">   
-                    <button onClick={() => handleDeleteClick(shortcut.id)} className="delbutn" >
-                       delete
-                    </button> 
+                    <IconButton aria-label="delete" onClick={() => handleDeleteClick(shortcut.id)} >
+                       <DeleteIcon className="delbutn"  />
+                    </IconButton> 
                 </td>
            </tr> 
        ) 

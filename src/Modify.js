@@ -2,6 +2,8 @@ import React,{useState,useRef} from 'react'
 import Modal from "./Modal"
 import CloseIcon from '@mui/icons-material/Close';
 import {useHistory} from "react-router-dom"
+import Button from '@mui/material/Button';
+
 
 function Modify() {
   const [shortcuts, setShortcuts] = useState([])
@@ -53,15 +55,15 @@ function Modify() {
                <td className = "td-edit">{shortcut.os}</td>   
                 <td className = "td-edit">{shortcut.task}</td> 
                 <td className = "td-edit">
-                   <button className = "taskButn" > {shortcut.keys} </button>
+                   <Button variant='contained' className = "taskButn" > {shortcut.keys} </Button>
                 </td>
                  <td className="td">   
-                    <button className=" taskButn listButn" onClick={() => { 
+                    <Button variant="text" className=" taskButn listButn" onClick={() => { 
                         setOpenModal(true); setPatchKey(shortcut.keys); setPatchId(shortcut.id) ;
                         setPatchShortcut(shortcut.task); setPatchDesc(shortcut.description);
                         setPatchOs(shortcut.os)}} >
                         edit
-                    </button> 
+                    </Button> 
                 </td>
            </tr> 
        ) 

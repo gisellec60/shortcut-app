@@ -3,15 +3,15 @@
     {
       "id": 2,
       "task": "Close Window ",
-      "keys": "Ctrl+Shift+W",
+      "keys": "Ctrl + Shift + W",
       "category": "general",
       "description": "Close current instance of window",
-      "os": "MacOS"
+      "os": "Windows"
     },
     {
       "id": 3,
       "task": "Close Window",
-      "keys": "command+W",
+      "keys": "command + W",
       "category": "general",
       "description": "Close current instance of window",
       "os": "MacOS"
@@ -19,7 +19,7 @@
     {
       "id": 4,
       "task": "User Settings",
-      "keys": "Crtl+,",
+      "keys": "Crtl + ,",
       "description": "Visual Studio Code comes with a lot of features and settings that you can change to fit your needs. This keyboard shortcut makes it easier to get to the settings whenever necessary.",
       "category": "general",
       "os": "Windows"
@@ -27,7 +27,7 @@
     {
       "id": 5,
       "task": "User Settings",
-      "keys": "command+,",
+      "keys": "command + ,",
       "description": "Visual Studio Code comes with a lot of features and settings that you can change to fit your needs. This keyboard shortcut makes it easier to get to the settings whenever necessary.",
       "category": "general",
       "os": "MacOS"
@@ -35,7 +35,7 @@
     {
       "id": 8,
       "task": "Copy Line",
-      "keys": "Ctrl c",
+      "keys": "Ctrl + C",
       "category": "basic",
       "description": "Copy the selected line into clipboard",
       "os": "Windows"
@@ -43,7 +43,7 @@
     {
       "id": 9,
       "task": "Copy Line",
-      "keys": "Command+C",
+      "keys": "Command + C",
       "category": "basic",
       "description": "Copy the selected line into clipboard",
       "os": "MacOS"
@@ -51,7 +51,7 @@
     {
       "id": 10,
       "task": "Move Line up/down",
-      "keys": "Alt+ Up/down arrow key",
+      "keys": "Alt + Up/down arrow key",
       "category": "basic",
       "description": "A lot of times you might need to move a line from one position to another. Instead of copying or cutting and pasting the line into another position, this shortcut offers a faster solution. Just place the cursor on the line.",
       "os": "Windows"
@@ -67,7 +67,7 @@
     {
       "id": 12,
       "task": "Copy Line UP/Down",
-      "keys": "Shift+Alt+ Up/Down arrow key",
+      "keys": "Shift + Alt + Up/Down arrow key",
       "category": "basic",
       "description": "What if you need to copy a line and paste it below or above? Instead of having to actually copy and paste the line, this shortcut duplicates the line either below or above it, based on the direction chosen with the arrows.",
       "os": "Windows"
@@ -75,7 +75,7 @@
     {
       "id": 13,
       "task": "Copy Line UP/Down",
-      "keys": "Shift+Option+Up/Down arrow key",
+      "keys": "Shift + ption + Up/Down arrow key",
       "category": "basic",
       "description": "What if you need to copy a line and paste it below or above? Instead of having to actually copy and paste the line, this shortcut duplicates the line either below or above it, based on the direction chosen with the arrows.",
       "os": "MacOS"
@@ -83,7 +83,7 @@
     {
       "id": 14,
       "task": "Delete Line",
-      "keys": "Ctrl+Shift+K",
+      "keys": "Ctrl + Shift + K",
       "category": "basic",
       "description": "Delete the current line",
       "os": "Windows"
@@ -91,14 +91,14 @@
     {
       "id": 15,
       "task": "Delete Line",
-      "keys": "Command+Shift+K",
+      "keys": "Command + Shift + K",
       "category": "basic",
       "description": "Delete the current line",
       "os": "MacOS"
     },
     {
       "task": "Insert Below",
-      "keys": "Ctrl+Enter",
+      "keys": "Ctrl + Enter",
       "id": 16,
       "category": "basic",
       "description": "Insert a line below the current line",
@@ -106,7 +106,7 @@
     },
     {
       "task": "Insert Below",
-      "keys": "Command+Enter",
+      "keys": "Command + Enter",
       "id": 17,
       "category": "basic",
       "description": "Insert a line below the current line",
@@ -114,7 +114,7 @@
     },
     {
       "task": "Insert Above Line",
-      "keys": "Ctrl+Shift+Enter",
+      "keys": "Ctrl + Shift + Enter",
       "id": 18,
       "category": "basic",
       "description": "Insert a line above the current line",
@@ -122,19 +122,11 @@
     },
     {
       "task": "Insert Above Line",
-      "keys": "Up Arrow+Command+Enter",
+      "keys": "Up Arrow + Command + Enter",
       "id": 19,
       "category": "basic",
       "description": "Insert a line above the current line",
       "os": "MacOs"
-    },
-    {
-      "id": 23,
-      "task": "Replace",
-      "keys": "Command + Shift + H",
-      "category": "search and replace",
-      "description": "Show search and replace and replace option",
-      "os": "MacOS"
     },
     {
       "id": 24,
@@ -147,7 +139,7 @@
     {
       "id": 25,
       "task": "Find Next/Previous",
-      "keys": "Command+G/Command+Shift+G",
+      "keys": "Command + G / Command + Shift + G",
       "category": "search and replace",
       "description": "Find the next/previous instance of the selection",
       "os": "MacOS"
@@ -155,7 +147,7 @@
     {
       "id": 26,
       "task": "Select All Occurance of Find Match",
-      "keys": "Alt+Enter",
+      "keys": "Alt + Enter",
       "category": "search and replace",
       "description": "If you are using the find feature to do certain modifications with all the find results, this keyboard shortcut allows you to select all the find results.",
       "os": "Windows"
@@ -163,7 +155,7 @@
     {
       "id": 27,
       "task": "Select All Occurance of Find Match",
-      "keys": "Option+Enter",
+      "keys": "Option + Enter",
       "category": "search and replace",
       "description": "If you are using the find feature to do certain modifications with all the find results, this keyboard shortcut allows you to select all the find results.",
       "os": "MacOS"
@@ -171,7 +163,7 @@
     {
       "id": 28,
       "task": "Add selection to next Find Match",
-      "keys": "Ctrl D",
+      "keys": "Ctrl + D",
       "category": "search and replace",
       "description": "Selects the word at the cursor, or the next occurrence of the current selection. ",
       "os": "Windows"
@@ -179,7 +171,7 @@
     {
       "id": 29,
       "task": "Add selection to next Find Match",
-      "keys": "Command+D",
+      "keys": "Command + D",
       "category": "search and replace",
       "description": "Selects the word at the cursor, or the next occurrence of the current selection. ",
       "os": "MacOs"
@@ -187,7 +179,7 @@
     {
       "id": 30,
       "task": "Move last selection to next Find match",
-      "keys": "Ctrl+K Ctrl+D",
+      "keys": "Ctrl + K / Ctrl + D",
       "description": "The Move Last Selection To Next Find Match command in VS Code moves the current selection to the next instance of the selected text.",
       "category": "search and replace",
       "os": "Windows"
@@ -195,7 +187,7 @@
     {
       "id": 31,
       "task": "Move last selection to next Find match",
-      "keys": "Command+K Command+D",
+      "keys": "Command + K / Command + D",
       "description": "The Move Last Selection To Next Find Match command in VS Code moves the current selection to the next instance of the selected text.",
       "category": "search and replace",
       "os": "MacOS"
@@ -203,7 +195,7 @@
     {
       "id": 33,
       "task": "Toggle case-sensitve/regex/whole word",
-      "keys": "Alt+C/R/W",
+      "keys": "Alt + C / R / W",
       "description": "",
       "category": "search and replace",
       "os": "Windows"
@@ -211,7 +203,7 @@
     {
       "id": 34,
       "task": "Toggle case-sensitve/regex/whole word",
-      "keys": "Option+C/R/W",
+      "keys": "Option + C / R / W",
       "description": "",
       "category": "search and replace",
       "os": "MacOS"
@@ -219,7 +211,7 @@
     {
       "id": 35,
       "task": "Insert Cursor ",
-      "keys": "Alt+mouseClick",
+      "keys": "Alt + mouseClick",
       "description": "This keyboard shortcut allows you to insert an additional cursor at any point in the file.",
       "category": "multi-cursor",
       "os": "Windows"
@@ -227,7 +219,7 @@
     {
       "id": 36,
       "task": "Insert Cursor",
-      "keys": "option+mouseClick",
+      "keys": "option + mouseClick",
       "description": "This keyboard shortcut allows you to insert an additional cursor at any point in the file.",
       "category": "multi-cursor",
       "os": "MacOS"
@@ -235,7 +227,7 @@
     {
       "id": 37,
       "task": "Insert cursor above/below",
-      "keys": "Ctrl+Alt+up/down key",
+      "keys": "Ctrl + Alt + up/down key",
       "description": "Insert cursor above or below each of the current cursor positions.",
       "category": "multi-cursor",
       "os": "Windows"
@@ -243,7 +235,7 @@
     {
       "id": 38,
       "task": "Insert cursor above/below",
-      "keys": "Command+Option+Up/down Arrow key",
+      "keys": "Command + Option + Up/down Arrow key",
       "description": "Insert cursor above or below each of the current cursor positions.",
       "category": "multi-cursor",
       "os": "MacOS"
@@ -251,7 +243,7 @@
     {
       "id": 39,
       "task": "Undo last cursor operation",
-      "keys": "Ctrl+U",
+      "keys": "Ctrl + U",
       "description": "What if you inserted a cursor by mistake, or realized later that you do not want to insert the cursor at that position anymore? This keyboard shortcut allows you to undo the last cursor insert. This is very helpful when you’ve inserted multiple cursors, as it allows you to keep the others in place and just removes the last inserted one.",
       "category": "multi-cursor",
       "os": "Windows"
@@ -259,7 +251,7 @@
     {
       "id": 40,
       "task": "Undo last cursor operation",
-      "keys": "Command+U",
+      "keys": "Command + U",
       "description": "What if you inserted a cursor by mistake, or realized later that you do not want to insert the cursor at that position anymore? This keyboard shortcut allows you to undo the last cursor insert. This is very helpful when you’ve inserted multiple cursors, as it allows you to keep the others in place and just removes the last inserted one.",
       "category": "multi-cursor",
       "os": "MacOS"
@@ -267,7 +259,7 @@
     {
       "id": 41,
       "task": "Insert cursor at end of each line selected",
-      "keys": "Shift+Alt+I",
+      "keys": "Shift + Alt + I",
       "description": "Insert the cursor at the end of a highlighted selection.",
       "category": "multi-cursor",
       "os": "Windows"
@@ -275,7 +267,7 @@
     {
       "id": 42,
       "task": "Insert cursor at end of each line selected",
-      "keys": "Shift+Option+I",
+      "keys": "Shift + Option + I",
       "description": "Insert the cursor at the end of a highlighted selection.",
       "category": "multi-cursor",
       "os": "MacOS"
@@ -283,7 +275,7 @@
     {
       "id": 43,
       "task": "Select current line",
-      "keys": "Ctrl+L",
+      "keys": "Ctrl + L",
       "description": "A lot of times you need to select the entire current line your cursor is at. This keyboard shortcut makes it very simple.",
       "category": "multi-cursor",
       "os": "Window"
@@ -291,7 +283,7 @@
     {
       "id": 44,
       "task": "Select current line",
-      "keys": "Command+L",
+      "keys": "Command + L",
       "description": "A lot of times you need to select the entire current line your cursor is at. This keyboard shortcut makes it very simple.",
       "category": "multi-cursor",
       "os": "MacOS"
@@ -299,7 +291,7 @@
     {
       "id": 45,
       "task": "Select all occurances of current seletion",
-      "keys": "Ctrl+Shift+L",
+      "keys": "Ctrl + Shift + L",
       "description": "With this keyboard shortcut, all you need is to have one occurrence of the text you’re looking for in the file selected. Then, by pressing the keys of the shortcut, you will select all its occurrences in the file.",
       "category": "multi-cursor",
       "os": "Windows"
@@ -307,7 +299,7 @@
     {
       "id": 46,
       "task": "Select all occurances of current seletion",
-      "keys": "Command+Shift+L",
+      "keys": "Command + Shift + L",
       "description": "With this keyboard shortcut, all you need is to have one occurrence of the text you’re looking for in the file selected. Then, by pressing the keys of the shortcut, you will select all its occurrences in the file.",
       "category": "multi-cursor",
       "os": "MacOS"
@@ -315,7 +307,7 @@
     {
       "id": 47,
       "task": "Select all occurances of current word",
-      "keys": "Ctrl+F2",
+      "keys": "Ctrl + F2",
       "description": "This keyboard shortcut allows you to do the same as the previous one, but without having anything selected. While the cursor is placed on a word, you can press the keys of this shortcut and the current word with all of its occurrences in the current file will be selected.",
       "category": "multi-cursor",
       "os": "Windows"
@@ -323,14 +315,14 @@
     {
       "id": 48,
       "task": "Select all occurances of current word",
-      "keys": "Command+F2",
+      "keys": "Command + F2",
       "description": "This keyboard shortcut allows you to do the same as the previous one, but without having anything selected. While the cursor is placed on a word, you can press the keys of this shortcut and the current word with all of its occurrences in the current file will be selected.",
       "category": "multi-cursor",
       "os": "Windows"
     },
     {
       "task": "Show Command Palette",
-      "keys": "Ctrl+Shift+P,F1",
+      "keys": "Ctrl + Shift + P, F1",
       "description": "With this keyboard shortcut, you can easily open the command palette. The command palette allows you to search and replace through the commands you can use and execute them.",
       "category": "general",
       "id": 49,
@@ -338,7 +330,7 @@
     },
     {
       "task": "Show Command Palette",
-      "keys": "Command+Shift+P,F1",
+      "keys": "Command + Shift + P, F1",
       "description": "With this keyboard shortcut, you can easily open the command palette. The command palette allows you to search and replace through the commands you can use and execute them.",
       "category": "general",
       "id": 50,
@@ -346,7 +338,7 @@
     },
     {
       "task": "Keyboard Shortcuts",
-      "keys": "Ctrl+K Ctrl+S",
+      "keys": "Ctrl + K / Ctrl + S",
       "category": "general",
       "description": "Enable keyboard shortcut sequence",
       "id": 51,
@@ -354,7 +346,7 @@
     },
     {
       "task": "Keyboard Shortcuts",
-      "keys": "Command+K Command+S",
+      "keys": "Command + K Command + S",
       "category": "general",
       "description": "Enable keyboard shortcut sequence",
       "id": 52,
@@ -362,7 +354,7 @@
     },
     {
       "task": "New Window /Instance",
-      "keys": "Ctrl+Shift+N",
+      "keys": "Ctrl + Shift + N",
       "category": "general",
       "description": "Open new instance of Visual Studio Code editor in new window",
       "os": "Windows",
@@ -370,7 +362,7 @@
     },
     {
       "task": "New Window /Instance",
-      "keys": "Command+Shift+N",
+      "keys": "Command + Shift + N",
       "category": "general",
       "description": "Open new instance of Visual Studio Code editor in new window",
       "os": "MacOS",

@@ -286,8 +286,9 @@ ul {
 }
 
 .delbutn{
-  background:red;
-  color:white;
+  /* background:red; */
+  color:grey;
+  font-size:30px;
   cursor:pointer;
 }
 
@@ -485,13 +486,10 @@ width:260px;
   border: radius 50%;
   overflow:hidden;
   cursor:pointer;
-  background:crimson;
-  color:white;
+  background-color:rgb(249, 243, 243);
+  color:black;
 }
 
-.menu-trigger-edit{
-  background:blue;
-}
 
 .modalBackground {
   position:relative;
