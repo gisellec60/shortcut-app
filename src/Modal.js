@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import Button from '@mui/material/Button';
 
 function Modal({closeModal, patchId, patchShortcut, patchKey, patchUpdate,
      patchOs, patchDesc }) {

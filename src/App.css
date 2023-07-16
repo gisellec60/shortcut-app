@@ -502,7 +502,7 @@ width:260px;
   position:relative;
   width:70px;
   top:-20px;
-  left:20px;
+  left:100px;
 }
 .modal-input-desc{
   position:relative;
@@ -649,7 +649,9 @@ width:260px;
 
 #modal-butn {
    position:relative;
-   top:170px;
+   width:200px;
+   height:30px;
+   top:130px;
    left:-30px;
    background:red;
    color:white;

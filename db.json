@@ -138,7 +138,7 @@
     },
     {
       "id": 25,
-      "task": "Find Next/Previous",
+      "task": "Find Next/Previous ",
       "keys": "Command + G / Command + Shift + G",
       "category": "search and replace",
       "description": "Find the next/previous instance of the selection",
