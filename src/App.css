@@ -397,24 +397,26 @@ width:260px;
 
  #addButn {
   position: relative;
+  width:200px;
+  height:30px;
   top:90px;
   left:-25px; 
   background: crimson;
   color:white
 }
 
-#submitButn {
+/* #submitButn {
   position: absolute;
   top:500px;
-  /* left:1200px;  */
+  left:1200px; 
   left:500px;
   background: red;
   width:100px;
   height:50px;
   color:white;
   border-radius: 10px;
-}
-                     
+}  */
+
 .label, .label-key {
   position:relative;
   font-size:large; 
