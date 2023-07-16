@@ -58,7 +58,7 @@ function Modify() {
                    <Button variant='contained' className = "taskButn" > {shortcut.keys} </Button>
                 </td>
                  <td className="td">   
-                    <Button variant="text" className=" taskButn listButn" onClick={() => { 
+                    <Button variant="text" className=" taskButn" onClick={() => { 
                         setOpenModal(true); setPatchKey(shortcut.keys); setPatchId(shortcut.id) ;
                         setPatchShortcut(shortcut.task); setPatchDesc(shortcut.description);
                         setPatchOs(shortcut.os)}} >

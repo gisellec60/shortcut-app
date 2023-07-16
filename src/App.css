@@ -87,7 +87,7 @@ body{
   font-weight:bold ;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   top: -290px;
-  left:540px;
+  left:440px;
   min-width:40%; 
   min-height:550px;
   height:auto;
@@ -278,25 +278,8 @@ ul {
   cursor:pointer;
  }
 
-.taskButn, .taskButnDel {
-  position:relative;
-  display:flex;
-  top:1px;
-  width:auto;
-  border-radius: 2px;
-  height:25px;
-  left:10px;
-  background:blue;
-  color :white;
-  font-weight:bold;
-}
-
-.taskButnDel{
-  background:red;
-}
 
 .delbutn{
-  /* background:red; */
   color:grey;
   font-size:30px;
   cursor:pointer;
@@ -379,7 +362,7 @@ width:260px;
 #pick-del{
   position:fixed;
   top:170px;
-  left:755px;
+  left:655px;
 }
 #win, #mac, #win-modal, #mac-modal{
   position:relative;
@@ -527,7 +510,7 @@ width:260px;
 .menu-trigger-del, .menu-trigger-edit {
   position:fixed;
   top: 230px;
-  left:855px;
+  left:735px;
   width:150px;
   height: 30px;
   border: radius 50%;
@@ -628,7 +611,7 @@ width:260px;
 
 #closeModifyBtn, #closeShowBtn{
   position:fixed;
-  left:580px;
+  left:450px;
   cursor:pointer;
   font-size:30px;
  }
