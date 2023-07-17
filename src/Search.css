@@ -66,6 +66,16 @@ input:focus{
 a:hover{
     background-color :lightgrey;
 }
-#clearBtn, #clearShowBtn, #closeModifyBtn{
+#clearBtn{
+    position:relative;
+    top:1px;
+    cursor:pointer;
+}
+
+#clearShowBtn {
+    position:fixed;
+    left:690px;
+    bottom:655px;
+    font-size:30px;
     cursor:pointer;
 }

@@ -48,15 +48,15 @@ Along the bottom of the Home page are what we call *utility* buttons. These butt
  
 (Fig6) ![Alt text](Add-4.jpg)
 
-*Modify* - Modify allows a user to edit a shortcut. When a user clicks *Modify*, *Pick a Category* appears with a dropdown menu that contains a list of categories, and a blank box(Fig1). When the user selects a category the box populates with a list of all the shortcuts for that category. Each shortcut will have either Windows or MacOs and an edit button(Fig2). When the user clicks the edit button a form pops up and is populated with the information for that shortcut(Fig3). The user can then modify the information and submit the form(Fig4). Once the form is submitted a new list appears with the updated shortcut(Fig5). Click the "X" in the top right corner to close the list and return to the Home page.
+*Modify* - Modify allows a user to edit a shortcut. When a user clicks *Modify*, *Pick a Category* appears with a dropdown menu that contains a list of categories, and a blank box(Fig1). When the user selects a category the box populates with a list of all the shortcuts for that category. Each shortcut will have either Windows or MacOs and an edit button(Fig2). When the user clicks the edit button a form pops up and is populated with the information for that shortcut(Fig3). The user can then modify the information and submit the form(Fig4). Once the form is submitted a new list appears with the updated shortcut(*Fig10*). Click the "X" in the top right corner to close the list and return to the Home page.
 
-(Fig1)![Alt text](Modify.jpg) (Fig2)![Alt text](Modify-2.jpg) 
-(Fig3)![Alt text](Modify-3.jpg) (Fig4)![Alt text](Modify-4.jpg) 
-(fig5)![Alt text](Modify-5.jpg)
+(Fig7)![Alt text](Modify.jpg) (Fig8)![Alt text](Modify-2.jpg) 
+(Fig9)![Alt text](Modify-3.jpg)   
+(Fig10)![Alt text](Modify-4.jpg) 
 
-*Delete* - The *Delete* button gives the ability to delete a shortcut. When the *Delete* button is clicked just like with the Modify button, *Pick a Category* appears with a dropdown menu that contains a list of categories, and a blank box. When the user selects a category the box populates with all the shortcuts from that category. Each shortcut will have either Windows or MacOs and a delete button(Fig1). When the delete button is clicked the shortcut will disappear from the list(Fig2).
+*Delete* - The *Delete* button gives the ability to delete a shortcut. When the *Delete* button is clicked just like with the Modify button, *Pick a Category* appears with a dropdown menu that contains a list of categories, and a blank box. When the user selects a category the box populates with all the shortcuts from that category. Each shortcut will have either Windows or MacOs and a delete icon (Fig11). When the delete icon is clicked the shortcut will disappear from the list(Fig12).
 
-![Alt text](Delete-2.jpg) (Fig2) ![Alt text](Delete-3.jpg)
+(Fig11)![Alt text](Delete-2.jpg) (Fig12) ![Alt text](Delete-3.jpg)
 
 ## What's Next
 

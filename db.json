@@ -33,14 +33,6 @@
       "os": "MacOS"
     },
     {
-      "id": 8,
-      "task": "Copy Line",
-      "keys": "Ctrl + C",
-      "category": "basic",
-      "description": "Copy the selected line into clipboard",
-      "os": "Windows"
-    },
-    {
       "id": 9,
       "task": "Copy Line",
       "keys": "Command + C",
@@ -130,19 +122,11 @@
     },
     {
       "id": 24,
-      "task": "Find Next/Previous",
+      "task": "Find Next/Previous highlighted item",
       "keys": "F3/Shift+F3",
       "category": "search and replace",
       "description": "Find the next/previous instance of the selection",
       "os": "Windows"
-    },
-    {
-      "id": 25,
-      "task": "Find Next/Previous ",
-      "keys": "Command + G / Command + Shift + G",
-      "category": "search and replace",
-      "description": "Find the next/previous instance of the selection",
-      "os": "MacOS"
     },
     {
       "id": 26,
@@ -384,6 +368,14 @@
       "category": "basic",
       "os": "Windows",
       "id": 56
+    },
+    {
+      "task": "",
+      "keys": "",
+      "description": "",
+      "category": "",
+      "os": "",
+      "id": 57
     }
   ]
 }
