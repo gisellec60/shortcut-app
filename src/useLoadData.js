@@ -8,10 +8,8 @@ function useLoadData(category)  {
 
     useEffect (() => {
         fetch(`${process.env.REACT_APP_API_URL}/shortcuts`)
-        // fetch("https://gisellec60-json-server-template.onrender.com/shortcuts")
-        // fetch("http://localhost:3000/shortcuts")
-          .then((res) => res.json())
-          .then((shortcuts) => {
+            .then((res) => res.json())
+            .then((shortcuts) => {
               const shortcutFilterArray = shortcuts.filter((shortcut)=>{
                   return shortcut.category === category
             })
