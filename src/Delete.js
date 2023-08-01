@@ -13,8 +13,7 @@ function Delete() {
   
   const handleChange = (e) =>{
       category.current = (e.target.value)
-      fetch("https://gisellec60-json-server-template.onrender.com/shortcuts")
-      // fetch("http://localhost:3000/shortcuts")
+      fetch(`${process.env.REACT_APP_API_URL}/shortcuts`)
         .then((res) => res.json())
         .then((shortcuts) =>  {
             const shortcutFilterArray = shortcuts.filter((shortcut)=>{
@@ -24,10 +23,8 @@ function Delete() {
   }
 
   const handleDeleteClick = ((id) => {
-    console.log("do you get here ")
-    fetch(`https://gisellec60-json-server-template.onrender.com/shortcuts/${id}`,{
-    // fetch(`http://localhost:3000/shortcuts/${id}`,{
-      method:"DELETE"
+    fetch(`${process.env.REACT_APP_API_URL}/shortcuts/${id}`,{
+       method:"DELETE"
     })
     .then (res => res.json())
     .then (() => handleDeleteTask(id))

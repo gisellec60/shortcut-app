@@ -19,8 +19,7 @@ function Modify() {
   
   const handleChange = (e) =>{
     category.current = e.target.value
-    fetch("https://gisellec60-json-server-template.onrender.com/shortcuts")
-    // fetch("http://localhost:3000/shortcuts")
+    fetch(`${process.env.REACT_APP_API_URL}/shortcuts`)
     .then((res) => res.json())
     .then((shortcuts) =>  {
       const shortcutFilterArray = shortcuts.filter((shortcut)=>{
@@ -107,17 +106,3 @@ function Modify() {
  }
 
 export default Modify                                  
-// const displayInfo = shortcuts.map((shortcut) => {
-//   return (
-//     <div> 
-//       <div className="listing" >
-//         <div key={shortcut.id}>{shortcut.os} - {shortcut.task}:</div> 
-//         <button className="taskButn">{shortcut.keys}</button>
-//          <button onClick={() => { 
-//            setOpenModal(true); setPatchKey(shortcut.keys); setPatchId(shortcut.id) ;
-//              setPatchShortcut(shortcut.task); setPatchDesc(shortcut.description);
-//              setPatchOs(shortcut.os)}} className ='editButn'>Edit</button> 
-//        </div>
-//     </div>   
-//   )
-// })

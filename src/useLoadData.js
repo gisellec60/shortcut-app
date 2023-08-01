@@ -7,7 +7,8 @@ function useLoadData(category)  {
     const [shortcuts, setShortcuts] = useState([])
 
     useEffect (() => {
-        fetch("https://gisellec60-json-server-template.onrender.com/shortcuts")
+        fetch(`${process.env.REACT_APP_API_URL}/shortcuts`)
+        // fetch("https://gisellec60-json-server-template.onrender.com/shortcuts")
         // fetch("http://localhost:3000/shortcuts")
           .then((res) => res.json())
           .then((shortcuts) => {

@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import Button from '@mui/material/Button';
 
 function Modal({closeModal, patchId, patchShortcut, patchKey, patchUpdate,
      patchOs, patchDesc }) {
@@ -13,8 +12,7 @@ function Modal({closeModal, patchId, patchShortcut, patchKey, patchUpdate,
       
         const handleSubmit = ((e) => {
            e.preventDefault()
-        fetch(`https://gisellec60-json-server-template.onrender.com/shortcuts/${patchId}`, {
-        // fetch(`http://localhost:3000/shortcuts/${patchId}`, {
+        fetch(`${process.env.REACT_APP_API_URL}/shortcuts/${patchId}`, {
             method:"PATCH",
             headers: {"Content-Type" : "application/json"},
             body:JSON.stringify (
