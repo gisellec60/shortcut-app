@@ -19,8 +19,8 @@ function Modify() {
   
   const handleChange = (e) =>{
     category.current = e.target.value
-    // fetch("https://gisellec60-json-server-template.onrender.com/shortcuts")
-    fetch("http://localhost:3000/shortcuts")
+    fetch("https://gisellec60-json-server-template.onrender.com/shortcuts")
+    // fetch("http://localhost:3000/shortcuts")
     .then((res) => res.json())
     .then((shortcuts) =>  {
       const shortcutFilterArray = shortcuts.filter((shortcut)=>{

@@ -13,8 +13,8 @@ function Delete() {
   
   const handleChange = (e) =>{
       category.current = (e.target.value)
-      // fetch("https://gisellec60-json-server-template.onrender.com/shortcuts")
-      fetch("http://localhost:3000/shortcuts")
+      fetch("https://gisellec60-json-server-template.onrender.com/shortcuts")
+      // fetch("http://localhost:3000/shortcuts")
         .then((res) => res.json())
         .then((shortcuts) =>  {
             const shortcutFilterArray = shortcuts.filter((shortcut)=>{
@@ -25,8 +25,8 @@ function Delete() {
 
   const handleDeleteClick = ((id) => {
     console.log("do you get here ")
-    // fetch(`https://gisellec60-json-server-template.onrender.com/shortcuts/${id}`,{
-    fetch(`http://localhost:3000/shortcuts/${id}`,{
+    fetch(`https://gisellec60-json-server-template.onrender.com/shortcuts/${id}`,{
+    // fetch(`http://localhost:3000/shortcuts/${id}`,{
       method:"DELETE"
     })
     .then (res => res.json())
@@ -93,15 +93,3 @@ function Delete() {
  }
 
 export default Delete
-// const displayInfo = shortcuts.map((shortcut) => {
-//   return (
-//     <div >
-//       <div className="listing" >
-//          <div key={shortcut.id}>{shortcut.os} - {shortcut.task}</div> 
-//          <button className="taskButnDel">{shortcut.keys}</button>
-//          <button onClick={() => handleDeleteClick(shortcut.id)} 
-//          className="delButn"> Delete </button>
-//       </div>
-//     </div>   
-//   )
-// })
